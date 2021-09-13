@@ -1,3 +1,5 @@
-from django.shortcuts import render
+(import [django.http [HttpResponse]]
+        [. [pages]])
 
-# Create your views here.
+(defn home [request]
+  (HttpResponse (pages.home.render {123 "123"})))
