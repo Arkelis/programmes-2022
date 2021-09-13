@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.9"
 Django = "^3.2.7"
 hyccup = "^1.0.0-alpha.2"
+Pillow = "^8.3.2"
 
 [tool.poetry.dev-dependencies]
 

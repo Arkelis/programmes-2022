@@ -1,4 +1,4 @@
-"""programmes_2022 URL Configuration
+"programmes_2022 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -12,9 +12,11 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-from django.contrib import admin
-from django.urls import path
+"
+
+(import
+  [django.contrib [admin]]
+  [django.urls [include path]])
 
 urlpatterns = [
     path('admin/', admin.site.urls),
