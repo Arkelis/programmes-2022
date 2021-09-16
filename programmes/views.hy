@@ -2,4 +2,4 @@
         [. [pages]])
 
 (defn home [request]
-  (HttpResponse (pages.home.render {123 "123"})))
+  (HttpResponse (pages.home.render)))
