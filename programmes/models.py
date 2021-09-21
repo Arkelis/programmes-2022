@@ -2,7 +2,8 @@ from django.db import models
 
 
 class Candidate(models.Model):
-    name = models.CharField(verbose_name="Nom du candidat", max_length=128)
+    first_name = models.CharField(verbose_name="Prénom du candidat", max_length=128)
+    last_name = models.CharField(verbose_name="Nom du candidat", max_length=128)
     party = models.ForeignKey(
         "PoliticalEntity",
         verbose_name="Parti, mouvement ou coalition politique",
@@ -11,14 +12,14 @@ class Candidate(models.Model):
         blank=True)
     profession = models.CharField(verbose_name="Métier du candidat", max_length=128)
     website = models.URLField(verbose_name="Site web du candidat")
-    photo = models.ImageField(verbose_name="Photo du candidat", upload_to="static/")
+    photo = models.ImageField(verbose_name="Photo du candidat", upload_to="static/static/")
     biography = models.TextField(verbose_name="Biographie synthétique")
 
     class Meta:
         verbose_name = "candidat"
 
     def __str__(self):
-        return self.name
+        return f"{self.first_name} {self.last_name}"
 
 
 class Term(models.Model):
@@ -40,7 +41,7 @@ class Term(models.Model):
         verbose_name = "mandat"
 
     def __str__(self):
-        base = f"{self.candidate.name} - {self.position.name}"
+        base = f"{self.candidate} - {self.position.name}"
         dates = (
             f"depuis {self.start_date.year}"
             if (end_date := self.end_date) is None
@@ -83,7 +84,7 @@ class PreviousPresidentialResult(models.Model):
         verbose_name_plural = "scores aux élections présidentielles passées"
 
     def __str__(self):
-        return f"{self.election.year} / {self.candidate.name} : {self.result:.2f} %"
+        return f"{self.election.year} / {self.candidate} : {self.result:.2f} %"
 
 
 class PoliticalEntity(models.Model):

@@ -51,6 +51,20 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "gunicorn"
+version = "20.1.0"
+description = "WSGI HTTP Server for UNIX"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+tornado = ["tornado (>=0.2)"]
+
+[[package]]
 name = "hy"
 version = "1.0a3"
 description = "Lisp and Python love each other."
@@ -139,7 +153,7 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "2e4977af6b1e3d3c9d99af6707b4d2c87be4ac123e5586dd5fb7cd0c59b1acfb"
+content-hash = "7f8d00527398581842e7c6f07e34d7530b959b77e50dc6d04cb4afcb32a5fcd6"
 
 [metadata.files]
 appdirs = [
@@ -160,6 +174,10 @@ django = [
 ]
 funcparserlib = [
     {file = "funcparserlib-0.3.6.tar.gz", hash = "sha256:b7992eac1a3eb97b3d91faa342bfda0729e990bd8a43774c1592c091e563c91d"},
+]
+gunicorn = [
+    {file = "gunicorn-20.1.0-py3-none-any.whl", hash = "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"},
+    {file = "gunicorn-20.1.0.tar.gz", hash = "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"},
 ]
 hy = [
     {file = "hy-1.0a3-py2.py3-none-any.whl", hash = "sha256:cdb5902a143c9be652bd48bf5cf892550e519a4276151d56add3008816fb0f22"},

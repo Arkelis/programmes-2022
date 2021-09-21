@@ -30,7 +30,7 @@
 
   (setv 
     list-display ["__str__" "party" "manifesto"]
-    ordering ["name"]
+    ordering ["last_name"]
     inlines [ManifestoInline
              PreviousPresidentialResultInline
              TermInline])))
