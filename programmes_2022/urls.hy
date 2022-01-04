@@ -8,5 +8,5 @@
   admin.site.index-title "Administration et Contenus")
 
 (setv urlpatterns
-  [(path "" admin.site.urls)])
-  ;; (path "" (include "programmes.urls"))])
+  [(path "admin" admin.site.urls)
+   (path "" (include "programmes.urls"))])
