@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+.title-word {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.title-year {
+    font-family: "PT Serif", serif;
+    font-size: 3.5rem;
+    margin-left: 1rem;
+}
+
+.abstract {
+    max-width: 80ch;
+    font-weight: 300;
+}
+
