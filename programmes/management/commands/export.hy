@@ -16,9 +16,10 @@
     client (Client))
 
   (defn handle [self #* args #** options]
-    (self.setup-folder)
-    (self.content-at "")
-    (self.copy-assets)
+    (doto self
+      (.setup-folder)
+      (.content-at "")
+      (.copy-assets))
     "Done! Result build is in 'site' folder.")
   
   (defn content-at [self url]
