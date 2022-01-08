@@ -7,6 +7,7 @@
   [django.core.management.base
     [BaseCommand
      CommandError]]
+  sass
   [programmes.urls [urlpatterns]])
 
 
@@ -38,4 +39,4 @@
     (site-path.mkdir))
   
   (defn copy-assets [self]
-    (copytree "programmes/static" "site/static")))
+    (sass.compile :dirname (, "programmes/static" "site/static"))))
