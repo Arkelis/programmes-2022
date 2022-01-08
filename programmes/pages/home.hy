@@ -1,5 +1,6 @@
 (import
   [hyccup.core [html]]
+  [hyccup.element [link-to]]
   [hyccup.page [html5 include-css]])
   
 (defn render []
@@ -15,4 +16,6 @@
           "En mai prochain se déroulera en France l'élection présidentielle de 2022.
            S'il s'agira d'élire la personnalité qui guidera la politique du pays pour
            les cinq prochaines années, ce site va tenter de synthétiser les programmes
-           portés par chacun des candidats, afin de vous éclairer dans votre choix."]]]))
+           portés par chacun des candidats, afin de vous éclairer dans votre choix."]
+        (link-to {'class "link-button link--programmes"} "/programmes" "Consulter les programmes des candidats")
+        (link-to {'class "link-button link--candidates"} "/candidats" "En savoir plus sur les candidats")]]))
