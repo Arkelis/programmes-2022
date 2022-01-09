@@ -1,0 +1,557 @@
+[
+{
+  "model": "programmes.candidate",
+  "pk": 1,
+  "fields": {
+    "first_name": "Jean-Luc",
+    "last_name": "Mélenchon",
+    "party": 1,
+    "profession": "Professeur, Journaliste",
+    "website": "https://melenchon2022.fr/",
+    "photo": "static/melenchon.jpg",
+    "biography": "Jean-Luc Mélenchon"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 2,
+  "fields": {
+    "first_name": "Anne",
+    "last_name": "Hidalgo",
+    "party": 2,
+    "profession": "Inspectrice du travail",
+    "website": "https://www.2022avechidalgo.fr",
+    "photo": "static/hidalgo.jpg",
+    "biography": "Anne Hidalgo"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 3,
+  "fields": {
+    "first_name": "Nathalie",
+    "last_name": "Arthaud",
+    "party": 3,
+    "profession": "Enseignante",
+    "website": "https://www.nathalie-arthaud.info/",
+    "photo": "static/arthaud.jpg",
+    "biography": "Nathalie Arthaud"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 4,
+  "fields": {
+    "first_name": "François",
+    "last_name": "Asselineau",
+    "party": 4,
+    "profession": "Inspecteur général des finances",
+    "website": "https://francoisasselineau.fr",
+    "photo": "static/asselineau.jpg",
+    "biography": "François Asselineau"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 6,
+  "fields": {
+    "first_name": "Nicolas",
+    "last_name": "Dupont-Aignan",
+    "party": 6,
+    "profession": "Administrateur civil",
+    "website": "https://debout-la-france.fr/",
+    "photo": "static/dupont-aignan.jpg",
+    "biography": "Nicolas Dupont-Aignan"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 7,
+  "fields": {
+    "first_name": "Jean",
+    "last_name": "Lassalle",
+    "party": 7,
+    "profession": "Technicien agricole",
+    "website": "https://resistons-france.fr/",
+    "photo": "static/lassalle.jpg",
+    "biography": "Jean Lassalle"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 8,
+  "fields": {
+    "first_name": "Marine",
+    "last_name": "Le Pen",
+    "party": 8,
+    "profession": "Avocate",
+    "website": "https://mlafrance.fr/",
+    "photo": "static/lepen.jpg",
+    "biography": "Marine Le Pen"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 9,
+  "fields": {
+    "first_name": "Arnaud",
+    "last_name": "Montebourg",
+    "party": 9,
+    "profession": "Entrepreneur",
+    "website": "https://laremontada.fr",
+    "photo": "static/montebourg.jpg",
+    "biography": "Arnaud Montebourg"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 11,
+  "fields": {
+    "first_name": "Philippe",
+    "last_name": "Poutou",
+    "party": 12,
+    "profession": "Ouvrier d'usine",
+    "website": "https://poutou2022.org/",
+    "photo": "static/static/poutou.jpg",
+    "biography": "Poutou"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 12,
+  "fields": {
+    "first_name": "Fabien",
+    "last_name": "Roussel",
+    "party": 13,
+    "profession": "Journaliste",
+    "website": "https://www.fabienroussel2022.fr/",
+    "photo": "static/static/roussel.jpg",
+    "biography": "Roussel"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 13,
+  "fields": {
+    "first_name": "Antoine",
+    "last_name": "Waechter",
+    "party": 10,
+    "profession": "Ingénieur écologue",
+    "website": "https://www.waechter2022.fr/",
+    "photo": "static/static/waechter.jpg",
+    "biography": "Waechter"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 14,
+  "fields": {
+    "first_name": "Valérie",
+    "last_name": "Pécresse",
+    "party": 5,
+    "profession": "Haute Fonctionnaire",
+    "website": "https://www.valeriepecresse.fr/",
+    "photo": "static/static/pecresse.jpg",
+    "biography": "Haute fonctionnaire"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 15,
+  "fields": {
+    "first_name": "Yannick",
+    "last_name": "Jadot",
+    "party": 16,
+    "profession": "Militant écologiste",
+    "website": "https://www.jadot2022.fr/",
+    "photo": "static/static/jadot.jpg",
+    "biography": "Militant écologiste"
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 16,
+  "fields": {
+    "first_name": "Éric",
+    "last_name": "Zemmour",
+    "party": 17,
+    "profession": "Journaliste",
+    "website": "https://www.zemmour2022.fr/",
+    "photo": "static/static/zemmour.jpg",
+    "biography": "Journaliste polémiste"
+  }
+},
+{
+  "model": "programmes.term",
+  "pk": 1,
+  "fields": {
+    "candidate": 1,
+    "start_date": "2017-06-27",
+    "end_date": null,
+    "position": 8,
+    "summary": "Président du groupe La France insoumise à l'Assemblée nationale"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 1,
+  "fields": {
+    "name": "Député français"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 2,
+  "fields": {
+    "name": "Député européen"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 3,
+  "fields": {
+    "name": "Sénateur français"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 4,
+  "fields": {
+    "name": "Ministre délégué à l'Enseignement professionnel"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 5,
+  "fields": {
+    "name": "Député européen"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 6,
+  "fields": {
+    "name": "Conseiller général"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 7,
+  "fields": {
+    "name": "Adjoint au maire"
+  }
+},
+{
+  "model": "programmes.politicalposition",
+  "pk": 8,
+  "fields": {
+    "name": "Président de groupe"
+  }
+},
+{
+  "model": "programmes.previouspresidentialelection",
+  "pk": 1,
+  "fields": {
+    "year": 2012
+  }
+},
+{
+  "model": "programmes.previouspresidentialelection",
+  "pk": 2,
+  "fields": {
+    "year": 2017
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 1,
+  "fields": {
+    "election": 1,
+    "result": 11.1,
+    "candidate": 1
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 2,
+  "fields": {
+    "election": 2,
+    "result": 19.58,
+    "candidate": 1
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 1,
+  "fields": {
+    "name": "La France insoumise",
+    "summary": "La France insoumise",
+    "website": "https://lafranceinsoumise.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 2,
+  "fields": {
+    "name": "Parti socialiste",
+    "summary": "Parti socialiste français",
+    "website": "https://www.parti-socialiste.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 3,
+  "fields": {
+    "name": "Lutte ouvrière",
+    "summary": "Lutte ouvrière",
+    "website": "https://www.lutte-ouvriere.org/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 4,
+  "fields": {
+    "name": "Union populaire républicaine",
+    "summary": "Union populaire républicaine",
+    "website": "https://www.upr.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 5,
+  "fields": {
+    "name": "Les Républicains",
+    "summary": "Les Républicains",
+    "website": "https://republicains.fr",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 6,
+  "fields": {
+    "name": "Debout la France",
+    "summary": "Debout la France",
+    "website": "https://debout-la-france.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 7,
+  "fields": {
+    "name": "Résistons",
+    "summary": "Résistons",
+    "website": "https://resistons-france.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 8,
+  "fields": {
+    "name": "Rassemblement national",
+    "summary": "Rassemblement national",
+    "website": "https://rassemblementnational.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 9,
+  "fields": {
+    "name": "L'Engagement",
+    "summary": "L'Engagement",
+    "website": "https://l-engagement.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 10,
+  "fields": {
+    "name": "Mouvement écologiste indépendant",
+    "summary": "Mouvement écologiste indépendant",
+    "website": "https://m-e-i.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 11,
+  "fields": {
+    "name": "VIA, la voie du peuple",
+    "summary": "VIA, la voie du peuple",
+    "website": "https://via-lavoiedupeuple.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 12,
+  "fields": {
+    "name": "Nouveau Parti anticapitaliste",
+    "summary": "Nouveau Parti anticapitaliste",
+    "website": "https://nouveaupartianticapitaliste.org/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 13,
+  "fields": {
+    "name": "Parti communiste français",
+    "summary": "Parti communiste français",
+    "website": "https://www.pcf.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 15,
+  "fields": {
+    "name": "Europe Écologie Les Verts",
+    "summary": "Les verts",
+    "website": "https://www.eelv.fr/",
+    "parent": 16
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 16,
+  "fields": {
+    "name": "Les Écologistes",
+    "summary": "Coalition de partis et mouvements écologistes pour l'élection présidentielle de 2022.",
+    "website": "https://lesecologistes.fr",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 17,
+  "fields": {
+    "name": "Reconquête !",
+    "summary": "Parti d'Eric Zemmour",
+    "website": "https://www.parti-reconquete.fr/",
+    "parent": null
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 1,
+  "fields": {
+    "name": "L'Avenir en commun",
+    "candidate": 1,
+    "summary": "L'Avenir en commun porte l'idée que le peuple peut, par son action collective, renverser le système actuel  dirigé par des \"dominants\" par la voie démocratique et ainsi faire face aux enjeux que sont la crise climatique et la fracture sociale.\r\n\r\nPour y parvenir, la mesure phare du programme est l’adoption d’une nouvelle constitution qui conduirait la France vers la Sixième République. Parmi les autres points forts de l’Avenir en commun : la justice, l’écologie, le retour de la souveraineté dont le manque se fait ressentir pendant la pandémie, le travail, le partage des richesses, l’accès à l’éducation, l’égalité, la remise en question des traités européens en faisant face aux autres pays de l’Union européenne.",
+    "website": "https://melenchon2022.fr/programme/"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 2,
+  "fields": {
+    "name": "Le courage de dire et la volonté de faire",
+    "candidate": 14,
+    "summary": "Synthèse du programme",
+    "website": "https://www.valeriepecresse.fr/mon-projet/"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 3,
+  "fields": {
+    "name": "Vivant 2022",
+    "candidate": 15,
+    "summary": "Programme de Yannick Jadot",
+    "website": "https://lesecologistes.fr/"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 4,
+  "fields": {
+    "name": "Pour que la France reste la France",
+    "candidate": 16,
+    "summary": "La France aux Français",
+    "website": "https://programme.zemmour2022.fr/"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 1,
+  "fields": {
+    "name": "République et Institutions"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 2,
+  "fields": {
+    "name": "Environnement"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 3,
+  "fields": {
+    "name": "Économie"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 4,
+  "fields": {
+    "name": "Éducation et Enseignement"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 5,
+  "fields": {
+    "name": "Solidarité et Santé"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 6,
+  "fields": {
+    "name": "International"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 7,
+  "fields": {
+    "name": "Justice, Défense et Sécurité"
+  }
+},
+{
+  "model": "programmes.topic",
+  "pk": 8,
+  "fields": {
+    "name": "Culture et Territoires"
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 1,
+  "fields": {
+    "topic": 1,
+    "text": "### La Sixième République\r\n\r\nPour réconcilier le peuple avec les institutions de la France, l'Avenir en commun propose de convoquer une Assemblée constituante pour définir une nouvelle constitution pour passer à la Sixième République, qui serait un régime plus parlementaire. Cette assemblée serait composée à la fois de membres élus et tirée au sort à la suite d'un référendum soumis par le Président de la République, puis elle travaillerait pendant deux ans. Le projet de constitution sera alors soumis aux Français à référendum.\r\n\r\n### La séparation de l'argent et de l'État\r\n\r\nL'Avenir en commun veut également \"mettre en place la séparation de l'argent et l'État\", notamment en durcissant les règles contre les conflits d'intérêt, en combattant l'influence des lobbys dans le débat parlementaire, et en luttant mieux contre la corruption.\r\n\r\n### Le Référendum d'initiative citoyenne\r\n\r\nPour améliorer l'action des citoyens sur les institutions, l'Avenir en commun propose une forme de référendum pour révoquer des élus, proposer ou abroger une loi, modifier la Constitution.\r\n\r\n### La Laïcité\r\n\r\nPour l'Avenir en commun, la laïcité doit être strictement appliquée selon la loi de 1905 de séparation des Églises et de l'État. Cela passe par l'abrogation du concordat d’Alsace-Moselle et le refus de financements publics pour la construction d'édifices religieux. Elle ne doit pas être utilisée pour montrer du doigt les croyants de quelque religion que ce soit.\r\n\r\n### Le contrôle des médias\r\n\r\nIl est constaté que beaucoup de médias sont contrôlés par quelques milliardaires. L'Avenir en commun prévoit une loi anti-concentration et de démocratisation des médias pour :\r\n\r\n- renforcer le statut juridique des rédactions ;\r\n- favoriser les coopératives de journalistes ;\r\n- l'introduction d'une charte déontologique dans la convention collective ;\r\n- donner un droit d'agrément aux rédactions face à l'entrée d'un nouvel actionnaire.",
+    "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 2,
+  "fields": {
+    "topic": 2,
+    "text": "### La planification écologique\r\n\r\nPour faire face à l'urgence climatique, l'Avenir en commun veut planifier l'écologie. Cela passe par la mise en place de la Règle verte : on ne doit pas prélever à la nature davantage qu'elle ne peut reconstituer.\r\n\r\n\r\n\r\n### Investir pour lancer la bifurcation écologique",
+    "manifesto": 1
+  }
+}
+]

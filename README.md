@@ -9,10 +9,10 @@ Work in progress, still not released.
 
 The project use the following technologies:
 
-- Python as main programming language
-- Django: fullstack web framework
-- Hy: a lisp embed in Python and Hyccup for HTML rendering
-- Poetry for package management
+- [Python](https://docs.python.org/) as main programming language
+- [Django](https://docs.djangoproject.com/en/4.0/): fullstack web framework
+- [Hy](https://docs.hylang.org/en/alpha/): a lisp embed in Python and [Hyccup](https://hyccup.pycolore.fr) for HTML rendering
+- [Poetry](https://python-poetry.org/) for package management
 
 ### Django project structure
 
@@ -20,23 +20,33 @@ There is one application called `programmes` in which the models and views are d
 A command exporting the website as static files is also exposed in this application.
 Some files are written in Hy.
 
+Instead of using Django templates, we use functions which return HTML. They are organized
+in a close manner as if they were Django templates, in `renderers` package. Each module
+exposes a `render()` function which is used by the views in `views.hy` to render pages. 
+
 ### Develop
 
 To contribute, clone the repository and install the dependencies with Poetry:
 
-```sh
+```
 poetry install
 ```
 
-You may want to retrieve a database with some data (ask me), then you can
-export the website
+Load latest data:
 
-```sh
+```
+poetry run python manage.py loaddata latest.json
+```
+
+Export the website:
+
+```
 poetry run python manage.py export
 ```
 
-You can now navigate on the exported website with
+This builds the website into the `site` directory.
+You can now navigate on the exported website with:
 
-```sh
+```
 poetry run python -m http.server -d site 
 ```
