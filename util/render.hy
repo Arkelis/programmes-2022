@@ -22,7 +22,9 @@
   (setv page-module (.replace (str page-name) "/" ".")
         resolved-module-name (resolve-renderer-module page-module))
   `(do
-     (import [importlib [import-module]])
+     (import
+       [importlib [import-module]]
+       [django.http [HttpResponse]])
      (HttpResponse
        (-> 
          (import-module ~resolved-module-name)
