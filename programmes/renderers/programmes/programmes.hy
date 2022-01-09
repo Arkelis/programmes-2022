@@ -1,2 +1,0 @@
-(defn render []
-  "Hello world")

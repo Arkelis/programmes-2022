@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 
 class Candidate(models.Model):
@@ -118,6 +119,9 @@ class Manifesto(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def slug(self):
+        return slugify(self.name)
 
 class Topic(models.Model):
     name = models.CharField(verbose_name="Titre de la thématique", max_length=128)
