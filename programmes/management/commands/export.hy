@@ -7,6 +7,7 @@
   [django.core.management.base
     [BaseCommand
      CommandError]]
+  [django.urls [reverse]]
   sass
   [programmes.urls [urlpatterns]])
 
@@ -19,13 +20,15 @@
   (defn handle [self #* args #** options]
     (doto self
       (.setup-folder)
-      (.content-at "")
+      (.content-at (reverse "home"))
+      (.content-at (reverse "programmes"))
+      (.content-at (reverse "candidates"))
       (.copy-assets))
     "Done! Result build is in 'site' folder.")
   
   (defn content-at [self url]
-    (.mkdir (Path url) :exist_ok True :parents True)
-    (with [f (open f"site/{url}index.html" "w")]
+    (.mkdir (Path f"site{url}") :exist_ok True :parents True)
+    (with [f (open f"site{url}/index.html" "w")]
       (f.write
         (-> self.client
           (.get url)

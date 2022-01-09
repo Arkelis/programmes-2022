@@ -1,5 +1,12 @@
-(import [django.http [HttpResponse]]
-        [. [pages]])
+(require [util.render [render]])
+
+(import [django.http [HttpResponse]])
 
 (defn home [request]
-  (HttpResponse (pages.home.render)))
+  (render "programmes/home"))
+
+(defn programmes [request]
+  (render "programmes/programmes"))
+
+(defn candidates [request]
+  (render "programmes/candidates"))
