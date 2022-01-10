@@ -6,9 +6,9 @@ authors = ["Guillaume Fayard <guillaume.fayard@pycolore.fr>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 Django = "^3.2.7"
-hyccup = "^1.0.0-alpha.3"
+hyccup = "^1.0.0-alpha.4"
 Pillow = "^8.3.2"
 gunicorn = "^20.1.0"
 libsass = "^0.21.0"
@@ -16,6 +16,11 @@ beautifulsoup4 = "^4.10.0"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.30.1"
+pytest-django = "*"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "programmes_2022.settings"
+python_files = ["**/test_*.hy", "**/test_*.py"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,5 +1,6 @@
-(require [hyccup.defmacros [defhtml]])
-(import [hyccup.page [include-css html5]])
+(require hyccup.defmacros [defhtml])
+
+(import hyccup.page [include-css html5])
 
 (defn render-in-page [#* content]
   (html5

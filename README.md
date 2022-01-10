@@ -38,6 +38,12 @@ Load latest data:
 poetry run python manage.py loaddata latest.json
 ```
 
+Execute the test suite:
+
+```
+poetry run pytest
+```
+
 Export the website:
 
 ```

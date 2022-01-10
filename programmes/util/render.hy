@@ -1,6 +1,8 @@
+(require hyrule [->])
+
 (import
-  [importlib [import-module]]
-  [django.http [HttpResponse]])
+  importlib [import-module]
+  django.http [HttpResponse])
 
 
 (defn resolve-renderer-module [module-name [where-to-search (, "programmes." "")]]
@@ -23,8 +25,8 @@
         resolved-module-name (resolve-renderer-module page-module))
   `(do
      (import
-       [importlib [import-module]]
-       [django.http [HttpResponse]])
+       importlib [import-module]
+       django.http [HttpResponse])
      (HttpResponse
        (-> 
          (import-module ~resolved-module-name)

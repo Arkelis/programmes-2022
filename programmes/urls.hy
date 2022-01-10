@@ -1,5 +1,5 @@
-(import [django.urls [path]]
-        [. [views]])
+(import django.urls [path]
+        programmes [views])
 
 (setv urlpatterns
   [(path "" views.home :name "home")

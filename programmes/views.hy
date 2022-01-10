@@ -1,6 +1,8 @@
-(require [util.render [render]])
+(require
+  hyrule [->] 
+  programmes.util.render [render])
 
-(import [programmes.models [Manifesto]])
+(import programmes.models [Manifesto])
 
 (defn home [request]
   (render "programmes/home"))

@@ -1,15 +1,17 @@
-(import
-  [pathlib [Path]]
-  [shutil [copytree rmtree]])
+(require hyrule [-> doto])
 
 (import
-  [bs4 [BeautifulSoup]]
-  [django.core.management.base [BaseCommand CommandError]]
-  [django.test [Client]]
-  [django.urls [reverse]]
+  pathlib [Path]
+  shutil [copytree rmtree])
+
+(import
+  bs4 [BeautifulSoup]
+  django.core.management.base [BaseCommand CommandError]
+  django.test [Client]
+  django.urls [reverse]
   sass)
 
-(import [programmes.models [Manifesto]])
+(import programmes.models [Manifesto])
 
 
 (defclass Command [BaseCommand]
