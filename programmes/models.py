@@ -136,7 +136,12 @@ class Topic(models.Model):
 class ManifestoParagraph(models.Model):
     topic = models.ForeignKey("Topic", verbose_name="thème", on_delete=models.CASCADE)
     text = models.TextField(verbose_name="Texte du paragraphe")
-    manifesto = models.ForeignKey("Manifesto", verbose_name="programme", on_delete=models.CASCADE)
+    manifesto = models.ForeignKey(
+        "Manifesto",
+        verbose_name="programme",
+        related_name="paragraphs",
+        related_query_name="pragraph",
+        on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "paragraphe de programme"

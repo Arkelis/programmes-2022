@@ -25,15 +25,15 @@
      "django.contrib.messages.middleware.MessageMiddleware"
      "django.middleware.clickjacking.XFrameOptionsMiddleware"]
   ROOT-URLCONF "programmes_2022.urls"
-  ;; TEMPLATES
-  ;;   [{"BACKEND" "django.template.backends.django.DjangoTemplates"
-  ;;     "DIRS" []
-  ;;     "APP_DIRS" True
-  ;;     "OPTIONS"
-  ;;       {"context_processors" ["django.template.context_processors.debug"
-  ;;                              "django.template.context_processors.request"
-  ;;                              "django.contrib.auth.context_processors.auth"
-  ;;                              "django.contrib.messages.context_processors.messages"]}}]
+  TEMPLATES
+    [{"BACKEND" "django.template.backends.django.DjangoTemplates"
+      "DIRS" []
+      "APP_DIRS" True
+      "OPTIONS"
+        {"context_processors" ["django.template.context_processors.debug"
+                               "django.template.context_processors.request"
+                               "django.contrib.auth.context_processors.auth"
+                               "django.contrib.messages.context_processors.messages"]}}]
   WSGI-APPLICATION "programmes_2022.wsgi.application"
   DATABASES
     {"default" {"ENGINE" "django.db.backends.sqlite3"
