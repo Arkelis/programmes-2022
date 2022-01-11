@@ -1,9 +1,9 @@
 (import
-  [django.urls [reverse]]
-  [hyccup.core [html]]
-  [hyccup.element [link-to]]
-  [hyccup.page [html5 include-css]]
-  [programmes.renderers.layouts.page [render-in-page]])
+  django.urls [reverse]
+  hyccup.core [html]
+  hyccup.element [link-to]
+  hyccup.page [html5 include-css]
+  programmes.renderers.layouts.page [render-in-page])
   
 (defn render []
   (render-in-page

@@ -1,6 +1,6 @@
 (import
-  [django.contrib [admin]]
-  [django.urls [include path]])
+  django.contrib [admin]
+  django.urls [include path])
 
 (setv
   admin.site.site-header "Administration de Programmes-2022.fr"
