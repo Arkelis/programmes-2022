@@ -32,6 +32,12 @@ To contribute, clone the repository and install the dependencies with Poetry:
 poetry install
 ```
 
+Install the database by executing Django migration:
+
+```
+poetry run python manage.py migrate
+```
+
 Load latest data:
 
 ```
