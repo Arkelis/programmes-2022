@@ -1,13 +1,11 @@
+
+
 (require hyrule [->])
 
 (import pathlib [Path])
 
-
 (setv
-  BASE-DIR (-> (Path __file__) (.resolve) (. parent parent))
-  SECRET-KEY "django-insecure-k-^5c=xe23u7umc3l=(2$)3v-q-mnj^3&c)5)%(*w)k*tyotq!"
-  DEBUG True
-  ALLOWED-HOSTS ["testserver" "127.0.0.1" "contenu.programmes-2022.fr"]
+  BASE-DIR (-> (Path __file__) (.resolve) (. parent parent parent))
   INSTALLED-APPS
     ["django.contrib.admin"
      "django.contrib.auth"
@@ -48,5 +46,4 @@
   USE-I18N True
   USE-TZ True
   STATIC-URL "/static/"
-  ;; STATIC_ROOT = "static/static/"
   DEFAULT-AUTO-FIELD "django.db.models.BigAutoField")
