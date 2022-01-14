@@ -35,13 +35,13 @@ poetry install
 Install the database by executing Django migration:
 
 ```
-poetry run python manage.py migrate
+poetry run python manage.py --settings programmes_2022.settings.devel migrate
 ```
 
 Load latest data:
 
 ```
-poetry run python manage.py loaddata latest.json
+poetry run python manage.py --settings programmes_2022.settings.devel loaddata latest.json
 ```
 
 Execute the test suite:
@@ -53,7 +53,7 @@ poetry run pytest
 Export the website:
 
 ```
-poetry run python manage.py export
+poetry run python manage.py --settings programmes_2022.settings.devel export
 ```
 
 This builds the website into the `site` directory.
@@ -61,4 +61,11 @@ You can now navigate on the exported website with:
 
 ```
 poetry run python -m http.server -d site 
+```
+
+To avoid passing `--settings` option at each command, create a `.env` file with
+following line:
+
+```
+DJANGO_SETTINGS_MODULE=programmes_2022.settings.devel
 ```

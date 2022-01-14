@@ -1,5 +1,6 @@
+.env
 .idea
+.vscode
 __pycache__
 db.sqlite3
-.vscode
 /site
