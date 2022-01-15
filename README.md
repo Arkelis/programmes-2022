@@ -26,50 +26,26 @@ Instead of using Django templates, we use functions which return HTML. They are 
 in a close manner as if they were Django templates, in `renderers` package. Each module
 exposes a `render()` function which is used by the views in `views.hy` to render pages. 
 
-### Develop
+### Build the website locally
 
-To contribute, clone the repository and install the dependencies with Poetry:
+Clone the repository and `cd` into it.
 
-```
-poetry install
-```
-
-Install the database by executing Django migration:
+Then, run the setup script, it will setup the project and build the website in you machine.
+You need to have Poetry and Python 3.9+ installed.
 
 ```
-poetry run python manage.py --settings programmes_2022.settings.devel migrate
-```
-
-Load latest data:
-
-```
-poetry run python manage.py --settings programmes_2022.settings.devel loaddata latest.json
-```
-
-Execute the test suite:
-
-```
-poetry run pytest
-```
-
-Export the website:
-
-```
-poetry run python manage.py --settings programmes_2022.settings.devel export
+sh ./scripts/dev-env-setup.sh
 ```
 
 This builds the website into the `site` directory.
 You can now navigate on the exported website with:
 
-```
-poetry run python -m http.server -d site 
-```
+### Develop
 
-To avoid passing `--settings` option at each command, create a `.env` file with
-following line:
+For develop, launch the Django development server to hot reload views:
 
 ```
-DJANGO_SETTINGS_MODULE=programmes_2022.settings.devel
+python manage.py runserver
 ```
 
 ## More information
