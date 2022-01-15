@@ -1,9 +1,11 @@
 # programmes-2022.fr
 
+[![Tests](https://github.com/Arkelis/programmes-2022/actions/workflows/ci.yml/badge.svg)](https://github.com/Arkelis/programmes-2022/actions/workflows/ci.yml)
+
 Website about candidates and their manifesto for 2022 French Presidential Elections.
 Work in progress, still not released.
 
-## Structure of the repository
+## Overview
 
 ### Technology
 
@@ -69,3 +71,7 @@ following line:
 ```
 DJANGO_SETTINGS_MODULE=programmes_2022.settings.devel
 ```
+
+## More information
+
+Refer to the [wiki](https://github.com/Arkelis/programmes-2022/wiki) (French)!
