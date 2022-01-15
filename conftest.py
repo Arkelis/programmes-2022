@@ -1,5 +1,6 @@
 import os
 
+from django.core.management import call_command
 import hy
 import pytest
 
@@ -7,6 +8,7 @@ import pytest
 def pytest_collect_file(parent, path):
     if (path.ext == ".hy"
         and "tests" in path.dirname + os.sep
+        and path.basename.startswith("test_")
         and path.basename != "__init__.hy"):
 
         if hasattr(pytest.Module, "from_parent"):

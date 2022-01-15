@@ -1,38 +1,29 @@
-(import django.test [Client]
-        pytest)
+(import pytest)
 
 (import programmes.util.html [to-text]
         programmes.models [Manifesto Candidate])
 
+;; Fixture provided by pytest-django:
+;; - client: an instance of django.test.Client
 
 #@(pytest.fixture
 (defn manifesto []
-  (Manifesto.objects.create
-    :name "L'avenir en commun"
-    :summary "Résumé du programme de l'avenir en commun"
-    :website "https://melenchon2022.fr"
-    :candidate (Candidate.objects.create
-      :first-name "Jean-Luc"
-      :last-name "Mélenchon"
-      :profession "Super job"
-      :website "https://melenchon.fr"
-      :photo "lien-vers-super-photo.com"
-      :biography "Super bio"))))
+  (Manifesto.objects.get :name "L'avenir en commun")))
 
 
-(defn test-home-page []
-  (setv resp (.get (Client) "/"))
+(defn test-home-page [client]
+  (setv resp (client.get "/"))
   (assert (in "En mai prochain se déroulera en France l'élection présidentielle de 2022."
               (to-text resp.content))))
 
 
 #@(pytest.mark.django-db
-(defn test-list-programmes [manifesto]
-  (setv resp (.get (Client) "/programmes/"))
+(defn test-list-programmes [client manifesto]
+  (setv resp (client.get "/programmes/"))
   (assert (in manifesto.name (to-text resp.content)))))
 
 
 #@(pytest.mark.django-db
-(defn test-detail-programme [manifesto]
-  (setv resp (.get (Client) "/programmes/lavenir-en-commun/"))
+(defn test-detail-programme [client manifesto]
+  (setv resp (client.get "/programmes/lavenir-en-commun/"))
   (assert (in manifesto.name (to-text resp.content)))))
