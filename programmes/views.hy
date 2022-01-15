@@ -1,8 +1,8 @@
 (require
-  hyrule [->] 
-  programmes.util.render [render])
+  hyrule [->])
 
-(import programmes.models [Manifesto])
+(import programmes.models [Manifesto]
+        programmes.util.render [render])
 
 (defn home [request]
   (render "programmes/home"))
@@ -11,7 +11,7 @@
   (setv manifestos (Manifesto.objects.all))
   (render 
     "programmes/manifesto_list"
-    {"manifestos" manifestos}))
+    :manifestos manifestos))
 
 (defn manifesto-detail [request slug]
   (setv manifesto
@@ -21,7 +21,7 @@
       (next)))
   (render 
     "programmes/manifesto_detail"
-    {"manifesto" manifesto}))
+    :manifesto manifesto))
 
 (defn candidate-list [request]
   (render "programmes/candidate_list"))

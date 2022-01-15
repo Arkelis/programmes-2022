@@ -1,10 +1,11 @@
 (require hyrule [->])
 
 (import
+  functools [cache]
   importlib [import-module]
   django.http [HttpResponse])
 
-
+#@(cache
 (defn resolve-renderer-module [module-name [where-to-search (, "programmes." "")]]
   (setv [to-search #* others] where-to-search)
   (try 
@@ -12,10 +13,10 @@
     (except [ModuleNotFoundError ImportError]
       (if others
         (resolve-renderer-module module-name others)
-        (raise (RuntimeError f"Temlate for {page-name} does not exist"))))))
+        (raise (RuntimeError f"Renderer for {page-name} does not exist")))))))
 
 
-(defmacro render [page-name [context {}]]
+(defn render [page-name #** context]
   "Return an HttpResponse with rendered page.
   
   Try to find the correct page module and call render() function in it.
@@ -23,12 +24,8 @@
   "
   (setv page-module (.replace (str page-name) "/" ".")
         resolved-module-name (resolve-renderer-module page-module))
-  `(do
-     (import
-       importlib [import-module]
-       django.http [HttpResponse])
-     (HttpResponse
-       (-> 
-         (import-module ~resolved-module-name)
-         (.render #** ~context)))))
+  (HttpResponse
+    (->
+      (import-module resolved-module-name)
+      (.render #** context))))
 
