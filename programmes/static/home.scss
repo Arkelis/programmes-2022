@@ -1,0 +1,68 @@
+/* ------- N A V ----- */
+@mixin header-font {
+    font-size: 24px;
+    height: 31px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    .site-name,
+    .site-name span {
+        @include header-font;
+        font-family: Fira Sans;
+        font-style: italic;
+        font-weight: 100;
+        margin-right: 20px;
+
+        span {
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding: 0px 10px;
+        min-width: 100px;
+        list-style-type: none;
+
+        a {
+            @include header-font;
+            font-family: Fira Sans Condensed;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 29px;
+            padding-bottom: 3px;
+
+            &:hover {
+                padding-bottom: 0px;
+                border-bottom: 3px solid #EC1920;
+            }
+        }
+    }
+}
