@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;700&display=swap');
 
-@import './home.scss';
+@import './navbar.scss';
 
 :root {
     --flag-blue: #051440;
@@ -13,6 +13,12 @@
     font-family: "Fira Sans", sans-serif;
     font-size: 18px;
     font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -49,7 +55,6 @@
     border-radius: .25rem;
     color: white;
     background-color: $bg-color;
-    text-decoration: none;
     margin-bottom: 1rem;
 
     &:hover {
