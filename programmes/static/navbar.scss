@@ -1,0 +1,62 @@
+@mixin header-font {
+    font-size: 24px;
+    height: 31px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+    .site-name,
+    .site-name span {
+        @include header-font;
+        font-family: "Fira Sans", sans-serif;
+        font-style: italic;
+        font-weight: 100;
+
+        span {
+            font-style: normal;
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    font-size: 1.5em;
+
+    li {
+        display: flex;
+        margin-right: 2rem;
+        list-style-type: none;
+
+        a {
+            @include header-font;
+            font-family: "Fira Sans Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                padding-bottom: 0px;
+                border-bottom: 3px solid #EC1920;
+            }
+        }
+    }
+}

@@ -12,9 +12,11 @@
 
 
 (defn test-home-page [client]
-  (setv resp (client.get "/"))
+  (setv resp (client.get "/")
+        content (to-text resp.content))
+  (assert (in "Comparateur" content))
   (assert (in "En mai prochain se déroulera en France l'élection présidentielle de 2022."
-              (to-text resp.content))))
+              content)))
 
 
 #@(pytest.mark.django-db
