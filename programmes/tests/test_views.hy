@@ -10,13 +10,14 @@
 (defn manifesto []
   (Manifesto.objects.get :name "L'avenir en commun")))
 
-
+#@(pytest.mark.django-db
 (defn test-home-page [client]
   (setv resp (client.get "/")
         content (to-text resp.content))
-  (assert (in "Comparateur" content))
+  (assert (in "L'avenir en commun" content))
+  (assert (in "Jean-Luc Mélenchon (La France insoumise)" content))
   (assert (in "En mai prochain se déroulera en France l'élection présidentielle de 2022."
-              content)))
+              content))))
 
 
 #@(pytest.mark.django-db
