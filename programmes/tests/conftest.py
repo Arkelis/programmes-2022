@@ -1,6 +1,7 @@
 import pytest
 from programmes.models import Manifesto
 from programmes.models import Candidate
+from programmes.models import PoliticalEntity
 
 
 @pytest.fixture(scope="session")
@@ -16,4 +17,5 @@ def django_db_setup(django_db_setup, django_db_blocker):
                 profession="Super job",
                 website="https://melenchon.fr",
                 photo="lien-vers-super-photo.com",
-                biography="Super bio"))
+                biography="Super bio",
+                party=PoliticalEntity.objects.create(name="La France insoumise")))

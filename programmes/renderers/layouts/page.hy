@@ -1,17 +1,34 @@
-(require hyccup.defmacros [defhtml])
+(require hyccup.defmacros [defhtml defelem])
 
-(import hyccup.page [html5]
-        programmes.util.render [include-scss])
+(import functools [cache])
 
-(defn render-in-page [#* content]
+(import django.urls [reverse]
+        hyccup.element [link-to]
+        hyccup.page [html5]
+        programmes.util.render [include-scss]
+        programmes.models [Manifesto])
+
+(defn render-in-page [#* content [home? False]]
   (html5
     ['head
       ['meta {'charset "UTF-8"}]
       #* (include-scss "/static/style/style.scss")]
     ['body
-      ['nav 
-        ['ul 
-          ['li ['a "Programmes"]] 
-          ['li ['a "Comparateur"]]]
-        ['p {'class "site-name"} "Programme" ['span "2022"]]]
+      (navbar {'class (when home? "nav--home")})
       (iter content)]))
+
+(defelem navbar []
+  ['nav 
+    ['ul 
+      ['li (link-to (reverse "manifesto-list") "Programmes")
+        ['div {'class "nav-submenu-container"} (manifesto-submenu)]]]
+    (link-to {'class "site-name"} (reverse "home") "Programmes" ['span "2022"])])
+
+(defn manifesto-submenu []
+  ['ul {'class "nav-submenu"}
+    (gfor 
+      manifesto (Manifesto.objects.all)
+      ['li 
+        (link-to (reverse "manifesto-detail" :args [manifesto.slug])
+          ['div {'class "manifesto"} (str manifesto)]
+          ['div {'class "candidate-party"} (str manifesto.candidate) f" ({manifesto.candidate.party})"])])])
