@@ -12,16 +12,10 @@
 }
 
 nav {
+  height: 100px;
   display: flex;
   justify-content: space-between;
   margin: 2rem;
-
-  &.nav--home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
 nav .site-name {
@@ -66,6 +60,9 @@ nav > ul {
   position: absolute;
 
   .nav-submenu {
+    max-height: 300px;
+    overflow: -moz-scrollbars-vertical; 
+    overflow: scroll;
     margin-top: 1rem;
     padding: 1.5rem;
     background-color: var(--bg-light);

@@ -15,7 +15,14 @@
       #* (include-scss "/static/style/style.scss")]
     ['body
       (navbar {'class (when home? "nav--home")})
-      (iter content)]))
+
+      ['div {'id "content"} (iter content)]
+      
+      ;
+      ['footer 
+        ['p "Created by Origénial"]
+        ['a {'href "https://github.com/Arkelis/programmes-2022" 'class "github"} ['img {'src "static/github.png" 'width "20px" 'class "github"}] ]]
+    ]))
 
 (defelem navbar []
   ['nav 
