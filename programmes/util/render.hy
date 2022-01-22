@@ -38,11 +38,10 @@
 
 (defn compile-if-needed [scss-uri]
   (setv scss-file-path f"programmes{scss-uri}"
-        css-uri (.replace scss-uri "scss" "css")
-        css-file-path f"programmes{css-uri}"
-        css-modified-time (get-modified-time css-file-path)
-        static-dir-modified-time (get-modified-time "programmes/static"))
-  (when (> static-dir-modified-time css-modified-time)
+        css-uri (.replace scss-uri ".scss" ".css")
+        css-file-path f"programmes{css-uri}")
+  (when (> (get-modified-time "programmes/static/style") 
+           (get-modified-time css-file-path))
     (logger.info f"Compiling {scss-file-path}")
     (with [f (open css-file-path "w")]
       (f.write (sass.compile :filename scss-file-path))))

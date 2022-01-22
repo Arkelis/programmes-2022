@@ -7,7 +7,7 @@
   (html5
     ['head
       ['meta {'charset "UTF-8"}]
-      #* (include-scss "/static/style.scss")]
+      #* (include-scss "/static/style/style.scss")]
     ['body
       ['nav 
         ['ul 

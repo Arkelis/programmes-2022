@@ -4,4 +4,4 @@
 __pycache__
 db.sqlite3
 /site
-/programmes/static/*.css
+/programmes/static/**/*.css
