@@ -1,71 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;0,300;0,700;1,300;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;700&display=swap');
-
-@import './components/navbar.scss';
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;0,300;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;400;700&display=swap");
 
 :root {
-    --flag-blue: #051440;
-    --flag-red: #EC1920;
+  --flag-blue: #051440;
+  --flag-red: #ec1920;
 }
 
+@import "./normalize.scss";
+@import "./components/navbar.scss";
+
 * {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
-    display: grid;
-    min-height: 100vh;
-    place-items: center;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
 }
 
 .container h1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .title-word {
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 200;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 200;
 }
 
 .title-year {
-    font-family: "PT Serif", serif;
-    font-size: 3.5rem;
-    margin-left: 1rem;
+  font-family: "PT Serif", serif;
+  font-size: 3.5rem;
+  margin-left: 0.25em;
 }
 
 .abstract {
-    max-width: 80ch;
-    margin-bottom: 2rem;
+  max-width: 80ch;
+  margin-bottom: 2rem;
 }
 
 @mixin link-button($bg-color) {
-    display: block;
-    width: fit-content;
-    padding: .5rem .75rem;
-    border-radius: .25rem;
-    color: white;
-    background-color: $bg-color;
-    margin-bottom: 1rem;
+  display: block;
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: $bg-color;
+  margin-bottom: 1rem;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .link--programmes {
-    @include link-button(var(--flag-blue));
+  @include link-button(var(--flag-blue));
 }
 
 .link--candidates {
-    @include link-button(var(--flag-red));
+  @include link-button(var(--flag-red));
 }

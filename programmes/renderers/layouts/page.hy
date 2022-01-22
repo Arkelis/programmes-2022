@@ -1,6 +1,8 @@
 (require hyccup.defmacros [defhtml])
 
-(import hyccup.page [html5]
+(import django.urls [reverse]
+        hyccup.element [link-to]
+        hyccup.page [html5]
         programmes.util.render [include-scss])
 
 (defn render-in-page [#* content]
@@ -9,9 +11,12 @@
       ['meta {'charset "UTF-8"}]
       #* (include-scss "/static/style/style.scss")]
     ['body
-      ['nav 
-        ['ul 
-          ['li ['a "Programmes"]] 
-          ['li ['a "Comparateur"]]]
-        ['p {'class "site-name"} "Programme" ['span "2022"]]]
+      (navbar)
       (iter content)]))
+
+(defn navbar []
+  ['nav 
+    ['ul 
+      ['li ['a "Programmes"]] 
+      ['li ['a "Comparateur"]]]
+    (link-to {'class "site-name"} (reverse "home") "Programmes" ['span "2022"])])
