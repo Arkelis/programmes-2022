@@ -4,8 +4,7 @@
   functools [cache]
   importlib [import-module]
   logging
-  pathlib [Path]
-  sys)
+  pathlib [Path])
 
 (import
   django.http [HttpResponse]
