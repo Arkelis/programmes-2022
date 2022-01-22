@@ -12,20 +12,74 @@
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
   margin: 2rem;
 
-  .site-name {
-    @include header-font(italic, 200, sans-serif);
+  &.nav--home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
 
-    span {
-      @include header-font(normal, 700, serif);
-      margin-left: 0.25em;
+nav .site-name {
+  @include header-font(italic, 200, sans-serif);
+
+  span {
+    @include header-font(normal, 700, serif);
+    margin-left: 0.25em;
+  }
+}
+
+nav > ul {
+  padding: 0;
+
+  > li {
+    display: inline-block;
+    margin-right: 2rem;
+
+    > a {
+      @include header-font($weight: 700, $family: sans-serif-condensed);
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      .nav-submenu-container {
+        display: block;
+      }
+
+      > a {
+        color: var(--flag-blue);
+        background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat;
+      }
+    }
+  }
+}
+
+.nav-submenu-container {
+  display: none;
+  position: absolute;
+
+  .nav-submenu {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    li {
+      .manifesto {
+        font-weight: bold;
+      }
+      .candidate-party {
+        font-style: italic;
+      }
     }
   }
 }
@@ -37,25 +91,5 @@ nav {
 
   nav li {
     width: 100%;
-  }
-}
-
-nav ul {
-  padding: 0;
-
-  li {
-    display: inline-block;
-    margin-right: 2rem;
-    list-style-type: none;
-
-    a {
-      @include header-font($weight: 700, $family: sans-serif-condensed);
-      text-transform: uppercase;
-
-      &:hover {
-        color: var(--flag-blue);
-        background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat;
-      }
-    }
   }
 }

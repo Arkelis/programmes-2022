@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;0,300;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,700;1,200;1,300;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;400;700&display=swap");
 
 :root {
   --flag-blue: #051440;
   --flag-red: #ec1920;
+  --bg-light: #fAf6f6;
 }
 
 @import "./normalize.scss";
@@ -21,6 +22,11 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit
+}
+
+li {
+  list-style-type: none;
 }
 
 .container {
