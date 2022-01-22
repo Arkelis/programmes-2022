@@ -22,7 +22,6 @@
     ['ul 
       ['li (link-to (reverse "manifesto-list") "Programmes")
         ['div {'class "nav-submenu-container"} (manifesto-submenu)]]]
-      ;;['li (link-to (reverse "candidate-list") "Comparateur")]]
     (link-to {'class "site-name"} (reverse "home") "Programmes" ['span "2022"])])
 
 (defn manifesto-submenu []

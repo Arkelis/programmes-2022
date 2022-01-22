@@ -74,6 +74,9 @@ nav > ul {
     grid-gap: 1rem;
 
     li {
+      a:hover {
+        text-decoration: underline;
+      }
       .manifesto {
         font-weight: bold;
       }
