@@ -1,9 +1,55 @@
-(require hyrule [->])
+(require hyrule [-> doto])
 
 (import
   functools [cache]
   importlib [import-module]
-  django.http [HttpResponse])
+  logging
+  pathlib [Path])
+
+(import
+  django.http [HttpResponse]
+  hyccup.page [include-css]
+  sass)
+
+
+(setv logger (doto (logging.getLogger "programmes.render.scss")
+                   (.setLevel logging.DEBUG)
+                   (.addHandler
+                     (doto 
+                       (logging.StreamHandler)
+                       (.setLevel logging.DEBUG)
+                       (.setFormatter 
+                         (logging.Formatter
+                           "[%(asctime)s] %(message)s"
+                           :datefmt "%d/%b/%Y %H:%M:%S"))))))
+
+
+(defn get-modified-time [path-str]
+  (setv path (Path path-str))
+  (cond 
+    [(.is-file path) (. path (stat) st-mtime)]
+    [(.is-dir path)
+     (max (gfor 
+            source-path (path.glob "**/*.scss") 
+            (. source-path (stat) st-mtime)))]
+    [True 0]))
+
+
+(defn compile-if-needed [scss-uri]
+  (setv scss-file-path f"programmes{scss-uri}"
+        css-uri (.replace scss-uri ".scss" ".css")
+        css-file-path f"programmes{css-uri}")
+  (when (> (get-modified-time "programmes/static/style") 
+           (get-modified-time css-file-path))
+    (logger.info f"Compiling {scss-file-path}")
+    (with [f (open css-file-path "w")]
+      (f.write (sass.compile :filename scss-file-path))))
+  css-uri)
+
+
+(defn include-scss [#* styles]
+  (include-css #* (map compile-if-needed styles)))
+
 
 #@(cache
 (defn resolve-renderer-module [module-name [where-to-search (, "programmes." "")]]

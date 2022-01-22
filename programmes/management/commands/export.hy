@@ -52,4 +52,8 @@
     (site-path.mkdir))
   
   (defn copy-assets [self]
-    (sass.compile :dirname (, "programmes/static" "site/static"))))
+    (setv scss-entry-point "static/style/style.css")
+    (.mkdir (Path f"site/static/style") :exist_ok True :parents True)
+    (with [f (open f"site/static/style/style.css" "w")]
+      (print f"Writing site/{scss-entry-point}")
+      (f.write (sass.compile :filename f"programmes/{scss-entry-point}")))))
