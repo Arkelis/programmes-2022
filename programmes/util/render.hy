@@ -30,7 +30,7 @@
     [(.is-file path) (. path (stat) st-mtime)]
     [(.is-dir path)
      (max (gfor 
-            source-path (path.glob "**/*.scss") 
+            source-path (path.glob "**/*.scss")
             (. source-path (stat) st-mtime)))]
     [True 0]))
 
@@ -39,7 +39,7 @@
   (setv scss-file-path f"programmes{scss-uri}"
         css-uri (.replace scss-uri ".scss" ".css")
         css-file-path f"programmes{css-uri}")
-  (when (> (get-modified-time "programmes/static/style") 
+  (when (> (get-modified-time "programmes/static/css") 
            (get-modified-time css-file-path))
     (logger.info f"Compiling {scss-file-path}")
     (with [f (open css-file-path "w")]

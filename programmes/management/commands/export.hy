@@ -25,7 +25,8 @@
       (.content-at (reverse "home"))
       (.contents-of Manifesto "manifesto-list" "manifesto-detail")
       (.content-at (reverse "candidate-list"))
-      (.copy-assets))
+      (.copy-styles)
+      (.copy-images))
     "Done! Result build is in 'site' folder.")
   
   (defn content-at [self url]
@@ -50,10 +51,13 @@
     (if (site-path.is-dir)
       (rmtree "site"))
     (site-path.mkdir))
+
+  (defn copy-images [self]
+    (copytree "programmes/media/img" "site/media/img"))
   
-  (defn copy-assets [self]
-    (setv scss-entry-point "static/style/style.css")
-    (.mkdir (Path f"site/static/style") :exist_ok True :parents True)
-    (with [f (open f"site/static/style/style.css" "w")]
+  (defn copy-styles [self]
+    (setv scss-entry-point "static/css/style.css")
+    (.mkdir (Path f"site/static/css") :exist_ok True :parents True)
+    (with [f (open f"site/static/css/style.css" "w")]
       (print f"Writing site/{scss-entry-point}")
       (f.write (sass.compile :filename f"programmes/{scss-entry-point}")))))

@@ -1,3 +1,5 @@
+(require hyrule [doto])
+
 (import
   django.contrib [admin]
   django.urls [include path]
@@ -10,6 +12,7 @@
   admin.site.index-title "Administration et Contenus")
 
 (setv urlpatterns
-  (+ [(path "admin/" admin.site.urls)
-   (path "" (include "programmes.urls"))]
-   (static (. settings MEDIA_URL) :document_root (. settings MEDIA_ROOT))))
+  (doto 
+    [(path "admin/" admin.site.urls)
+     (path "" (include "programmes.urls"))]
+    (.extend (static settings.MEDIA_URL :document_root settings.MEDIA_ROOT))))

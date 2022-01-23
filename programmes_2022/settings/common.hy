@@ -44,5 +44,6 @@
   USE-I18N True
   USE-TZ True
   STATIC-URL "static/"
-  MEDIA_ROOT "./programmes/static/"
+  MEDIA-URL "media/"
+  MEDIA-ROOT "./programmes/media/"
   DEFAULT-AUTO-FIELD "django.db.models.BigAutoField")
