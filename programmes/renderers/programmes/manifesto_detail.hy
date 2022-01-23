@@ -11,4 +11,6 @@
   ['div {'class "container--manifesto-intro"}
     ['section {'class "manifesto-intro"}
       ['h1 manifesto.name]
-      ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]]])
+      ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]
+      ['h2 "En bref"]
+      ['p {'class "manifesto-summary"} manifesto.summary]]])
