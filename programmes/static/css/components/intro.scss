@@ -1,0 +1,19 @@
+.container--manifesto-intro {
+  background-color: var(--bg-light);
+}
+
+.manifesto-intro {
+  width: 80ch;
+  margin: 1rem auto;
+
+  h1 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+  }
+
+  .candidate-party {
+    font-family: "Fira Sans", serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+}

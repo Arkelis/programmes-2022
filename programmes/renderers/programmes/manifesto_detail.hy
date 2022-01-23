@@ -5,5 +5,10 @@
 
 (defn render [manifesto]
   (render-in-page
-    ['p manifesto.name]
-    (gfor par (manifesto.paragraphs.all) ['p par.topic])))
+    (intro manifesto)))
+
+(defn intro [manifesto]
+  ['div {'class "container--manifesto-intro"}
+    ['section {'class "manifesto-intro"}
+      ['h1 manifesto.name]
+      ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]]])
