@@ -18,10 +18,8 @@
       ['header (navbar {'class (when home? "nav--home")})]
       ['main ['div {'id "content"} (iter content)]]]
       
-      
       (full-footer home?)
-      
-    ))
+      ]))
 
 (defelem navbar []
   ['nav
@@ -31,22 +29,24 @@
     (link-to {'class "site-name"} (reverse "home") "Programmes" ['span "2022"])])
 
 #@(cache
-(defelem full-footer []
+(defelem full-footer [home?]
     ['footer
+     (if (not home?)
+      ['div
       ['p {'class "title"} "Programmes"]
       ['div {'class "manifestos"}
         #* (lfor
           manifesto (Manifesto.objects.all)
           ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))]
-        )]
-
+        )]])
+      
       ['p {'class "title"} "Programmes 2022"]
       ['p
         ['span (link-to (reverse "about") "À propos du site")]
         ['span (link-to (reverse "legals") "Mentions légales")]
         ['span ['a {'href "https://github.com/Arkelis/programmes-2022" 'class "github"} 
           ['img {'src "/static/github.png"}] "Code source"]]]
-      ])
+      ]))
 
 #@(cache
 (defn manifesto-submenu []

@@ -1,12 +1,13 @@
+$space-between: 30px;
+
 footer {
-  padding: 25px 0 25px 20vw;
+  padding: $space-between 0 $space-between 20vw;
   background-color: rgba(5, 20, 64, 0.05);
 
 
-  &>div.manifestos {
-    margin-bottom: 20px;
+  &>div {
+    margin-bottom: $space-between
   }
-
 
   p {
     display: flex;
