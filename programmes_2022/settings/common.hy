@@ -43,5 +43,7 @@
   TIME-ZONE "UTC"
   USE-I18N True
   USE-TZ True
-  STATIC-URL "/static/"
+  STATIC-URL "static/"
+  MEDIA-URL "media/"
+  MEDIA-ROOT "./programmes/media/"
   DEFAULT-AUTO-FIELD "django.db.models.BigAutoField")

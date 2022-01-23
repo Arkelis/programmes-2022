@@ -13,7 +13,7 @@ class Candidate(models.Model):
         blank=True)
     profession = models.CharField(verbose_name="Métier du candidat", max_length=128)
     website = models.URLField(verbose_name="Site web du candidat")
-    photo = models.ImageField(verbose_name="Photo du candidat", upload_to="static/static/")
+    photo = models.ImageField(verbose_name="Photo du candidat", upload_to="img/")
     biography = models.TextField(verbose_name="Biographie synthétique")
 
     class Meta:
@@ -93,6 +93,7 @@ class PoliticalEntity(models.Model):
     summary = models.TextField(verbose_name="Description")
     website = models.URLField(verbose_name="Site internet")
     parent = models.ForeignKey("PoliticalEntity", on_delete=models.SET_NULL, blank=True, null=True)
+    photo = models.ImageField(verbose_name="Logo du parti", upload_to="img/", blank=True, null=True)
 
     class Meta:
         verbose_name = "entité politique"

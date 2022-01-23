@@ -12,7 +12,7 @@
   (html5
     ['head
       ['meta {'charset "UTF-8"}]
-      #* (include-scss "/static/style/style.scss")]
+      #* (include-scss "/static/css/style.scss")]
     ['body
       (navbar {'class (when home? "nav--home")})
       (iter content)]))
