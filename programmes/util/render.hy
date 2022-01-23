@@ -7,7 +7,9 @@
   pathlib [Path])
 
 (import
+  commonmark [commonmark]
   django.http [HttpResponse]
+  hyccup.core [raw]
   hyccup.page [include-css]
   sass)
 
@@ -49,6 +51,10 @@
 
 (defn include-scss [#* styles]
   (include-css #* (map compile-if-needed styles)))
+
+
+(defn markdown [string]
+  (-> string (commonmark) (raw)))
 
 
 #@(cache

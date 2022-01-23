@@ -1,0 +1,55 @@
+.container--manifesto-paragraphs {
+  padding: 2rem 0;
+}
+
+.manifesto-paragraphs {
+  @include text-container;
+}
+
+.manifesto-paragraph {
+  p {
+    margin-left: 1.5rem;
+  }
+  p::before {
+    content: '▶';
+    color: var(--flag-blue);
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    margin-left: -1.4rem;
+    margin-top: .1rem;
+    margin-right: .5rem;
+    position: absolute;
+  }
+
+  h1 {
+    position: sticky;
+    z-index: 2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 0;
+    background-color: white;
+    color: var(--grey);
+    font-size: 2rem;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+  }
+
+  h2, h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: var(--flag-red);
+    font-size: 1.25rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    color: var(--grey);
+    font-size: 1rem;
+  }
+  
+  li {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+}

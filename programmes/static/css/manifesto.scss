@@ -1,0 +1,16 @@
+@import './base.scss';
+@import './components/manifestos';
+
+p {
+  margin-bottom: .5rem;
+}
+
+.manifesto-intro > h2,
+.manifesto-paragraphs > h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: .25rem;
+  font-size: 1.25rem;
+  color: var(--flag-blue);
+}

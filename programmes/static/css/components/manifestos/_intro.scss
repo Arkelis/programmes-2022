@@ -4,22 +4,12 @@
 }
 
 .manifesto-intro {
-  width: 80ch;
-  margin: auto;
+  @include text-container;
 
   h1 {
     font-family: "PT Serif", serif;
     font-weight: 700;
     margin-bottom: .25rem;
-  }
-
-  h2 {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: .25rem;
-    font-size: 1.25rem;
-    color: var(--flag-blue);
   }
 
   .manifesto-summary {
