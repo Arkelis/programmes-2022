@@ -7,20 +7,6 @@
 }
 
 .manifesto-paragraph {
-  p {
-    margin-left: 1.5rem;
-  }
-  p::before {
-    content: '▶';
-    color: var(--flag-blue);
-    font-size: .75rem;
-    margin-bottom: 1rem;
-    margin-left: -1.4rem;
-    margin-top: .1rem;
-    margin-right: .5rem;
-    position: absolute;
-  }
-
   h1 {
     position: sticky;
     z-index: 2;
@@ -35,19 +21,39 @@
   }
 
   h2, h3 {
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    color: var(--flag-red);
-    font-size: 1.25rem;
+    margin-bottom: 1rem;
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
   }
+  
+  h2 {
+    color: var(--flag-red);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+  }
 
   h3 {
+    margin-top: 1rem;
     color: var(--grey);
     font-size: 1rem;
   }
+
+  h3::before {
+    content: '▶';
+    color: var(--flag-blue);
+    font-size: .75rem;
+    margin-bottom: 1rem;
+    margin-left: -1.4rem;
+    margin-top: .1rem;
+    margin-right: .5rem;
+    position: absolute;
+  }
   
+  p, h3 {
+    margin-left: 1.5rem;
+  }
+
   li {
     list-style-type: disc;
     margin-left: 2rem;
