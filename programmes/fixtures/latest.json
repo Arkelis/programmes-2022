@@ -46,7 +46,7 @@
     "last_name": "Asselineau",
     "party": 4,
     "profession": "Inspecteur général des finances",
-    "website": "https://francoisasselineau.fr",
+    "website": "https://asselineau2022.fr",
     "photo": "static/asselineau.jpg",
     "biography": "François Asselineau"
   }
@@ -281,6 +281,96 @@
   }
 },
 {
+  "model": "programmes.previouspresidentialresult",
+  "pk": 3,
+  "fields": {
+    "election": 2,
+    "result": 0.92,
+    "candidate": 4
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 4,
+  "fields": {
+    "election": 1,
+    "result": 0.56,
+    "candidate": 3
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 5,
+  "fields": {
+    "election": 2,
+    "result": 0.64,
+    "candidate": 3
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 6,
+  "fields": {
+    "election": 1,
+    "result": 1.79,
+    "candidate": 6
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 7,
+  "fields": {
+    "election": 2,
+    "result": 4.7,
+    "candidate": 6
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 8,
+  "fields": {
+    "election": 2,
+    "result": 1.21,
+    "candidate": 7
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 9,
+  "fields": {
+    "election": 1,
+    "result": 17.9,
+    "candidate": 8
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 10,
+  "fields": {
+    "election": 2,
+    "result": 21.3,
+    "candidate": 8
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 11,
+  "fields": {
+    "election": 1,
+    "result": 1.15,
+    "candidate": 11
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 12,
+  "fields": {
+    "election": 2,
+    "result": 1.09,
+    "candidate": 11
+  }
+},
+{
   "model": "programmes.politicalentity",
   "pk": 1,
   "fields": {
@@ -481,6 +571,76 @@
   }
 },
 {
+  "model": "programmes.manifesto",
+  "pk": 5,
+  "fields": {
+    "name": "La France, notre Avenir !",
+    "candidate": 4,
+    "summary": "La France, notre Avenir !",
+    "website": "https://asselineau2022.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 6,
+  "fields": {
+    "name": "Le bon sens en action !",
+    "candidate": 6,
+    "summary": "La France mérite qu’on se batte pour elle.\r\n\r\nJe veux la sauver avec un projet présidentiel à la fois ambitieux, concret et solide, fruit de milliers de rencontres avec les Français et de centaines d’heures de travail avec des acteurs de terrain et des experts reconnus.",
+    "website": "https://2022nda.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 7,
+  "fields": {
+    "name": "Hidalgo!2022",
+    "candidate": 2,
+    "summary": "Une France réconciliée, une France pour tous, qui retrouve sa sérénité, son unité autour des valeurs de la République, le goût du débat citoyen et l’énergie pour affronter dans la justice les grands défis du siècle à venir à mener contre les désordres et écologiques, économiques et démocratiques. C’est le sens de ma candidature à cette élection présidentielle.",
+    "website": "https://www.2022avechidalgo.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 8,
+  "fields": {
+    "name": "JL 2022",
+    "candidate": 7,
+    "summary": "Résistons! est un mouvement politique qui engage les Français à reprendre la parole. Il organise l’écoute et l’échange, préalables essentiels au renouveau du peuple souverain, à la régénérescence de la démocratie et à la consolidation de la République. Il a pour objet suprême de recréer les conditions qui permettent à l’Homme de retrouver l’Homme.",
+    "website": "https://jl2022.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 9,
+  "fields": {
+    "name": "M La France",
+    "candidate": 8,
+    "summary": "Autour d’un État restauré dans ses fonctions régaliennes, la Nation sera rétablie dans sa souveraineté et ses libertés.",
+    "website": "https://mlafrance.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 10,
+  "fields": {
+    "name": "Waechter 2022",
+    "candidate": 13,
+    "summary": "Programme à remplir",
+    "website": "https://www.waechter2022.fr/"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 11,
+  "fields": {
+    "name": "fabienroussel2022",
+    "candidate": 12,
+    "summary": "fabienroussel2022",
+    "website": "https://www.fabienroussel2022.fr/"
+  }
+},
+{
   "model": "programmes.topic",
   "pk": 1,
   "fields": {
@@ -505,7 +665,7 @@
   "model": "programmes.topic",
   "pk": 4,
   "fields": {
-    "name": "Éducation et Enseignement"
+    "name": "Éducation, Enseignement et Recherche"
   }
 },
 {
@@ -541,7 +701,7 @@
   "pk": 1,
   "fields": {
     "topic": 1,
-    "text": "### La Sixième République\r\n\r\nPour réconcilier le peuple avec les institutions de la France, l'Avenir en commun propose de convoquer une Assemblée constituante pour définir une nouvelle constitution pour passer à la Sixième République, qui serait un régime plus parlementaire. Cette assemblée serait composée à la fois de membres élus et tirée au sort à la suite d'un référendum soumis par le Président de la République, puis elle travaillerait pendant deux ans. Le projet de constitution sera alors soumis aux Français à référendum.\r\n\r\n### La séparation de l'argent et de l'État\r\n\r\nL'Avenir en commun veut également \"mettre en place la séparation de l'argent et l'État\", notamment en durcissant les règles contre les conflits d'intérêt, en combattant l'influence des lobbys dans le débat parlementaire, et en luttant mieux contre la corruption.\r\n\r\n### Le Référendum d'initiative citoyenne\r\n\r\nPour améliorer l'action des citoyens sur les institutions, l'Avenir en commun propose une forme de référendum pour révoquer des élus, proposer ou abroger une loi, modifier la Constitution.\r\n\r\n### La Laïcité\r\n\r\nPour l'Avenir en commun, la laïcité doit être strictement appliquée selon la loi de 1905 de séparation des Églises et de l'État. Cela passe par l'abrogation du concordat d’Alsace-Moselle et le refus de financements publics pour la construction d'édifices religieux. Elle ne doit pas être utilisée pour montrer du doigt les croyants de quelque religion que ce soit.\r\n\r\n### Le contrôle des médias\r\n\r\nIl est constaté que beaucoup de médias sont contrôlés par quelques milliardaires. L'Avenir en commun prévoit une loi anti-concentration et de démocratisation des médias pour :\r\n\r\n- renforcer le statut juridique des rédactions ;\r\n- favoriser les coopératives de journalistes ;\r\n- l'introduction d'une charte déontologique dans la convention collective ;\r\n- donner un droit d'agrément aux rédactions face à l'entrée d'un nouvel actionnaire.",
+    "text": "## Passer à la 6e République\r\n\r\n### Convoquer une Constituante afin de passer à la Sixième République, pour un régime parlementaire stable\r\n\r\nPour réconcilier le peuple avec les institutions de la France, l'Avenir en commun propose de convoquer une Assemblée constituante pour définir une nouvelle constitution pour passer à la Sixième République, qui serait un régime plus parlementaire. Cette assemblée serait composée à la fois de membres élus et tirée au sort à la suite d'un référendum soumis par le Président de la République, puis elle travaillerait pendant deux ans. Le projet de constitution sera alors soumis aux Français à référendum.\r\n\r\n### La séparation de l'argent et de l'État\r\n\r\nL'Avenir en commun veut également \"mettre en place la séparation de l'argent et l'État\", notamment en durcissant les règles contre les conflits d'intérêt, en combattant l'influence des lobbys dans le débat parlementaire, et en luttant mieux contre la corruption.\r\n\r\n### Le Référendum d'initiative citoyenne\r\n\r\nPour améliorer l'action des citoyens sur les institutions, l'Avenir en commun propose une forme de référendum pour révoquer des élus, proposer ou abroger une loi, modifier la Constitution.\r\n\r\n### La Laïcité\r\n\r\nPour l'Avenir en commun, la laïcité doit être strictement appliquée selon la loi de 1905 de séparation des Églises et de l'État. Cela passe par l'abrogation du concordat d’Alsace-Moselle et le refus de financements publics pour la construction d'édifices religieux. Elle ne doit pas être utilisée pour montrer du doigt les croyants de quelque religion que ce soit.\r\n\r\n### Le contrôle des médias\r\n\r\nIl est constaté que beaucoup de médias sont contrôlés par quelques milliardaires. L'Avenir en commun prévoit une loi anti-concentration et de démocratisation des médias pour :\r\n\r\n- renforcer le statut juridique des rédactions ;\r\n- favoriser les coopératives de journalistes ;\r\n- l'introduction d'une charte déontologique dans la convention collective ;\r\n- donner un droit d'agrément aux rédactions face à l'entrée d'un nouvel actionnaire.",
     "manifesto": 1
   }
 },
@@ -550,7 +710,7 @@
   "pk": 2,
   "fields": {
     "topic": 2,
-    "text": "### La planification écologique\r\n\r\nLe réchauffement climatique est déjà visible aujourd'hui. Pour faire face à l'urgence, il faut révolutionner notre mode de vie pour assurer un futur à la civilisation humaine en s'adaptant aux nouvelles conditions climatiques et en empêchant une aggravation de la situation. L'Avenir en commun propose une planification écologique citoyenne sur le long terme. \r\n\r\n#### La règle verte\r\n\r\nLa planification écologique aura pour principe directeur la Règle verte directrice : on ne doit pas prélever à la nature davantage qu'elle ne peut reconstituer. Il faut arriver à subvenir aux besoins essentiels tout en prenant en compte les limites planétaires, cela passera par une changement des modes de vie, de production, de consommation.\r\n\r\n#### Les régions définies par les bassins versants\r\n\r\nPour maîtriser le cycle de l'eau, les bassins versants[^1] et les agences de l'eau seront les socles d'une nouvelle organisation des régions. L'objectif : \"zéro pollution et zéro épuisement de la ressource en eau\".\r\n\r\n#### Les territoires ultramarins comme pilotes de la planification\r\n\r\nCe sont ces territoires qui aideront à définir les modalités de mise en œuvre des objectifs de la planification écologique : l'autonomie énergétique et renouvelable, l'autosuffisance alimentaire, la protection de la biodiversité, la définition d'une politique maritime.\r\n\r\n#### Transports en commun et Services publics\r\n\r\nLa planification écologique comprend leur défense et la reconstruction de leur maillage, notamment dans les départements ruraux, les quartiers populaires, les territoires ultramarins. L'idée est de mettre une distance maximale de 30 minutes entre chaque habitation et les services publics fondamentaux : école, gare, hôpital, bureau de poste.\r\n\r\n[^1]: Voir les [régions hydrographiques françaises](https://fr.wikipedia.org/wiki/Bassin_hydrographique#France).\r\n\r\n### Investir pour lancer la bifurcation écologique\r\n\r\nLa planification écologique sera soutenue par un plan d'investissements écologiques et sociaux de 200 milliards d'euros.\r\n\r\n#### Création d'un pôle public des transports et de la mobilité\r\n\r\nIl faut investir dans les transports ferroviaires notamment, en rouvrant les petites lignes, renationaliser la SNCF pour éviter une hausse de prix qui est observée au Royaume-Uni ou en Allemagne, et refuser la mise en concurrence des lignes de transport. Renationaliser les autoroutes permettra aussi de réduire les hausses de tarif des péages.\r\n\r\n#### Passer au 100 % renouvelable, Sobriété et Efficacité énergétiques\r\n\r\nD'une part, investir dans les énergies renouvelables au profit du nucléaire et des énergies fossiles. Les centrales nucléaires présentent un risque car vieillissantes, et elles sont chères à entretenir.\r\n\r\nD'autre part, organiser un plan de rénovation du parc immobilier pour éradiquer la précarité énergétique.\r\n\r\n#### Abolir l'obsolescence programmée\r\n\r\nPréférer le réparable et le durable au jetable. Il faut allonger les durées de garanties légales des produits et lutter contre l'obsolescence programmée.\r\n\r\n#### Créer un ministère de la Production alimentaire\r\n\r\nIl faut relocaliser l'agriculture, la rendre diversifiée et écologique, et créer trois cent mille agricoles.\r\n\r\n### Protéger les biens communs\r\n\r\nIl existe des biens communs qui ne doivent pas être appropriés par des individus. L'Avenir en commun propose d'**établir une liste de tels biens ainsi que de services essentiels par référendum**.\r\n\r\n#### La règle bleue\r\n\r\nL'eau est l'enjeu écologique le plus concret, son cycle est perturbé par le réchauffement climatique. Il faut appliquer la règle verte à l'eau, il s'agit de réguler son usage et de protéger sa qualité.\r\n\r\n#### Garantir l'accès à l'eau potable courante pour tous les habitants des Outre-mer\r\n\r\nDe nombreux habitants de ces territoires subissent des coupures d'eau ou ont une eau courant polluée. Le droit d'accès à l'eau et son assainissement par une gestion publique est primordial.\r\n\r\n#### Interdire les coupes rases sauf impasse sanitaire avérée\r\n\r\nIl faut protéger les forêts qui sont des alliés climatiques et écologiques, en réduisant son industrialisation et sa marchandisation.\r\n\r\n#### Interdire les fermes-usines\r\n\r\nLe modèle agricole productiviste est à l'origine de pandémies comme celle de Covid-19, nous pouvons nous en passer grâce aux sources de protéines végétales.  Il ne faut plus considérer les être sensibles comme de simples marchandises.\r\n\r\n#### Interdire les dépôts de brevets sur des organismes vivants\r\n\r\nLes espèces animales et végétales ne peuvent être appropriées par des entreprises privées.",
+    "text": "## La planification écologique\r\n\r\nLe réchauffement climatique est déjà visible aujourd'hui. Pour faire face à l'urgence, il faut révolutionner notre mode de vie pour assurer un futur à la civilisation humaine en s'adaptant aux nouvelles conditions climatiques et en empêchant une aggravation de la situation. L'Avenir en commun propose une planification écologique citoyenne sur le long terme. \r\n\r\n### La règle verte\r\n\r\nLa planification écologique aura pour principe directeur la Règle verte directrice : on ne doit pas prélever à la nature davantage qu'elle ne peut reconstituer. Il faut arriver à subvenir aux besoins essentiels tout en prenant en compte les limites planétaires, cela passera par une changement des modes de vie, de production, de consommation.\r\n\r\n### Les régions définies par les bassins versants\r\n\r\nPour maîtriser le cycle de l'eau, les bassins versants[^1] et les agences de l'eau seront les socles d'une nouvelle organisation des régions. L'objectif : \"zéro pollution et zéro épuisement de la ressource en eau\".\r\n\r\n### Les territoires ultramarins comme pilotes de la planification\r\n\r\nCe sont ces territoires qui aideront à définir les modalités de mise en œuvre des objectifs de la planification écologique : l'autonomie énergétique et renouvelable, l'autosuffisance alimentaire, la protection de la biodiversité, la définition d'une politique maritime.\r\n\r\n### Transports en commun et Services publics\r\n\r\nLa planification écologique comprend leur défense et la reconstruction de leur maillage, notamment dans les départements ruraux, les quartiers populaires, les territoires ultramarins. L'idée est de mettre une distance maximale de 30 minutes entre chaque habitation et les services publics fondamentaux : école, gare, hôpital, bureau de poste.\r\n\r\n[^1]: Voir les [régions hydrographiques françaises](https://fr.wikipedia.org/wiki/Bassin_hydrographique#France).\r\n\r\n## Investir pour lancer la bifurcation écologique\r\n\r\nLa planification écologique sera soutenue par un plan d'investissements écologiques et sociaux de 200 milliards d'euros.\r\n\r\n### Création d'un pôle public des transports et de la mobilité\r\n\r\nIl faut investir dans les transports ferroviaires notamment, en rouvrant les petites lignes, renationaliser la SNCF pour éviter une hausse de prix qui est observée au Royaume-Uni ou en Allemagne, et refuser la mise en concurrence des lignes de transport. Renationaliser les autoroutes permettra aussi de réduire les hausses de tarif des péages.\r\n\r\n### Passer au 100 % renouvelable, Sobriété et Efficacité énergétiques\r\n\r\nD'une part, investir dans les énergies renouvelables au profit du nucléaire et des énergies fossiles. Les centrales nucléaires présentent un risque car vieillissantes, et elles sont chères à entretenir.\r\n\r\nD'autre part, organiser un plan de rénovation du parc immobilier pour éradiquer la précarité énergétique.\r\n\r\n### Abolir l'obsolescence programmée\r\n\r\nPréférer le réparable et le durable au jetable. Il faut allonger les durées de garanties légales des produits et lutter contre l'obsolescence programmée.\r\n\r\n### Créer un ministère de la Production alimentaire\r\n\r\nIl faut relocaliser l'agriculture, la rendre diversifiée et écologique, et créer trois cent mille agricoles.\r\n\r\n## Protéger les biens communs\r\n\r\nIl existe des biens communs qui ne doivent pas être appropriés par des individus. L'Avenir en commun propose d'**établir une liste de tels biens ainsi que de services essentiels par référendum**.\r\n\r\n### La règle bleue\r\n\r\nL'eau est l'enjeu écologique le plus concret, son cycle est perturbé par le réchauffement climatique. Il faut appliquer la règle verte à l'eau, il s'agit de réguler son usage et de protéger sa qualité.\r\n\r\n### Garantir l'accès à l'eau potable courante pour tous les habitants des Outre-mer\r\n\r\nDe nombreux habitants de ces territoires subissent des coupures d'eau ou ont une eau courant polluée. Le droit d'accès à l'eau et son assainissement par une gestion publique est primordial.\r\n\r\n### Interdire les coupes rases sauf impasse sanitaire avérée\r\n\r\nIl faut protéger les forêts qui sont des alliés climatiques et écologiques, en réduisant son industrialisation et sa marchandisation.\r\n\r\n### Interdire les fermes-usines\r\n\r\nLe modèle agricole productiviste est à l'origine de pandémies comme celle de Covid-19, nous pouvons nous en passer grâce aux sources de protéines végétales.  Il ne faut plus considérer les être sensibles comme de simples marchandises.\r\n\r\n### Interdire les dépôts de brevets sur des organismes vivants\r\n\r\nLes espèces animales et végétales ne peuvent être appropriées par des entreprises privées.",
     "manifesto": 1
   }
 },
@@ -588,6 +748,42 @@
     "topic": 8,
     "text": "## Une grande nation artistique, scientifique et sportive\r\n\r\n### Porter le budget consacré à l'art, à la culture et à la création à 1 % du PIB\r\n\r\n### Soutenir la création, le spectacle vivant et l'appropriation pour tous des œuvres et pratiques culturelles\r\n\r\nL'Avenir en commun défend une politique publique de l'art et la culture. Chaque citoyen doit pouvoir s'y exprimer, contribuer, s'impliquer. La culture permet de s'émanciper et d'échapper à l'obscurantisme.\r\n\r\n### Améliorer le régime des intermittents du spectacle\r\n\r\nDepuis les années 1960, les intermittents dépendent d'un régime spécifique pour prendre en compte la spécificité discontinue de leur métier, constitué d'une alternance entre périodes travaillées et chômées, successives ou simultanées. Ce régime est essentiel pour préserver la création, et doit être étendu aux travailleurs discontinus comme les \"extras\" de l'hôtellerie ou les guides-conférenciers",
     "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 7,
+  "fields": {
+    "topic": 4,
+    "text": "## Une grande nation scientifique et sportive\r\n\r\n### Financer des plans généraux de thèmes de recherche sur des secteurs d'avenir\r\n\r\nLa France doit reprendre la main sur la recherche. Pour l'Avenir en commun, il en va de sa souveraineté : on constate un précarisation des métiers de la recherche, une baisse de la participation française aux congrès internationaux et une fuite de chercheurs vers d'autre pays.\r\n\r\n### Créer une association sportive dans tous les établissements scolaires du premier degré\r\n\r\nL'Avenir en commun veut par cette voie rendre la pratique du sport encadrée par des professionnels gratuite et accessible à tous.\r\n\r\n## Une école de l'égalité et de l'émancipation\r\n\r\n### Assurer la gratuité de l'éducation publique : cantines, transport, périscolaire, manuels et fournitures",
+    "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 8,
+  "fields": {
+    "topic": 2,
+    "text": "Energie : \r\n- neutralité carbone d’ici 2050.\r\n- construction de 8 EPR (réacteur nucléaire 3ème génération)\r\n- moratoire sur les fermetures des 14 réacteurs prévu d’ici 2035\r\n\r\nTransport :\r\n- Gratuité des transports en commun urbains et investissement de 50 milliards sur 15 ans",
+    "manifesto": 11
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 9,
+  "fields": {
+    "topic": 5,
+    "text": "Création de 100 000 postes à l’hôpital public.\r\nDéconjugalisation de l’Allocation Adultes Handicapé.",
+    "manifesto": 11
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 10,
+  "fields": {
+    "topic": 4,
+    "text": "Augmentation du temps scolaire : 27h en primaire, 32h au collège et au lycée, sans augmenter le temps de travail des enseignants.\r\n\r\nEn finir avec les devoirs : tout le travail scolaire doit se faire en classe. \r\n\r\nRéduction des effectifs : pas plus de 20 en maternelle et en primaire, pas plus de 25 dans l’enseignement secondaire.\r\n\r\nRecrutement de 90 000 enseignantes et enseignants",
+    "manifesto": 11
   }
 }
 ]
