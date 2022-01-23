@@ -8,14 +8,14 @@
         programmes.util.render [include-scss]
         programmes.models [Manifesto])
 
-(defn render-in-page [#* content [home? False]]
+(defn render-in-page [#* content [home? False] style]
   (html5
     ['head
       ['meta {'charset "UTF-8"}]
-      #* (include-scss "/static/css/style.scss")]
+      #* (include-scss f"/static/css/{style}.scss")]
     ['body
-      (navbar {'class (when home? "nav--home")})
-      (iter content)]))
+      ['header (navbar {'class (when home? "nav--home")})]
+      ['main (iter content)]]))
 
 (defelem navbar []
   ['nav 
@@ -24,11 +24,12 @@
         ['div {'class "nav-submenu-container"} (manifesto-submenu)]]]
     (link-to {'class "site-name"} (reverse "home") "Programmes" ['span "2022"])])
 
+#@(cache
 (defn manifesto-submenu []
   ['ul {'class "nav-submenu"}
-    (gfor 
+    #* (lfor 
       manifesto (Manifesto.objects.all)
       ['li 
         (link-to (reverse "manifesto-detail" :args [manifesto.slug])
           ['div {'class "manifesto"} (str manifesto)]
-          ['div {'class "candidate-party"} (str manifesto.candidate) f" ({manifesto.candidate.party})"])])])
+          ['div {'class "candidate-party"} (str manifesto.candidate) f" ({manifesto.candidate.party})"])])]))

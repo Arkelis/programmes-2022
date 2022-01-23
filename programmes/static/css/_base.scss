@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,700;1,200;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;400;700&display=swap");
+
+:root {
+  --flag-blue: #051440;
+  --flag-red: #ec1920;
+  --bg-light: #fAf6f6;
+  --grey: #312727;
+}
+
+@import "./mixins";
+@import "./normalize";
+@import "./components/navbar";
+
+* {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+

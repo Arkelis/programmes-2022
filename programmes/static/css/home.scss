@@ -1,0 +1,47 @@
+@import './base';
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
+}
+
+.title-word {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.title-year {
+  font-family: "PT Serif", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-left: 0.25em;
+}
+
+.abstract {
+  @include text-container;
+  margin-bottom: 2rem;
+}
+
+@mixin link-button($bg-color) {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: $bg-color;
+  margin-bottom: 1rem;
+}
+
+.link--programmes {
+  @include link-button(var(--flag-blue));
+}
+
+.link--candidates {
+  @include link-button(var(--flag-red));
+}

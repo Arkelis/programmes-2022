@@ -19,4 +19,5 @@
            portés par chacun des candidats, afin de vous éclairer dans votre choix."]
         (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats")
         (link-to {'class "link--candidates"} (reverse "candidate-list") "En savoir plus sur les candidats")]]
-   :home? True))
+   :home? True
+   :style "home"))

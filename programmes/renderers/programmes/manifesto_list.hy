@@ -7,4 +7,5 @@
   (render-in-page
     ['ul
       (gfor manifesto manifestos
-        ['li (link-to (reverse "manifesto-detail" :args [manifesto.slug]) manifesto.name)])]))
+        ['li (link-to (reverse "manifesto-detail" :args [manifesto.slug]) manifesto.name)])]
+    :style "home"))

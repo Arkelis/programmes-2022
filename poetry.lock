@@ -133,7 +133,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "commonmark"
 version = "0.9.1"
 description = "Python parser for the CommonMark Markdown spec"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -644,7 +644,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "2486e9a7b69540a60754a340580308d17b234e757ad1431ab2307ef820e40993"
+content-hash = "51308dc1c7ed22ea27f6e35eed555754a9dfdad3617d61e4e996bc55b6f87ca5"
 
 [metadata.files]
 appdirs = [

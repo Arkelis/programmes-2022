@@ -57,8 +57,13 @@
       (copytree "programmes/media/img" "site/media/img")))
   
   (defn copy-styles [self]
-    (setv scss-entry-point "static/css/style.css")
-    (.mkdir (Path f"site/static/css") :exist_ok True :parents True)
-    (with [f (open f"site/static/css/style.css" "w")]
-      (print f"Writing site/{scss-entry-point}")
-      (f.write (sass.compile :filename f"programmes/{scss-entry-point}")))))
+    (setv django-css-dir "programmes/static/css"
+          site-css-dir "site/static/css")
+    (.mkdir (Path site-css-dir) :exist_ok True :parents True)
+    (for [scss-entry-point 
+          (-> (Path django-css-dir) (.glob "[!_]*.scss"))]
+      (setv scss-filename scss-entry-point.name
+            css-filename (.replace scss-entry-point.name "scss" "css"))
+      (with [f (open f"{site-css-dir}/{css-filename}" "w")]
+        (self.stdout.write f"Writing {site-css-dir}/{css-filename}")
+        (f.write (sass.compile :filename f"{django-css-dir}/{scss-filename}"))))))
