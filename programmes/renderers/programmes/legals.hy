@@ -3,4 +3,5 @@
 
 (defn render []
   (render-in-page
-    ['h1 "Mentions légales"]))
+    ['h1 "Mentions légales"]
+    :style "home"))

@@ -16,10 +16,9 @@
       #* (include-scss f"/static/css/{style}.scss")]
     ['body
       ['header (navbar {'class (when home? "nav--home")})]
-      ['main ['div {'id "content"} (iter content)]]]
+      ['main {'id "content"} (iter content)]]
       
-      (full-footer home?)
-      ]))
+      (full-footer home?)))
 
 (defelem navbar []
   ['nav
@@ -36,7 +35,7 @@
       ['p {'class "title"} "Programmes"]
       ['div {'class "manifestos"}
         #* (lfor
-          manifesto (Manifesto.objects.all)
+          manifesto (Manifesto.objects.order_by "name")
           ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))]
         )]])
       

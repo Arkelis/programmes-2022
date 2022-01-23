@@ -3,4 +3,5 @@
 
 (defn render []
   (render-in-page
-    ['h1 "A propros"]))
+    ['h1 "A propros"]
+    :style "home"))
