@@ -32,13 +32,21 @@
 
 #@(cache
 (defelem full-footer []
-      ['footer
+    ['footer
+      ['p {'class "title"} "Programmes"]
+      ['div {'class "manifestos"}
+        #* (lfor
+          manifesto (Manifesto.objects.all)
+          ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))]
+        )]
+
       ['p {'class "title"} "Programmes 2022"]
       ['p
-        (link-to (reverse "about") "À propos du site") "•"
-        (link-to (reverse "legals") "Mentions légales") "•"
-        ['a {'href "https://github.com/Arkelis/programmes-2022" 'class "github"} 
-          ['img {'src "/static/github.png"}] "Code source"]]]))
+        ['span (link-to (reverse "about") "À propos du site")]
+        ['span (link-to (reverse "legals") "Mentions légales")]
+        ['span ['a {'href "https://github.com/Arkelis/programmes-2022" 'class "github"} 
+          ['img {'src "/static/github.png"}] "Code source"]]]
+      ])
 
 #@(cache
 (defn manifesto-submenu []

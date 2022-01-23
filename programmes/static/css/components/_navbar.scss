@@ -14,7 +14,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 2rem;
+  padding: 2rem;
+  height: 10vh;
 
   &.nav--home {
     position: absolute;
