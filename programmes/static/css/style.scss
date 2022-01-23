@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;0,300;0,700;1,200;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,700;1,200;1,300;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;400;700&display=swap");
 
@@ -10,6 +10,7 @@
 
 @import "./normalize.scss";
 @import "./components/navbar.scss";
+@import "./components/intro.scss";
 
 * {
   font-family: "Fira Sans", sans-serif;
@@ -53,6 +54,7 @@ li {
 .title-year {
   font-family: "PT Serif", serif;
   font-size: 3.5rem;
+  font-weight: 700;
   margin-left: 0.25em;
 }
 
