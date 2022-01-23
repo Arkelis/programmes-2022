@@ -45,7 +45,7 @@ You can now navigate on the exported website with:
 For develop, launch the Django development server to hot reload views:
 
 ```
-python manage.py runserver
+poetry run python manage.py runserver
 ```
 
 ## More information
