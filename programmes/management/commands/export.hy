@@ -53,7 +53,8 @@
     (site-path.mkdir))
 
   (defn copy-images [self]
-    (copytree "programmes/media/img" "site/media/img"))
+    (when (.is-dir (Path "programmes/media/img"))
+      (copytree "programmes/media/img" "site/media/img")))
   
   (defn copy-styles [self]
     (setv scss-entry-point "static/css/style.css")
