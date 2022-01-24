@@ -1,12 +1,15 @@
-$space-between: 30px;
+$space-between: 2rem;
 
 footer {
-  padding: $space-between 0 $space-between 20vw;
+  padding: $space-between 0;
   background-color: rgba(5, 20, 64, 0.05);
 
+  > * {
+    @include text-container;
+  }
 
-  &>div {
-    margin-bottom: $space-between
+  > div {
+    margin-bottom: $space-between;
   }
 
   p {
@@ -21,6 +24,7 @@ footer {
   .title {
     @include header-font($weight: 600, $family: sans-serif-condensed, $size: 18px);
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
   }
 }
 
