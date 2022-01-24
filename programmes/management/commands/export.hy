@@ -24,7 +24,7 @@
       (.setup-folder)
       (.content-at (reverse "home"))
       (.contents-of Manifesto "manifesto-list" "manifesto-detail")
-      (.content-at (reverse "candidate-list"))
+      ;; (.content-at (reverse "candidate-list"))
       (.copy-styles)
       (.copy-images))
     "Done! Result build is in 'site' folder.")
