@@ -1,5 +1,5 @@
-@mixin header-font($style: normal, $weight: 300, $family: sans-serif) {
-  font-size: 24px;
+@mixin header-font($style: normal, $weight: 300, $family: sans-serif, $size: 24px) {
+  font-size: $size;
   font-weight: $weight;
   font-style: $style;
   @if $family == serif {

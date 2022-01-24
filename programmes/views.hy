@@ -25,3 +25,9 @@
 
 (defn candidate-list [request]
   (render "programmes/candidate_list"))
+
+(defn about [request]
+  (render "programmes/about"))
+
+(defn legals [request]
+  (render "programmes/legals"))

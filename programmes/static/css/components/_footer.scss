@@ -1,0 +1,40 @@
+$space-between: 2rem;
+
+footer {
+  padding: $space-between 0;
+  background-color: rgba(5, 20, 64, 0.05);
+
+  > * {
+    @include text-container;
+  }
+
+  > div {
+    margin-bottom: $space-between;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+
+  span:not(:last-of-type)::after {
+    content: '\00a0\00a0•\00a0\00a0';
+  }
+
+  .title {
+    @include header-font($weight: 600, $family: sans-serif-condensed, $size: 18px);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+}
+
+a.github {
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
