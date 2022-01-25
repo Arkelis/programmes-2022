@@ -546,7 +546,7 @@
   "fields": {
     "name": "Le courage de dire et la volonté de faire",
     "candidate": 14,
-    "summary": "Synthèse du programme",
+    "summary": "Après les présidences de François Hollande et d'Emmanuel Macron, Valérie veut que la France retrouve un véritable chef à sa tête. Face à la dette, à l'islamisme, à l'immigration incontrôlée et à l'insécurité, elle veut rétablir l'ordre dans le pays grâce à un projet puissant : réduire les dépenses publiques en supprimant 150 000 postes de fonctionnaires et en menant à son terme la réforme des retraites redonnera à la France les leviers nécessaires pour que chacun puisse vivre de son travail puis de sa retraite, ainsi que d'être soigné quelque soit son revenu.",
     "website": "https://www.valeriepecresse.fr/mon-projet/"
   }
 },
@@ -719,7 +719,7 @@
   "pk": 3,
   "fields": {
     "topic": 3,
-    "text": "## Souveraineté Sanitaire et Industrielle\r\n\r\nLa crise l'a montré, la France ne doit plus être dépendante d'autres pays pour ses productions essentielles. Il faut les **relocaliser**. Cela passerait notamment par une taxe kilométrique aux frontières pour dissuader l'importation de produits éloignés. Si cette mesure est contre les règles européennes, la France proposera de nouveaux traités compatibles avec les urgences sociales et écologiques, même si cela doit passer par une désobéissance aux règles bloquantes.\r\n\r\n### Bloquer les prix des produits de première nécessité\r\n\r\nÉnergie, gaz, électricité, carburant, denrées alimentaires : tous ces produits indispensables doivent rester abordables.\r\n\r\n### Adopter un pan non liberticide d'adaptation face aux pandémies\r\n\r\nIl serait basé sur la société du roulement et la planification sanitaire : mettre en sécurité sociale les personnes, renforcer les liens d'entraide pour faire face à l'insécurité écologique causée par le réchauffement climatique.\r\n\r\n### Reconstruire l'hôpital public et rembourser 100% des soins prescrits\r\n\r\nUn Français sur trois renonce à des soins faute d'argent. L'Avenir en commun veut lutter contre les déserts médicaux et engageant un plan de recrutement de professionnels de santé, en revalorisant les métiers et les salaires, en augmentant les capacités des hôpitaux. Le numerus clausus serait également supprimé.\r\n\r\n### Lancer un plan pluriannuel d'investissement et de développement des services publics dans les outre-mer",
+    "text": "## Souveraineté Sanitaire et Industrielle\r\n\r\nLa crise l'a montré, la France ne doit plus être dépendante d'autres pays pour ses productions essentielles. Il faut les **relocaliser**. Cela passerait notamment par une taxe kilométrique aux frontières pour dissuader l'importation de produits éloignés. Si cette mesure est contre les règles européennes, la France proposera de nouveaux traités compatibles avec les urgences sociales et écologiques, même si cela doit passer par une désobéissance aux règles bloquantes.\r\n\r\n### Bloquer les prix des produits de première nécessité\r\n\r\nÉnergie, gaz, électricité, carburant, denrées alimentaires : tous ces produits indispensables doivent rester abordables.\r\n\r\n### Adopter un plan non liberticide d'adaptation face aux pandémies\r\n\r\nIl serait basé sur la société du roulement et la planification sanitaire : mettre en sécurité sociale les personnes, renforcer les liens d'entraide pour faire face à l'insécurité écologique causée par le réchauffement climatique.\r\n\r\n### Reconstruire l'hôpital public et rembourser 100% des soins prescrits\r\n\r\nUn Français sur trois renonce à des soins faute d'argent. L'Avenir en commun veut lutter contre les déserts médicaux et engageant un plan de recrutement de professionnels de santé, en revalorisant les métiers et les salaires, en augmentant les capacités des hôpitaux. Le numerus clausus serait également supprimé.\r\n\r\n### Lancer un plan pluriannuel d'investissement et de développement des services publics dans les outre-mer",
     "manifesto": 1
   }
 },
@@ -793,6 +793,78 @@
     "topic": 6,
     "text": "## Rompre avec les traités européens et désobéir\r\n\r\n### Dans tous les cas, appliquer le programme de l'Avenir en commun\r\n\r\n### Plan A : Proposer aux pays de l'Union européenne une rupture concertée avec les traités actuels\r\n\r\n### Plan B : Appliquer le programme au niveau national en assumant la confrontation avec les autres états membres\r\n\r\nL'Avenir en commun veut profiter du poids de la France dans l'Union européenne pour faire évoluer ses règles : ses deux plans s'alimentent mutuellement pour entraîner les autres pays européens. \r\n\r\n## Une diplomatie altermondialiste pour la paix\r\n\r\n### Se retirer immédiatement du commandement intégré de l'OTAN\r\n\r\nAvant d'en sortir par étape pour se préparer à d'éventuelles sanctions américaines, la France doit sortir du commandement de l'OTAN pour sortir de la vision \"atlantiste et occidentale\" et retrouver une voix indépendante.\r\n\r\n### Adopter une loi de programmation militaire\r\n\r\nPour restaurer l'indépendance de la France et s'adapter au changement climatique\r\n\r\n### Porter des propositions de rupture avec le néolibéralisme auprès des institutions internationales\r\n\r\nAvec une position non alignée suite à la sortie de l'OTAN, la France pourra pousser à des coopérations d'intérêt général, à des réponses à la crise climatique, au désarmement nucléaire multilatéral, à la protection et à l'accès aux biens communs.\r\n\r\n### Développer une politique migratoire réaliste et humaniste\r\n\r\nL'Avenir en commun veut notamment augmenter le nombre de structures d'accueil en France et renforcer le droit d'asile et améliorer l'insertion des migrants grâce à une nouvelle politique de délivrance des titres de séjour et un renforcement des dispositifs d'apprentissage de la langue française.",
     "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 12,
+  "fields": {
+    "topic": 1,
+    "text": "## Stopper l'immigration actuelle et défendre les valeurs de la République\r\n\r\nEmmanuel Macron n'a pas réussi à maîtriser les flux migratoires entrant sur le territoire, comme le montrent le nombre record de délivrances de titres de séjour et l'incapacité à reconduire les clandestins dans leurs pays d'origine. Pour que les Français conservent leur mode de vie, il faut à contrôler l'immigration. Valérie Pécresse prévoit donc de soumettre à référendum un projet de loi constitutionnel permettant les mesures suivantes.\r\n\r\n### Mise en place de quotas d'accueil par métier et par pays\r\n\r\n### Suspendre la délivrance de nouveaux visas d'entrée pour les pays qui refusent de délivrer des laissez-passez pour le retour de leurs ressortissants clandestins\r\n\r\n### Supprimer le versement des prestations sociales non contributives à tous les étrangers\r\n\r\nS'ils n'ont pas résidé 5 ans en France de manière régulière en France. En outre, l'aide médicale d'État sera recentrée sur la médecine urgente et les maladies contagieuses.\r\n\r\n### En finir avec le droit du sol automatique\r\n\r\nLes enfants nés en France de parents étrangers pourront accéder à la nationalité française s'ils maîtrisent la langue française et s'ils respectent les valeurs de la République.\r\n\r\n### Expulser immédiatement les clandestins représentant une menace grave\r\n\r\n### Rendre nécessaire la maîtrise du français l'obtention de la carte de séjour\r\n\r\n## Lutte contre l'islamisme radical\r\n\r\n### Fermeture de toute mosquée où il est tenu un discours hostile à la France\r\n\r\n### Imposer un serment de respect de la laïcité et des valeurs républicaines pour le recrutement de tout agent public\r\n\r\n### Faire de la radicalisation un motif de licenciement\r\n\r\n### Utiliser la reconnaissance faciale dans les transports en commun pour repérer les personnes du fichier anti-terroriste\r\n\r\n### Maintenir enfermés les terroristes radicalisés en prison à l'issue de leurs peines\r\n\r\n### Interdiction du port du voile forcé, du port du voile pour les accompagnatrices scolaires et du port du burkini\r\n\r\n## Renforcement de l'intégration\r\n\r\n### Éradiquer en dix ans les ghettos en plafonnant le nombre de logements sociaux par quartier à 30 %\r\n\r\n### Renforcer l'enseignement de l'histoire de France à l'école",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 13,
+  "fields": {
+    "topic": 7,
+    "text": "## Rétablir l'ordre de la rue\r\n\r\n### Consacrer cinq milliards d'euros à l'équipement des forces de l'ordre\r\n\r\nLa loi sera modifiée pour permettre l'utilisation des technologies du maintien de l'ordre et d'enquête plus performantes.\r\n\r\n### Instaurer des peines plancher contre ceux qui s'en prennent aux forces de l'ordre\r\n\r\n### Rendre obligatoire l'armement des polices municipales dans les villes de plus de cinq mille habitants\r\n\r\n## Augmenter les moyens de la justice\r\n\r\nValérie Pécresse considère que l'impunité règne en France : 5 % des faits constatés aboutissent à une condamnation. Il faut rompre avec dix ans de laxisme, la justice doit être plus efficace.\r\n\r\n### Augmenter de 50 % les moyens des tribunaux sur cinq ans\r\n\r\nCela va engendrer notamment 16 000 recrutements supplémentaires, parmi les juges, procureurs, greffiers, juristes assistants et personnels techniques.\r\n\r\n### Consacrer 1,8 milliard par an à la mise à disposition de la justice des équipements informatiques performants\r\n\r\nCela permettra de mieux cibler les 6 % des délinquants qui, d'après une étude britannique, sont responsables de 60 % es infractions.\r\n\r\n### Simplifier la procédure pénale pour réduire massivement les délais de jugement\r\n\r\n### Instruire en 72 heures et juger en 15 jours les violences intrafamiliales\r\n\r\nCette mesure cible en particulier les violences conjugales. Les autres violences et délits du quotidien seront jugés en moins de six mois, appels compris.\r\n\r\n### Ouvrir des centres correctionnels fermés pour en finir avec l'aménagement des courtes peines\r\n\r\nLe nombre de places de travaux d'intérêt général sera doublé en cinq ans, de même pour les centres éducatifs fermés pour mineurs. Enfin, 20 000 places de prison seront construites.\r\n\r\n### Généraliser les retenues sur salaires et prestations sociales\r\n\r\nIl s'agit de lutter contre les amendes impayées, soit 50 % des amendes pénales.\r\n\r\n### Abaisser la majorité pénale à 16 ans",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 14,
+  "fields": {
+    "topic": 5,
+    "text": "## Réformer et réduire la bureaucratie pour augmenter fortement les revenus\r\n\r\n## Remettre la famille au cœur de nos politiques\r\n\r\n## Un plan d'urgence pour la santé et pour la prise en charge du handicap",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 15,
+  "fields": {
+    "topic": 3,
+    "text": "## Libéraliser l'économie pour créer davantage de richesses et d'emplois",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 16,
+  "fields": {
+    "topic": 2,
+    "text": "## Faire de la lutte contre le réchauffement climatique une opportunité pour nos emplois",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 17,
+  "fields": {
+    "topic": 4,
+    "text": "## Refaire de l'école un puissant levier d'intégration et de promotion",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 18,
+  "fields": {
+    "topic": 8,
+    "text": "## Promouvoir les arts et la culture\r\n\r\n## Mettre fin à une gouvernance verticale, solitaire et inefficace",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 19,
+  "fields": {
+    "topic": 6,
+    "text": "## Faire de nouveau rayonner la France dans le monde",
+    "manifesto": 2
   }
 }
 ]
