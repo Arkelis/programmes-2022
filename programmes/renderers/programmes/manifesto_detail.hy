@@ -6,9 +6,17 @@
 
 (defn render [manifesto]
   (render-in-page
+    (menu manifesto.paragraphs.all)
     (intro manifesto)
     (paragraphs manifesto)
    :style "manifesto"))
+
+(defn menu [paragraphs]
+  ['div {'class "manifesto-menu"}
+    ['div {'id "content"} 
+    ['h2 "Sommaire"]
+    (gfor paragraph (paragraphs)
+      ['a {'href (+ "#" (linkify (str paragraph.topic)))} paragraph.topic])]])
 
 (defn intro [manifesto]
   ['div {'class "container--manifesto-intro"}
@@ -18,11 +26,16 @@
       ['h2 "En bref"]
       ['div {'class "manifesto-summary"} (markdown manifesto.summary)]]])
 
+
+(defn linkify [s]
+  (.replace 
+    (.replace (.lower s) " " "-") "," ""))
+  
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}
     ['div {'class "manifesto-paragraphs"}
       ['h1 "Propositions par thématiques"]
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
-              ['h1 paragraph.topic]
+              ['h1 {'id (linkify (str paragraph.topic)) 'class "large"} paragraph.topic]
               (markdown paragraph.text)])]])
