@@ -20,6 +20,9 @@
 (defn intro [manifesto]
   ['div {'class "container--manifesto-intro"}
     ['div {'class "manifesto-intro"}
+      ['img {'src (+ "/media/" (str manifesto.candidate.party.photo)) 'class "party"}]
+      ['img {'src (+ "/media/" (str manifesto.candidate.photo)) 'class "candidate"}]
+
       ['h1 manifesto.name]
       ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]
       ['h2 "En bref"]
@@ -31,5 +34,6 @@
       ['h1 "Propositions par thématiques"]
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
-              ['h1 {'id (slugify (str paragraph.topic)) 'class "large"} paragraph.topic]
-              (markdown paragraph.text)])]])
+              ['div {'class "title-full-width"}
+                ['h1 {'id (slugify (str paragraph.topic)) 'class "large"} paragraph.topic]]
+                (markdown paragraph.text)])]])
