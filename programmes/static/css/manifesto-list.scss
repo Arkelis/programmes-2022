@@ -1,0 +1,45 @@
+@import './base.scss';
+
+.title-container {
+  @include text-container;
+
+  h1 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    margin-bottom: .25rem;
+  }
+}
+
+ul.manifesto-list {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 2rem;
+  margin: 2rem;
+
+  li {
+    color: var(--grey);
+    
+    a:hover,
+    a:focus
+     {
+      text-decoration: none;
+      background-color: var(--bg-light);
+    }
+
+    .manifesto {
+      font-weight: bold;
+    }
+    .candidate-party {
+      font-style: italic;
+    }
+  }
+}
+
+.manifesto-hero {
+  display: none;
+
+  &:target {
+    display: block;
+  }
+}
