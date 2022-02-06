@@ -12,7 +12,18 @@
   z-index: 2;
   margin-left: 1.8em;
   
+  @media screen and (max-width: 1260px) {
+    & {
+      display: none;
+    }
+  }
+
+  a:first-child:hover {
+    text-decoration: none;
+  }
+
   * {
+    font-size: 16px;
     padding-bottom: 5px;
   }
 
@@ -27,6 +38,7 @@
     display: block;
   }
 }
+
 
 .manifesto-intro {
   @include text-container;

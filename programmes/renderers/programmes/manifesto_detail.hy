@@ -13,13 +13,12 @@
 
 (defn menu [paragraphs title]
   ['div {'class "manifesto-menu"}
-    ['div {'id "content"} 
-    ['h2 title]
+    ['a {'href "#intro"} ['h2 title ]]
     (gfor paragraph (paragraphs)
-      ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])]])
+      ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
 
 (defn intro [manifesto]
-  ['div {'class "container--manifesto-intro"}
+  ['div {'class "container--manifesto-intro" 'id "intro"}
     ['div {'class "manifesto-intro"}
       ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.party.photo)) 'class "party"}]
       ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.photo)) 'class "candidate"}]
@@ -36,5 +35,5 @@
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
               ['div {'id (slugify paragraph.topic.name)}] ; empty div to have fixed anchor links
-                ['h1 {'id (slugify paragraph.topic.name)} paragraph.topic]
+                ['h1 paragraph.topic]
                 (markdown paragraph.text)])]])
