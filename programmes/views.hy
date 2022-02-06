@@ -8,7 +8,7 @@
   (render "programmes/home"))
 
 (defn manifesto-list [request]
-  (setv manifestos (Manifesto.objects.all))
+  (setv manifestos (Manifesto.objects.filter :candidate__is_active True))
   (render 
     "programmes/manifesto_list"
     :manifestos manifestos))

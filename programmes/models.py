@@ -15,6 +15,7 @@ class Candidate(models.Model):
     website = models.URLField(verbose_name="Site web du candidat")
     photo = models.ImageField(verbose_name="Photo du candidat", upload_to="img/")
     biography = models.TextField(verbose_name="Biographie synthétique")
+    is_active = models.BooleanField(verbose_name="Afficher le candidat", default=True)
 
     class Meta:
         verbose_name = "candidat"
@@ -141,7 +142,7 @@ class ManifestoParagraph(models.Model):
         "Manifesto",
         verbose_name="programme",
         related_name="paragraphs",
-        related_query_name="pragraph",
+        related_query_name="paragraph",
         on_delete=models.CASCADE)
 
     class Meta:

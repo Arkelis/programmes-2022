@@ -25,7 +25,7 @@ class CandidateAdmin(admin.ModelAdmin):
     class TermInline(admin.StackedInline):
         model = Term
 
-    list_display = ['__str__', 'party', 'manifesto']
+    list_display = ['__str__', 'is_active', 'party', 'manifesto']
     ordering = ['last_name']
     inlines = [ManifestoInline, PreviousPresidentialResultInline, TermInline]
 
