@@ -8,18 +8,16 @@
 
 .manifesto-menu {
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  display: flex;
-  align-items: center;
-  left: 2em;
-  z-index: 3;
-
+  top: 8em;
+  z-index: 2;
+  margin-left: 1.8em;
+  
   * {
     padding-bottom: 5px;
   }
 
   h2 {
+    max-width: 20ch;
     line-height: 25px;
     font-weight: bold;
     color: #A38585;
@@ -72,21 +70,14 @@
 }
 
 .manifesto-paragraph {
-
-  div.title-full-width {
+  h1 {
     position: sticky;
     top: 0;
+    text-align: center;
     z-index: 2;
-    margin-left: calc(-100vw / 2 + 80ch / 2);
-    margin-right: calc(-100vw / 2 + 80ch / 2);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background: linear-gradient(white 85%, transparent);
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-  }
-
-  h1 {
-    margin: 0.6em;
     color: var(--grey);
     font-size: 2rem;
     font-family: "PT Serif", serif;

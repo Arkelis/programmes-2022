@@ -35,7 +35,6 @@
       ['h1 "Propositions par thématiques"]
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
-              ['div {'id (slugify paragraph.topic.name)}]
-                ['div {'class "title-full-width"}
-                ['h1 {'class "large"} paragraph.topic]]
+              ['div {'id (slugify paragraph.topic.name)}] ; empty div to have fixed anchor links
+                ['h1 {'id (slugify paragraph.topic.name)} paragraph.topic]
                 (markdown paragraph.text)])]])
