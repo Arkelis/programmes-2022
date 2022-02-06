@@ -35,7 +35,7 @@
           ['p {'class "title"} "Programmes"]
            ['div {'class "manifestos"}
              #* (lfor
-                 manifesto (Manifesto.objects.order_by "name")
+                 manifesto (Manifesto.active_objects.all)
                  ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))])]])
       
       ['p {'class "title"} "Programmes 2022"]
@@ -49,7 +49,7 @@
 (defn manifesto-submenu []
   ['ul {'class "nav-submenu"}
     #* (lfor 
-      manifesto (Manifesto.objects.all)
+      manifesto (Manifesto.active_objects.all)
       ['li 
         (link-to (reverse "manifesto-detail" :args [manifesto.slug])
           ['div {'class "manifesto"} (str manifesto)]
