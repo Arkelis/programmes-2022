@@ -79,14 +79,14 @@
     z-index: 2;
     margin-left: calc(-100vw / 2 + 80ch / 2);
     margin-right: calc(-100vw / 2 + 80ch / 2);
-    background-color: var(--bg-light);
+    background: linear-gradient(white 85%, transparent);
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
   }
 
   h1 {
-    margin: 0.4em;
+    margin: 0.6em;
     color: var(--grey);
     font-size: 2rem;
     font-family: "PT Serif", serif;
@@ -146,6 +146,6 @@ p {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: .25rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--flag-blue);
 }

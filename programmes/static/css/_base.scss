@@ -14,6 +14,9 @@
 @import "./components/navbar";
 @import "./components/footer";
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   box-sizing: border-box;
