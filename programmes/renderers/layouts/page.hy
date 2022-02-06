@@ -43,7 +43,7 @@
           ['span (link-to (reverse "about") "À propos du site")]
           ['span (link-to (reverse "legals") "Mentions légales")]
           ['span ['a {'href "https://github.com/Arkelis/programmes-2022" 'class "github"} 
-            ['img {'src "/static/github.png"}] "Code source"]]]]))
+              ['img {'src "/static/github.png"}] "Code source"]]]]))
 
 #@(cache
 (defn manifesto-submenu []

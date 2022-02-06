@@ -14,6 +14,9 @@
 @import "./components/navbar";
 @import "./components/footer";
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   box-sizing: border-box;
@@ -23,9 +26,11 @@ body {
   min-height: 100vh;
 
   main#content {
-    // min-height: 90vh;
     flex-grow: 1; // footer at the bottom; flexbox container => <body/>
-    padding: 0 20px;
+  }
+
+  header {
+    z-index: 3;
   }
 }
 
@@ -51,4 +56,3 @@ a {
 li {
   list-style-type: none;
 }
-
