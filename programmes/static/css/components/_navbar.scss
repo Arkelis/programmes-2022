@@ -55,7 +55,7 @@ nav > ul {
 
       > a {
         color: var(--flag-blue);
-        background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat;
+        @include underline-red;
       }
     }
   }

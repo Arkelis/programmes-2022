@@ -1,0 +1,92 @@
+@import "./base.scss";
+
+.title-container {
+  @include text-container;
+
+  h1 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+}
+
+ul.manifesto-list {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-gap: 1rem;
+  margin: 2rem;
+
+  li {
+    color: var(--grey);
+
+    a {
+      display: block;
+      padding: 1rem;
+    }
+
+    a:hover,
+    a:active {
+      color: var(--flag-blue);
+      text-decoration: none;
+      background-color: var(--bg-light);
+      border-radius: 0.5rem;
+    }
+
+    .manifesto {
+      font-weight: bold;
+    }
+    .candidate-party {
+      font-style: italic;
+    }
+  }
+}
+
+.container--manifesto-hero {
+  display: none;
+  padding-top: 5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &:target {
+    display: block;
+  }
+
+  .manifesto-hero {
+    @include text-container;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    border-radius: 1rem;
+
+    h1 {
+      font-family: "PT Serif", serif;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+      color: var(--flag-blue);
+    }
+
+    a:hover > h2 {
+      display: inline-block;
+      text-decoration: none;
+      @include underline-red;
+    }
+
+    .manifesto-summary {
+      font-weight: 300;
+    }
+
+    .candidate-party {
+      font-family: "Fira Sans", sans-serif;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+}
