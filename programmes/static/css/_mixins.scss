@@ -2,3 +2,7 @@
   max-width: 80ch;
   margin: auto;
 }
+
+@mixin underline-red {
+  background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat;
+}

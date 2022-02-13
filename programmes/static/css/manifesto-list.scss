@@ -76,7 +76,7 @@ ul.manifesto-list {
     a:hover > h2 {
       display: inline-block;
       text-decoration: none;
-      background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat;
+      @include underline-red;
     }
 
     .manifesto-summary {

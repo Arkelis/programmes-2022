@@ -12,7 +12,7 @@
       (gfor manifesto manifestos
         ['li
           (link-to f"#{(slugify manifesto.name)}"
-            ['div.manifesto (str manifesto)]
+            ['div.manifesto manifesto.name]
             ['div.candidate-party (str manifesto.candidate) f" ({manifesto.candidate.party})"])])]
     #* (map manifesto-hero manifestos)
     :style "manifesto-list"))
