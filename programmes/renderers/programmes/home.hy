@@ -21,4 +21,4 @@
              les cinq prochaines années, ce site va tenter de synthétiser les programmes
              portés par chacun des candidats, afin de vous éclairer dans votre choix."]
           (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats")
-          ['div {'class "link--candidates"  'disabled True} "En savoir plus sur les candidats (bientôt disponible)"]]])))
+          ['div {'class ["link--candidates" "disabled"]} "En savoir plus sur les candidats"]]])))
