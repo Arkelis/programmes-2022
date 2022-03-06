@@ -13,8 +13,7 @@
 ul.manifesto-list {
   display: grid;
   place-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  // grid-gap: 1rem;
+  grid-template-columns: 25rem 25rem 25rem;
   margin: 2rem;
 
   li {
@@ -88,5 +87,22 @@ ul.manifesto-list {
       font-style: italic;
       font-weight: 300;
     }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  ul.manifesto-list {
+    grid-template-columns: 25rem 25rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  ul.manifesto-list {
+    display: block;
   }
 }

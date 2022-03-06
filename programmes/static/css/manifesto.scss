@@ -1,9 +1,13 @@
-@import './base.scss';
-
+@import "./base.scss";
 
 .container--manifesto-intro {
   background-color: var(--bg-light);
   padding: 3rem 0;
+  margin-top: 6rem;
+
+  .title--image {
+    margin-top: 0;
+  }
 }
 
 .manifesto-toc {
@@ -11,10 +15,9 @@
   position: sticky;
   margin-top: 2.5rem;
   top: 1rem;
-  z-index: 4;
   margin-left: 1.8em;
   align-self: start;
-  
+
   @media screen and (max-width: 1260px) {
     & {
       display: none;
@@ -34,23 +37,24 @@
     max-width: 20ch;
     line-height: 25px;
     font-weight: bold;
-    color: #A38585;
+    color: #a38585;
   }
 
   a {
     display: block;
-    width: fit-content
+    width: fit-content;
   }
 }
 
-
 .manifesto-intro {
   @include text-container;
+  position: relative;
 
-  h1 {
+  h1,
+  h1.title--image img {
     font-family: "PT Serif", serif;
     font-weight: 700;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
   }
 
   .manifesto-summary {
@@ -64,15 +68,16 @@
   }
 
   img.party {
-    height: 160px;
+    width: 20ch;
+    display: block;
   }
 
   img.candidate {
     position: absolute;
-    top: 3em;
-    right: 16em;
-    width: 200px;
-    height: 200px;
+    top: -8rem;
+    right: 0;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 100%;
   }
 }
@@ -103,16 +108,15 @@
   h1 {
     top: 0;
     text-align: center;
-    z-index: 2;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: linear-gradient(white 85%, transparent);
     color: var(--flag-blue);
     font-size: 2rem;
     font-family: "PT Serif", serif;
     font-weight: 700;
 
     @media screen and (max-width: 1270px) {
+      display: none;
       position: sticky;
     }
   }
@@ -137,22 +141,20 @@
     color: var(--grey);
     font-size: 1rem;
     font-weight: bold;
+    position: relative;
   }
 
   h3::before {
-    content: '▶';
+    content: "\2023";
     color: var(--flag-blue);
-    font-size: .75rem;
-    margin-bottom: 1rem;
-    margin-left: -1.4rem;
-    margin-top: .1rem;
-    margin-right: .5rem;
+    margin-left: -1.1rem;
+    margin-right: 0.5rem;
     position: absolute;
   }
 
   p,
   h3 {
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
   }
 
   li {
@@ -161,17 +163,16 @@
   }
 }
 
-
 p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.manifesto-intro>h2,
-.manifesto-paragraphs>h1 {
+.manifesto-intro > h2,
+.manifesto-paragraphs > h1 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   margin-top: 2rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-size: 1.5rem;
   color: var(--flag-blue);
 }
@@ -190,10 +191,10 @@ details {
 
 details[open] {
   background-color: var(--bg-light);
-  padding: .5rem;
+  padding: 0.5rem;
   padding-left: 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   h3 {
     color: var(--flag-blue);
@@ -201,5 +202,58 @@ details[open] {
 
   p {
     color: black;
+  }
+}
+
+.breadcrumb {
+  display: none;
+  position: sticky;
+  top: 0;
+
+  @media screen and (max-width: 1270px) {
+    margin-top: 5px;
+    display: block;
+    background: linear-gradient(white 85%, transparent);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    z-index: 2;
+
+    div {
+      font-family: "PT Serif", serif;
+      font-size: 1.2rem;
+      color: var(--flag-blue);
+    }
+  }
+  
+  > div {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 90ch) {
+  .container--manifesto-intro,
+  .container--manifesto-paragraphs {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  
+  .manifesto-intro {
+    margin-top: 8rem;
+    
+    img.candidate {
+      top: -16rem;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 50ch) {
+  .manifesto-intro img.party {
+    width: 100%;
   }
 }

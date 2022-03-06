@@ -38,3 +38,10 @@ a.github {
     height: 20px;
   }
 }
+
+@media screen and (max-width: 90ch) {
+  footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
