@@ -6,16 +6,15 @@
 
 (defn render [manifesto]
   (render-in-page
-    (menu manifesto.paragraphs.all manifesto.name)
     (intro manifesto)
-    (paragraphs manifesto)  
+    (paragraphs manifesto)
    :style "manifesto"))
 
-(defn menu [paragraphs title]
-  ['div {'class "manifesto-menu"}
-    ['a {'href "#intro"} ['h2 title ]]
-    (gfor paragraph (paragraphs)
-      ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
+(defn toc [paragraphs title]
+    ['div {'class "manifesto-toc"}
+      ['a {'href "#intro"} ['h2 title ]]
+      (gfor paragraph (paragraphs)
+        ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
 
 (defn intro [manifesto]
   ['div {'class "container--manifesto-intro" 'id "intro"}
@@ -30,8 +29,8 @@
   
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}
+    (toc manifesto.paragraphs.all manifesto.name)
     ['div {'class "manifesto-paragraphs"}
-      ['h1 "Propositions par thématiques"]
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
               ['div {'id (slugify paragraph.topic.name)}] ; empty div to have fixed anchor links

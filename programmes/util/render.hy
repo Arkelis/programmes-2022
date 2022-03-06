@@ -1,15 +1,17 @@
-(require hyrule [-> doto])
+(require hyrule [-> doto unless])
 
 (import
   functools [cache]
+  itertools [chain]
   importlib [import-module]
   logging
   pathlib [Path])
 
 (import
+  bs4 [BeautifulSoup]
   commonmark [commonmark]
   django.http [HttpResponse]
-  hyccup.core [raw]
+  hyccup.core [html raw]
   hyccup.page [include-css]
   sass)
 
@@ -54,7 +56,34 @@
 
 
 (defn markdown [string]
-  (-> string (commonmark) (raw)))
+  (-> string (commonmark) (h3-to-detail) (raw)))
+
+
+(defn h3-to-detail [html-string]
+  (-> html-string
+      (.replace "\n" "")
+      (BeautifulSoup "html.parser")
+      (iter)
+      (replace-h3 "")))
+
+
+(defn replace-h3 [html-iterator converted-html]
+  (try 
+    (setv tag (next html-iterator))
+  (except [StopIteration]
+    (return converted-html)))
+  (unless (= "h3" tag.name)
+    (return (replace-h3 html-iterator (+ converted-html (str tag)))))
+  (setv details ['details ['summary (raw (str tag))]])
+  (for [el html-iterator]
+    (unless (in el.name ["p" "ol" "ul"])
+      (return (replace-h3
+        (chain [el] html-iterator) 
+        (+ converted-html (html details)))))
+    (.append details (raw (str el))))
+  (replace-h3
+    html-iterator
+    (+ converted-html (html details))))
 
 
 #@(cache
