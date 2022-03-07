@@ -1,4 +1,4 @@
-@import './base';
+@import "./base";
 
 .container {
   display: grid;
@@ -44,4 +44,19 @@
 
 .link--candidates {
   @include link-button(var(--flag-red));
+}
+
+@media screen and (max-width: 90ch) {
+  .center-block {
+    margin: 0 1rem;
+  }
+
+  .container {
+    .title-word {
+      font-size: 2rem;
+    }
+    .title-year {
+      font-size: 2.25rem;
+    }
+  }
 }

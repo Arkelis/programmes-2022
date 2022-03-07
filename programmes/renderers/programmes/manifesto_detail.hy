@@ -1,39 +1,44 @@
 (import
   django.utils.text [slugify]
   django.conf [settings]
+  django.urls [reverse]
   programmes.renderers.layouts.page [render-in-page]
-  programmes.util.render [markdown])
+  programmes.util.render [markdown]
+  hyccup.element [link-to])
 
 (defn render [manifesto]
   (render-in-page
-    (menu manifesto.paragraphs.all manifesto.name)
     (intro manifesto)
-    (paragraphs manifesto)  
+    (paragraphs manifesto)
    :style "manifesto"))
 
-(defn menu [paragraphs title]
-  ['div {'class "manifesto-menu"}
-    ['a {'href "#intro"} ['h2 title ]]
-    (gfor paragraph (paragraphs)
-      ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
+(defn toc [paragraphs title]
+    ['div {'class "manifesto-toc"}
+      ['a {'href "#intro"} ['h2 title ]]
+      (gfor paragraph (paragraphs)
+        ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
 
 (defn intro [manifesto]
   ['div {'class "container--manifesto-intro" 'id "intro"}
     ['div {'class "manifesto-intro"}
-      ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.party.photo)) 'class "party"}]
       ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.photo)) 'class "candidate"}]
-      
-      ['h1 manifesto.name]
+      (if manifesto.logo
+        ['h1 {'class "title--image"} 
+          ['img {'src (+ settings.MEDIA-URL (str manifesto.logo)) 'class "party" 'alt "L'Avenir en commun"}]]
+        ['h1 manifesto.name])
       ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]
       ['h2 "En bref"]
       ['div {'class "manifesto-summary"} (markdown manifesto.summary)]]])
   
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}
+    (toc manifesto.paragraphs.all manifesto.name)
     ['div {'class "manifesto-paragraphs"}
-      ['h1 "Propositions par thématiques"]
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
-              ['div {'id (slugify paragraph.topic.name)}] ; empty div to have fixed anchor links
-                ['h1 paragraph.topic]
-                (markdown paragraph.text)])]])
+              ['div {'class "breadcrumb" 'aria-hidden True}
+                (link-to (reverse "manifesto-list") "Programmes") " / "
+                (link-to "#intro" manifesto.name)
+                ['div paragraph.topic.name]]
+              ['h1 {'id (slugify paragraph.topic.name)} paragraph.topic]
+              (markdown paragraph.text)])]])

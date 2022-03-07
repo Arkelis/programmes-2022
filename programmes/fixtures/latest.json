@@ -9,7 +9,8 @@
     "profession": "Professeur, Journaliste",
     "website": "https://melenchon2022.fr/",
     "photo": "static/melenchon.jpg",
-    "biography": "Jean-Luc Mélenchon"
+    "biography": "Jean-Luc Mélenchon",
+    "is_active": true
   }
 },
 {
@@ -21,8 +22,9 @@
     "party": 2,
     "profession": "Inspectrice du travail",
     "website": "https://www.2022avechidalgo.fr",
-    "photo": "static/hidalgo.jpg",
-    "biography": "Anne Hidalgo"
+    "photo": "img/hidalgo.jpg",
+    "biography": "Anne Hidalgo",
+    "is_active": true
   }
 },
 {
@@ -35,20 +37,8 @@
     "profession": "Enseignante",
     "website": "https://www.nathalie-arthaud.info/",
     "photo": "static/arthaud.jpg",
-    "biography": "Nathalie Arthaud"
-  }
-},
-{
-  "model": "programmes.candidate",
-  "pk": 4,
-  "fields": {
-    "first_name": "François",
-    "last_name": "Asselineau",
-    "party": 4,
-    "profession": "Inspecteur général des finances",
-    "website": "https://francoisasselineau.fr",
-    "photo": "static/asselineau.jpg",
-    "biography": "François Asselineau"
+    "biography": "Nathalie Arthaud",
+    "is_active": true
   }
 },
 {
@@ -61,7 +51,8 @@
     "profession": "Administrateur civil",
     "website": "https://debout-la-france.fr/",
     "photo": "static/dupont-aignan.jpg",
-    "biography": "Nicolas Dupont-Aignan"
+    "biography": "Nicolas Dupont-Aignan",
+    "is_active": true
   }
 },
 {
@@ -74,7 +65,8 @@
     "profession": "Technicien agricole",
     "website": "https://resistons-france.fr/",
     "photo": "static/lassalle.jpg",
-    "biography": "Jean Lassalle"
+    "biography": "Jean Lassalle",
+    "is_active": true
   }
 },
 {
@@ -87,20 +79,8 @@
     "profession": "Avocate",
     "website": "https://mlafrance.fr/",
     "photo": "static/lepen.jpg",
-    "biography": "Marine Le Pen"
-  }
-},
-{
-  "model": "programmes.candidate",
-  "pk": 9,
-  "fields": {
-    "first_name": "Arnaud",
-    "last_name": "Montebourg",
-    "party": 9,
-    "profession": "Entrepreneur",
-    "website": "https://laremontada.fr",
-    "photo": "static/montebourg.jpg",
-    "biography": "Arnaud Montebourg"
+    "biography": "Marine Le Pen",
+    "is_active": true
   }
 },
 {
@@ -113,7 +93,8 @@
     "profession": "Ouvrier d'usine",
     "website": "https://poutou2022.org/",
     "photo": "static/static/poutou.jpg",
-    "biography": "Poutou"
+    "biography": "Poutou",
+    "is_active": true
   }
 },
 {
@@ -126,20 +107,8 @@
     "profession": "Journaliste",
     "website": "https://www.fabienroussel2022.fr/",
     "photo": "static/static/roussel.jpg",
-    "biography": "Roussel"
-  }
-},
-{
-  "model": "programmes.candidate",
-  "pk": 13,
-  "fields": {
-    "first_name": "Antoine",
-    "last_name": "Waechter",
-    "party": 10,
-    "profession": "Ingénieur écologue",
-    "website": "https://www.waechter2022.fr/",
-    "photo": "static/static/waechter.jpg",
-    "biography": "Waechter"
+    "biography": "Roussel",
+    "is_active": true
   }
 },
 {
@@ -151,8 +120,9 @@
     "party": 5,
     "profession": "Haute Fonctionnaire",
     "website": "https://www.valeriepecresse.fr/",
-    "photo": "static/static/pecresse.jpg",
-    "biography": "Haute fonctionnaire"
+    "photo": "img/pecresse.jpg",
+    "biography": "Haute fonctionnaire",
+    "is_active": true
   }
 },
 {
@@ -164,8 +134,9 @@
     "party": 16,
     "profession": "Militant écologiste",
     "website": "https://www.jadot2022.fr/",
-    "photo": "static/static/jadot.jpg",
-    "biography": "Militant écologiste"
+    "photo": "img/jadot.jpg",
+    "biography": "Militant écologiste",
+    "is_active": true
   }
 },
 {
@@ -177,8 +148,23 @@
     "party": 17,
     "profession": "Journaliste",
     "website": "https://www.zemmour2022.fr/",
-    "photo": "static/static/zemmour.jpg",
-    "biography": "Journaliste polémiste"
+    "photo": "img/zemmour.jpg",
+    "biography": "Journaliste polémiste",
+    "is_active": true
+  }
+},
+{
+  "model": "programmes.candidate",
+  "pk": 17,
+  "fields": {
+    "first_name": "Emmanuel",
+    "last_name": "Macron",
+    "party": 18,
+    "profession": "Banquier d'affaires",
+    "website": "https://en-marche.fr",
+    "photo": "static/static/macron.jpg",
+    "biography": "EM",
+    "is_active": true
   }
 },
 {
@@ -281,13 +267,95 @@
   }
 },
 {
+  "model": "programmes.previouspresidentialresult",
+  "pk": 4,
+  "fields": {
+    "election": 1,
+    "result": 0.56,
+    "candidate": 3
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 5,
+  "fields": {
+    "election": 2,
+    "result": 0.64,
+    "candidate": 3
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 6,
+  "fields": {
+    "election": 1,
+    "result": 1.79,
+    "candidate": 6
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 7,
+  "fields": {
+    "election": 2,
+    "result": 4.7,
+    "candidate": 6
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 8,
+  "fields": {
+    "election": 2,
+    "result": 1.21,
+    "candidate": 7
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 9,
+  "fields": {
+    "election": 1,
+    "result": 17.9,
+    "candidate": 8
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 10,
+  "fields": {
+    "election": 2,
+    "result": 21.3,
+    "candidate": 8
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 11,
+  "fields": {
+    "election": 1,
+    "result": 1.15,
+    "candidate": 11
+  }
+},
+{
+  "model": "programmes.previouspresidentialresult",
+  "pk": 12,
+  "fields": {
+    "election": 2,
+    "result": 1.09,
+    "candidate": 11
+  }
+},
+{
   "model": "programmes.politicalentity",
   "pk": 1,
   "fields": {
     "name": "La France insoumise",
     "summary": "La France insoumise",
     "website": "https://lafranceinsoumise.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -297,7 +365,8 @@
     "name": "Parti socialiste",
     "summary": "Parti socialiste français",
     "website": "https://www.parti-socialiste.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -307,7 +376,8 @@
     "name": "Lutte ouvrière",
     "summary": "Lutte ouvrière",
     "website": "https://www.lutte-ouvriere.org/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -317,7 +387,8 @@
     "name": "Union populaire républicaine",
     "summary": "Union populaire républicaine",
     "website": "https://www.upr.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -327,7 +398,8 @@
     "name": "Les Républicains",
     "summary": "Les Républicains",
     "website": "https://republicains.fr",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -337,7 +409,8 @@
     "name": "Debout la France",
     "summary": "Debout la France",
     "website": "https://debout-la-france.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -347,7 +420,8 @@
     "name": "Résistons",
     "summary": "Résistons",
     "website": "https://resistons-france.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -357,7 +431,8 @@
     "name": "Rassemblement national",
     "summary": "Rassemblement national",
     "website": "https://rassemblementnational.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -367,7 +442,8 @@
     "name": "L'Engagement",
     "summary": "L'Engagement",
     "website": "https://l-engagement.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -377,7 +453,8 @@
     "name": "Mouvement écologiste indépendant",
     "summary": "Mouvement écologiste indépendant",
     "website": "https://m-e-i.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -387,7 +464,8 @@
     "name": "VIA, la voie du peuple",
     "summary": "VIA, la voie du peuple",
     "website": "https://via-lavoiedupeuple.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -397,7 +475,8 @@
     "name": "Nouveau Parti anticapitaliste",
     "summary": "Nouveau Parti anticapitaliste",
     "website": "https://nouveaupartianticapitaliste.org/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -407,7 +486,8 @@
     "name": "Parti communiste français",
     "summary": "Parti communiste français",
     "website": "https://www.pcf.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -417,7 +497,8 @@
     "name": "Europe Écologie Les Verts",
     "summary": "Les verts",
     "website": "https://www.eelv.fr/",
-    "parent": 16
+    "parent": 16,
+    "photo": ""
   }
 },
 {
@@ -427,7 +508,8 @@
     "name": "Les Écologistes",
     "summary": "Coalition de partis et mouvements écologistes pour l'élection présidentielle de 2022.",
     "website": "https://lesecologistes.fr",
-    "parent": null
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -437,7 +519,19 @@
     "name": "Reconquête !",
     "summary": "Parti d'Eric Zemmour",
     "website": "https://www.parti-reconquete.fr/",
-    "parent": null
+    "parent": null,
+    "photo": ""
+  }
+},
+{
+  "model": "programmes.politicalentity",
+  "pk": 18,
+  "fields": {
+    "name": "La République en marche",
+    "summary": "LREM",
+    "website": "https://en-marche.fr",
+    "parent": null,
+    "photo": ""
   }
 },
 {
@@ -481,6 +575,66 @@
   }
 },
 {
+  "model": "programmes.manifesto",
+  "pk": 6,
+  "fields": {
+    "name": "Le bon sens en action !",
+    "candidate": 6,
+    "summary": "La France mérite qu’on se batte pour elle.\r\n\r\nJe veux la sauver avec un projet présidentiel à la fois ambitieux, concret et solide, fruit de milliers de rencontres avec les Français et de centaines d’heures de travail avec des acteurs de terrain et des experts reconnus.",
+    "website": "https://2022nda.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 7,
+  "fields": {
+    "name": "Hidalgo!2022",
+    "candidate": 2,
+    "summary": "Une France réconciliée, une France pour tous, qui retrouve sa sérénité, son unité autour des valeurs de la République, le goût du débat citoyen et l’énergie pour affronter dans la justice les grands défis du siècle à venir à mener contre les désordres et écologiques, économiques et démocratiques. C’est ainsi qu'Anne Hidalgo présente sa candidature à l'élection présidentielle.",
+    "website": "https://www.2022avechidalgo.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 8,
+  "fields": {
+    "name": "La France authentique",
+    "candidate": 7,
+    "summary": "La France authentique entend avant tout porter la parole des Français au cœur de nos institutions, maintenir les services publics de proximité, encourager les initiatives locales et rebâtir un État fort. Il est organisé autour de l’écoute et de l’échange, préalables essentiels au renouveau du peuple souverain, à la régénérescence de la démocratie et à la consolidation de la République. Jean Lassalle souhaite reconstruire un État au service de nos compatriotes et redonner à l’espace public le pouvoir financier dont il ne dispose plus. Pour cela, il faut réapprendre à gérer en bien commun nos précieux territoires et nos merveilleuses cités.",
+    "website": "https://jl2022.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 9,
+  "fields": {
+    "name": "M La France",
+    "candidate": 8,
+    "summary": "Relever les défis de la submersion et du déclassement et faire entrer notre pays dans le 3e millénaire avec énergie et imagination, telle est l'ambition du programme porté par Marine Le Pen. Autour d’un État restauré dans ses fonctions régaliennes, la Nation sera rétablie dans sa souveraineté et ses libertés. Avec des perspectives de résultats rapides l'action de redressement s’ordonnance autour d’un triptyque Protection, Projection, Transmission. L'objectif est de remettre la France en ordre et lui faire retrouver la sécurité et la prospérité et ainsi renouer avec le bonheur d’y vivre pour tous les Français patriotes.",
+    "website": "https://mlafrance.fr"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 11,
+  "fields": {
+    "name": "La France des jours heureux",
+    "candidate": 12,
+    "summary": "fabienroussel2022",
+    "website": "https://www.fabienroussel2022.fr/le_programme"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 12,
+  "fields": {
+    "name": "Le camp des travailleurs",
+    "candidate": 3,
+    "summary": "Faire entendre le camp des travailleurs est l'objectif majeur de Nathalie Arthaud à l'élection présidentielle. Il faut dénoncer les conditions de travail et augmenter les salaires, lutter contre les inégalités. Il faut pour cela combattre le capitalisme à travers un programme de luttes et révolutionnaire.",
+    "website": "https://www.nathalie-arthaud.info/programme"
+  }
+},
+{
   "model": "programmes.topic",
   "pk": 1,
   "fields": {
@@ -491,7 +645,7 @@
   "model": "programmes.topic",
   "pk": 2,
   "fields": {
-    "name": "Environnement"
+    "name": "Énergie et Environnement"
   }
 },
 {
@@ -505,7 +659,7 @@
   "model": "programmes.topic",
   "pk": 4,
   "fields": {
-    "name": "Éducation et Enseignement"
+    "name": "Éducation, Enseignement et Recherche"
   }
 },
 {
@@ -541,7 +695,7 @@
   "pk": 1,
   "fields": {
     "topic": 1,
-    "text": "### La Sixième République\r\n\r\nPour réconcilier le peuple avec les institutions de la France, l'Avenir en commun propose de convoquer une Assemblée constituante pour définir une nouvelle constitution pour passer à la Sixième République, qui serait un régime plus parlementaire. Cette assemblée serait composée à la fois de membres élus et tirée au sort à la suite d'un référendum soumis par le Président de la République, puis elle travaillerait pendant deux ans. Le projet de constitution sera alors soumis aux Français à référendum.\r\n\r\n### La séparation de l'argent et de l'État\r\n\r\nL'Avenir en commun veut également \"mettre en place la séparation de l'argent et l'État\", notamment en durcissant les règles contre les conflits d'intérêt, en combattant l'influence des lobbys dans le débat parlementaire, et en luttant mieux contre la corruption.\r\n\r\n### Le Référendum d'initiative citoyenne\r\n\r\nPour améliorer l'action des citoyens sur les institutions, l'Avenir en commun propose une forme de référendum pour révoquer des élus, proposer ou abroger une loi, modifier la Constitution.\r\n\r\n### La Laïcité\r\n\r\nPour l'Avenir en commun, la laïcité doit être strictement appliquée selon la loi de 1905 de séparation des Églises et de l'État. Cela passe par l'abrogation du concordat d’Alsace-Moselle et le refus de financements publics pour la construction d'édifices religieux. Elle ne doit pas être utilisée pour montrer du doigt les croyants de quelque religion que ce soit.\r\n\r\n### Le contrôle des médias\r\n\r\nIl est constaté que beaucoup de médias sont contrôlés par quelques milliardaires. L'Avenir en commun prévoit une loi anti-concentration et de démocratisation des médias pour :\r\n\r\n- renforcer le statut juridique des rédactions ;\r\n- favoriser les coopératives de journalistes ;\r\n- l'introduction d'une charte déontologique dans la convention collective ;\r\n- donner un droit d'agrément aux rédactions face à l'entrée d'un nouvel actionnaire.",
+    "text": "## Passer à la Sixième République\r\n\r\n### Convoquer une Constituante afin de passer à la Sixième République, pour un régime parlementaire stable\r\n\r\nPour réconcilier le peuple avec les institutions de la France, l'Avenir en commun propose de convoquer une Assemblée constituante pour définir une nouvelle constitution pour passer à la Sixième République, qui serait un régime plus parlementaire. Cette assemblée serait composée à la fois de membres élus et tirée au sort à la suite d'un référendum soumis par le Président de la République, puis elle travaillerait pendant deux ans. Le projet de constitution sera alors soumis aux Français par référendum.\r\n\r\n### Balayer l'oligarchie : Mettre en place un plan de séparation de l'argent et de l'État\r\n\r\nL'Avenir en commun veut également \"mettre en place la séparation de l'argent et l'État\", notamment en durcissant les règles contre les conflits d'intérêt, en combattant l'influence des lobbys dans le débat parlementaire, et en luttant mieux contre la corruption.\r\n\r\n### Instaurer le Référendum d'initiative citoyenne\r\n\r\nPour améliorer l'action des citoyens sur les institutions, l'Avenir en commun propose une forme de référendum pour révoquer des élus, proposer ou abroger une loi, modifier la Constitution.\r\n\r\n### Donner le droit de vote à 16 ans\r\n\r\n### Reconnaitre le vote blanc et mettre en place le vote obligatoire\r\n\r\n### Instaurer une procédure de parrainages citoyens pour l'élection présidentielle\r\n\r\nEn alternative au parrainage par les maires.\r\n\r\n### Réaffirmer les échelons de l'organisation décentralisée : Communes, Départements, Régions\r\n\r\nAvec la superposition des échelons technocratiques, métropoles et intercommunalités géantes, les citoyens sont tenus à l'écart des prises de décision.\r\n\r\n## Une République laïque\r\n\r\nPour l'Avenir en commun, la laïcité doit être strictement appliquée selon la loi de 1905 de séparation des Églises et de l'État. Elle ne peut être confondue avec un athéisme d’État ou prétendre organiser les religions. Elle ne doit pas être utilisée pour montrer du doigt les croyants de quelque religion que ce soit.\r\n\r\n### Garantir la liberté de conscience et l'application stricte de la laïcité\r\n\r\n### Abroger le concordat d’Alsace-Moselle et le refus de financements publics pour la construction d'édifices religieux\r\n\r\n### Garantir la présence d'une école laïque dans chaque commune du pays\r\n\r\n### Interdire aux élus locaux, parlementaires, ministres et préfets d’assister à des cérémonies religieuses au titre de leurs fonctions\r\n\r\nDe plus, il ne peuvent recevoir de titre religieux. Il faut également refuser l'attribution du titre de chanoine de Latran au président de la République.\r\n\r\n## La révolution citoyenne dans les médias\r\n\r\n### Adopter une loi anti-concentration dans les médias et engager leur démocratisation\r\n\r\nIl est constaté que beaucoup de médias sont contrôlés par quelques milliardaires. L'Avenir en commun prévoit une loi anti-concentration et de démocratisation des médias pour :\r\n\r\n- renforcer le statut juridique des rédactions ;\r\n- favoriser les coopératives de journalistes ;\r\n- l'introduction d'une charte déontologique dans la convention collective ;\r\n- donner un droit d'agrément aux rédactions face à l'entrée d'un nouvel actionnaire.\r\n\r\n### Élire au parlement les présidents de France Télévisions et de Radio France",
     "manifesto": 1
   }
 },
@@ -550,7 +704,7 @@
   "pk": 2,
   "fields": {
     "topic": 2,
-    "text": "### La planification écologique\r\n\r\nLe réchauffement climatique est déjà visible aujourd'hui. Pour faire face à l'urgence, il faut révolutionner notre mode de vie pour assurer un futur à la civilisation humaine en s'adaptant aux nouvelles conditions climatiques et en empêchant une aggravation de la situation. L'Avenir en commun propose une planification écologique citoyenne sur le long terme. \r\n\r\n#### La règle verte\r\n\r\nLa planification écologique aura pour principe directeur la Règle verte directrice : on ne doit pas prélever à la nature davantage qu'elle ne peut reconstituer. Il faut arriver à subvenir aux besoins essentiels tout en prenant en compte les limites planétaires, cela passera par une changement des modes de vie, de production, de consommation.\r\n\r\n#### Les régions définies par les bassins versants\r\n\r\nPour maîtriser le cycle de l'eau, les bassins versants[^1] et les agences de l'eau seront les socles d'une nouvelle organisation des régions. L'objectif : \"zéro pollution et zéro épuisement de la ressource en eau\".\r\n\r\n#### Les territoires ultramarins comme pilotes de la planification\r\n\r\nCe sont ces territoires qui aideront à définir les modalités de mise en œuvre des objectifs de la planification écologique : l'autonomie énergétique et renouvelable, l'autosuffisance alimentaire, la protection de la biodiversité, la définition d'une politique maritime.\r\n\r\n#### Transports en commun et Services publics\r\n\r\nLa planification écologique comprend leur défense et la reconstruction de leur maillage, notamment dans les départements ruraux, les quartiers populaires, les territoires ultramarins. L'idée est de mettre une distance maximale de 30 minutes entre chaque habitation et les services publics fondamentaux : école, gare, hôpital, bureau de poste.\r\n\r\n[^1]: Voir les [régions hydrographiques françaises](https://fr.wikipedia.org/wiki/Bassin_hydrographique#France).\r\n\r\n### Investir pour lancer la bifurcation écologique\r\n\r\nLa planification écologique sera soutenue par un plan d'investissements écologiques et sociaux de 200 milliards d'euros.\r\n\r\n#### Création d'un pôle public des transports et de la mobilité\r\n\r\nIl faut investir dans les transports ferroviaires notamment, en rouvrant les petites lignes, renationaliser la SNCF pour éviter une hausse de prix qui est observée au Royaume-Uni ou en Allemagne, et refuser la mise en concurrence des lignes de transport. Renationaliser les autoroutes permettra aussi de réduire les hausses de tarif des péages.\r\n\r\n#### Passer au 100 % renouvelable, Sobriété et Efficacité énergétiques\r\n\r\nD'une part, investir dans les énergies renouvelables au profit du nucléaire et des énergies fossiles. Les centrales nucléaires présentent un risque car vieillissantes, et elles sont chères à entretenir.\r\n\r\nD'autre part, organiser un plan de rénovation du parc immobilier pour éradiquer la précarité énergétique.\r\n\r\n#### Abolir l'obsolescence programmée\r\n\r\nPréférer le réparable et le durable au jetable. Il faut allonger les durées de garanties légales des produits et lutter contre l'obsolescence programmée.\r\n\r\n#### Créer un ministère de la Production alimentaire\r\n\r\nIl faut relocaliser l'agriculture, la rendre diversifiée et écologique, et créer trois cent mille agricoles.\r\n\r\n### Protéger les biens communs\r\n\r\nIl existe des biens communs qui ne doivent pas être appropriés par des individus. L'Avenir en commun propose d'**établir une liste de tels biens ainsi que de services essentiels par référendum**.\r\n\r\n#### La règle bleue\r\n\r\nL'eau est l'enjeu écologique le plus concret, son cycle est perturbé par le réchauffement climatique. Il faut appliquer la règle verte à l'eau, il s'agit de réguler son usage et de protéger sa qualité.\r\n\r\n#### Garantir l'accès à l'eau potable courante pour tous les habitants des Outre-mer\r\n\r\nDe nombreux habitants de ces territoires subissent des coupures d'eau ou ont une eau courant polluée. Le droit d'accès à l'eau et son assainissement par une gestion publique est primordial.\r\n\r\n#### Interdire les coupes rases sauf impasse sanitaire avérée\r\n\r\nIl faut protéger les forêts qui sont des alliés climatiques et écologiques, en réduisant son industrialisation et sa marchandisation.\r\n\r\n#### Interdire les fermes-usines\r\n\r\nLe modèle agricole productiviste est à l'origine de pandémies comme celle de Covid-19, nous pouvons nous en passer grâce aux sources de protéines végétales.  Il ne faut plus considérer les être sensibles comme de simples marchandises.\r\n\r\n#### Interdire les dépôts de brevets sur des organismes vivants\r\n\r\nLes espèces animales et végétales ne peuvent être appropriées par des entreprises privées.",
+    "text": "## La planification écologique et l'organisation du pays\r\n\r\n### Revoir les ambitions climatiques de la France à la hausse\r\n\r\nIl faut rendre public un bilan annuel des émissions du pays. De plus, l'Avenir en commun veut fixer un nouvel objectif de baisse de 65% de celles-ci d'ici 2030 (au lieu de 40% aujourd'hui).\r\n\r\n### Obliger les entreprises à mettre en œuvre une compatibilité carbone certifiée par un organisme public agréé.\r\n\r\nCommençant par les secteurs les plus émetteurs, les entreprises devront exposer leurs émissions de gaz à effet de serre, indirectes et directes. Cette compatibilité doit être accompagnée d'une trajectoire de baisse des émissions.\r\n\r\n### Redécouper les régions à partir des bassins versants\r\n\r\nPour maîtriser le cycle de l'eau, les [bassins versants](https://fr.wikipedia.org/wiki/Bassin_hydrographique#France) et les agences de l'eau seront les socles d'une nouvelle organisation des régions. L'objectif : \"zéro pollution et zéro épuisement de la ressource en eau\".\r\n\r\n### Interdire le « droit à la différenciation » qui permet que des règles différentes s’appliquent selon les territoires\r\n\r\n### Mettre en place des assemblées citoyennes régionales pour débattre des projets d’aménagement et d’investissement en lien avec la planification écologique\r\n\r\n### Permettre la libre association des communes\r\n\r\nIl faut revenir sur leur obligation d'appartenance à des intercommunalités en abrogeant la loir sur la Nouvelle organisation territoriale de la République et leur redonner libre association. L'Avenir en commun veut leur redonner le rôle de cellule de base de la démocratie locale et les impliquer dans les décisions et la mise en œuvre de la planification écologique.\r\n\r\n### Supprimer les méga-régions et les régions transfrontalières (eurorégions)\r\n\r\nLes eurorégions regroupent plusieurs régions frontalières appartenant à différents pays.\r\n\r\n### Mettre fin à l'étalement urbain\r\n\r\nIl s'agit de renoncer aux grands projets inutiles et de rapprocher les bassins de vie et les bassins d'emploi.\r\n\r\n### Les territoires ultramarins comme pilotes de la planification\r\n\r\nCe sont ces territoires qui aideront à définir les modalités de mise en œuvre des objectifs de la planification écologique : l'autonomie énergétique et renouvelable, l'autosuffisance alimentaire, la protection de la biodiversité, la définition d'une politique maritime.\r\n\r\n### Instaurer un bouclier douanier via une taxe kilométrique en faveur des productions locales à faible empreinte écologique\r\n\r\n### Appliquer une préférence commerciale pour les produits ultramarins vers l’Hexagone et l’Europe et nouer des partenariats commerciaux équilibrés avec les voisins régionaux\r\n\r\n### Reconstruire le maillage des Transports en commun et Services publics\r\n\r\nLa planification écologique comprend leur défense et la reconstruction de leur maillage, notamment dans les départements ruraux, les quartiers populaires, les territoires ultramarins. L'idée est de mettre une distance maximale de 30 minutes entre chaque habitation et les services publics fondamentaux : école, gare, hôpital, bureau de poste.\r\n\r\n### Réaffirmer le rôle du département comme échelle pertinente pour organiser un maillage équilibré du territoire en services publics essentiels à la population\r\n\r\n### Soutenir le tissu associatif local\r\n\r\nIl faut maintenir les subventions, généraliser les conventions pluriannuelles et sortir de la logique des appels à projets.\r\n\r\n### Renforcer les dotations de l’État pour les territoires et régions en retard de développement économique et social\r\n\r\n## Investir pour lancer la bifurcation écologique\r\n\r\nLa planification écologique sera soutenue par un plan d'investissements écologiques et sociaux de 200 milliards d'euros.\r\n\r\n### Création d'un pôle public des transports et de la mobilité\r\n\r\nIl faut investir dans les transports ferroviaires notamment, en rouvrant les petites lignes, renationaliser la SNCF pour éviter une hausse de prix qui est observée au Royaume-Uni ou en Allemagne, et refuser la mise en concurrence des lignes de transport. Renationaliser les autoroutes permettra aussi de réduire les hausses de tarif des péages.\r\n\r\n### Supprimer les lignes aériennes quand l'alternative en train est inférieure à 4 heures\r\n\r\n### Repenser la mobilité individuelle\r\n\r\nIl faut développer les usages partagés de la voiture et les mobilités douces comme le vélo.\r\n\r\n### Adopter un plan de développement du ferroutage et de report modal (cabotage maritime, fluvial et dirigeable)\r\n\r\n### Engager un plan spécifique de développement des transports collectifs en Outre-mer\r\n\r\nIls sont en effet quasi inexistants aujourd’hui. L'Avenir en commun veut s'inspirer du modèle du projet de tram-train à La Réunion.\r\n\r\n### Planifier le passage au 100 % renouvelable : Sobriété et Efficacité énergétiques\r\n\r\nD'une part, investir dans les énergies renouvelables au profit du nucléaire et des énergies fossiles. Les centrales nucléaires présentent un risque car vieillissantes, et elles sont chères à entretenir.\r\n\r\nD'autre part, organiser un plan de rénovation du parc immobilier pour éradiquer la précarité énergétique.\r\n\r\n### Arrêter les subventions aux énergies fossiles (nationales ou internationales)\r\n\r\n### Abandonner les projets d'EPR et planifier le démantèlement et la reconversion des sites nucléaires ainsi que de leurs bassins de vie\r\n\r\n### Instaurer une tarification progressive de l'énergie\r\n\r\nPlus l'énergie est consommée, plus elle revient cher.\r\n\r\n### Refaire l'isolation d'au moins 700 000 logements par an\r\n\r\n### Développer l'écoconstruction\r\n\r\nIl s'agit de réduire l'impact écologique des travaux en favorisant les matériaux bioclimatiques : bois, terre, paille.\r\n\r\n### Abolir l'obsolescence programmée\r\n\r\nPréférer le réparable et le durable au jetable. Il faut allonger les durées de garanties légales des produits et lutter contre l'obsolescence programmée.\r\n\r\n### Lutter contre la surproduction des déchets\r\n\r\nInterdire les plastiques à usage unique, rétablir la consigne pour les bouteilles et bocaux en verre. Le recyclage doit être rendu obligatoire, ainsi que le compostage ou en dernier recours l'incinération. Il faut également développer les filières de réutilisation des matériaux et de substitution aux matériaux carbonés.\r\n\r\n### Créer un service public du réemploi et de la réparation\r\n\r\n### Rendre la collecte séparée des déchets organiques obligatoire en 2025\r\n\r\n### Faire reculer la publicité\r\n\r\nD'une part, réduire la publicité dans l'espace public et interdire les prospectus dans les boîtes aux lettres, les panneaux publicitaires et le démarchage commercial téléphonique.\r\n\r\nD'autre part, interdire la publicité pour les produits et services émetteurs de gaz à effet de serre, tous supports confondus.\r\n\r\nEnfin, diminuer les possibilités de diffusion de publicité à la télévision.\r\n\r\n### Créer un réseau national de déchèteries et recyclage\r\n\r\n### Créer un ministère de la Production alimentaire\r\n\r\nIl faut relocaliser l'agriculture, la rendre diversifiée et écologique, et créer trois cent mille emplois agricoles.\r\n\r\n## Protéger les biens communs\r\n\r\nIl existe des biens communs qui ne doivent pas être appropriés par des individus.\r\n\r\n### Établir par référendum la liste des biens communs et services essentiels et les collectiviser\r\n\r\nUn défenseur des biens communs, chargé de publier un rapport annuel, sera créé.\r\n\r\n### Empêcher le droit privé de prévaloir sur la protection de l'eau, de l'air, de l'alimentation, du vivant, de la santé et de l'énergie\r\n\r\n### Permettre à l'État et aux collectivités locales les moyens d'appliquer le tryptique \"surveiller, contrôler, sanctionner\" et de réguler faD�vVYce au libre marché en termes de pollution\r\n\r\nL’empoisonnement du monde est global. L’air, l’eau et les sols sont affectés par toutes sortes de pollutions plastiques, chimiques, industrielles. Les plus riches polluent le plus. Mais ce sont les plus pauvres qui en subissent davantage les conséquences. Un plan de dépollution national et international s’impose.\r\n\r\n### Etablir un plan d'urgence pour la dépollution rapides des régions polluées\r\n\r\nLa priorité sera mise sur la Guadeloupe et la Martinique, victimes du chloredécone.\r\n\r\n### Instaurer la Règle bleue\r\n\r\nL'eau est l'enjeu écologique le plus concret, son cycle est perturbé par le réchauffement climatique. Il faut appliquer la règle verte à l'eau, il s'agit de réguler son usage et de protéger sa qualité.\r\n\r\n### Inscrire dans la Constitution l'eau comme biencommun et la protection de l'ensemble de son cycle\r\n\r\n### Réprimer durement les coupures d'eau illégales\r\n\r\n### Créer un haut-commissariat à l'eau pour organiser une gestion 100 % publique de l'eau\r\n\r\nElle sera articulée autour de régies publiques locales ouvertes aux citoyens. D'autre part, un vaste plan d'investissement dans le renouvellement des canalisations et l'accélération des travaux engagés en Outre-mer.\r\n\r\n### Instaurer une tarification progressive et différenciée selon les usages\r\n\r\n### Mailler le territoire de fontaines à eau, de douches et de sanitaires publics gratuits\r\n\r\n### Systématiser le recours au fret fluvial dès que possible\r\n\r\n### Garantir l'accès à l'eau potable courante pour tous les habitants des Outre-mer\r\n\r\nDe nombreux habitants de ces territoires subissent des coupures d'eau ou ont une eau courant polluée. Le droit d'accès à l'eau et son assainissement par une gestion publique est primordial.\r\n\r\n### Interdire les coupes rases sauf impasse sanitaire avérée\r\n\r\nIl faut protéger les forêts qui sont des alliés climatiques et écologiques, en réduisant son industrialisation et sa marchandisation.\r\n\r\n### Laisser au niveau national 25% de la surface de la forêt française en libre évolution\r\n\r\n### Augmenter les moyens de l'Office national des forêts (ONF) et stopper sa privatisation\r\n\r\n### Inciter la création de coopératives de petits producteurs et le groupement de la gestion de parcelles forestières privées\r\n\r\n### Rétablir la filière du bois\r\n\r\n* Reconstruire tout le secteur de la transformation du bois avec l’objectif de diversifier les essences et de développer les circuits courts, en mettant en place une formation professionnelle publique\r\n* Rétablir des scieries et encadrer les exportations de bois\r\n* Encadrer l’usage du bois dans la production d’énergie et favoriser son usage durable dans la construction\r\n\r\nEt au niveau international :\r\n\r\n* Rompre avec les accords commerciaux participant de l’augmentation de la déforestation importée\r\n* Assurer une traçabilité complète des importations afin de bannir de la commande publique celles liées à la déforestation et contraindre les entreprises à exclure ces produits de leurs approvisionnements\r\n* Accroître la coopération internationale afin de lutter contre les pratiques illégales qui détruisent les forêts (trafic de bois, orpaillage et mines)\r\n\r\n### Renforcer les moyens humains et matériels de lutte contre les feux de forêt\r\n\r\n### Interdire les fermes-usines\r\n\r\nLe modèle agricole productiviste est à l'origine de pandémies comme celle de Covid-19, nous pouvons nous en passer grâce aux sources de protéines végétales.  Il ne faut plus considérer les être sensibles comme de simples marchandises.\r\n\r\n### Limiter les temps de transport des animaux vivants\r\n\r\n### Interdire tous les élevages de production de fourrure, immédiatement pour les élevages de visons\r\n\r\n### Orienter la recherche vers des méthodes substitutives et éthiques qui permettraient de ne plus expérimenter sur les animaux\r\n\r\n### Interdire les dépôts de brevets sur des organismes vivants\r\n\r\nLes espèces animales et végétales ne peuvent être appropriées par des entreprises privées.",
     "manifesto": 1
   }
 },
@@ -568,7 +722,7 @@
   "pk": 4,
   "fields": {
     "topic": 5,
-    "text": "## Un emploi pour toutes et tous\r\n\r\n### La réduction du temps de travail\r\n\r\nC'est l'une des grandes mesures de l'Avenir en commun. La réduction du temps de travail est le moteur de l'emploi : le temps de travail annuel a été divisé par deux depuis 150 ans, permettant la création de millions d'emplois. De nombreux pays voisins continuent de diminuer ce temps dans la journée, la semaine, l'année et plus globalement dans la vie. La France doit faire de même alors que quatre millions sont privés d'emplois et que le temps de travail moyen est de plus de 37 heures, un rééquilibrage s'impose.\r\n\r\nIl faut appliquer véritablement les 35 heures, adopter une sixième semaine de congés payés, la retraite à 60 ans après 40 annuités. Passer aussi les métiers pénibles et de nuit à 32 h, pour ensuite les généraliser.\r\n\r\n### La garantie d'emploi\r\n\r\n### Porter le SMIC à 1400 euros net\r\n\r\n### Instaurer un quota maxima de 10 % de contrats précaires dans les PME, 5 % dans les grandes entreprises\r\n\r\nUn travailleur sur sept travaille sans CDI, chez les jeunes ce taux atteint 50 %. Cela empêche de se projeter, d'obtenir un crédit ou de trouver du sens à son travail.\r\n\r\n### Revenir sur la réforme Macron de l'assurance-chômage\r\n\r\nIl faut indemniser les chômeurs dès le premier jour, ils reçoivent l'argent qu'ils ont eux-même cotisé en travaillant. Des études ont monté que baisser les prestations sociales n'a aucun impact sur le taux de chômage.\r\n\r\n## Le partage des richesses\r\n\r\n### Refondre l'impôt sur le revenu\r\n\r\nL'Avenir en commun veut rétablir l'ISF : 1 % des plus riches captent en effet 80 % de la richesse produite. L'impôt sur le revenu sera plus progressif grâce à 14 tranches. Il faut également faire payer les entreprises multinationales en fonction de leur activité en France.\r\n\r\nPour faire face aux éventuelles expatriations de riches, l'impôt universel sera appliqué : les Français à l'étranger paieront la différence entre l'impôt pratiqué dans leur pays d'accueil et le barème en France.\r\n\r\n### Garantie d'autonomie\r\n\r\nNul ne doit vivre sous le seuil de pauvreté. Chacun verra son revenu complété si besoin.\r\n\r\n### Zéro SDF\r\n\r\nLes logements adéquats seront réquisitionnés pour sortir de la rue les trois cent milles personnes sans domicile.\r\n\r\n### Sécurité alimentaire\r\n\r\nPour réduire les inégalités, le prix de cinq fruits et légumes de saison seront bloqués. La cantine solaire publique sera gratuite.\r\n\r\n### Renationaliser les aéroports, autoroutes, Française des jeux\r\n\r\n### Établir de nouveaux indicateurs de progrès humain\r\n\r\nL'économie doit être au service de critères de bien-vivre : la santé, l'éducation, etc.\r\n\r\n## L'Égalité réelle maintenant\r\n\r\n### Mettre en œuvre un plan d'action contre les discriminations sous toutes ses formes : emploi, logement, éducation, santé, etc.\r\n\r\nLes actes racistes ont augmenté de 38 % en 2019, pour lutter contre les contrôles au faciès, l'Avenir en commun veut instaurer les récépissé de contrôle d'identité, ainsi que des formations.\r\n\r\nLa majorité des contrats précaires et smicards sont occupés par des femmes. Elles demeurent aussi moins payées que les hommes à poste équivalent. Plus de cent d'entre elles meurent chaque année assassinées par leur conjoint. L'Avenir en commun veut agir de manière urgente.\r\n\r\nLes discriminations à l'égard des personnes LGBTI restent nombreuses. L'Avenir en commun veut interdire les thérapies de conversions contre les comportement homosexuels ainsi qu'un plan d'éradication des violence contre ces personnes. Il sera possible de modifier son état-civil gratuitement devant un officier d'état-civil, et la PMA sera accessible aux personnes trans. \r\n\r\n### Adopter une loi de lutte contre le sexisme et les violences faites aux femmes\r\n\r\nUn milliard d'euros y sera alloué, notamment en matière de formation et de places d'hébergement.\r\n\r\n### Inscrire dans la Constitution la non-marchandisation du corps humain et le droit de disposer de soi en toutes circonstances.\r\n\r\n### Construire un service public de la dépendance pour aider les seniors à rester à domicile\r\n\r\nLe modèle actuel maltraite les aînés, en particulier les femmes ; l'Avenir en commun veut en sortir : chacun a droit a des conditions de vieillesse dignes.\r\n\r\n### Revaloriser et Déconjugaliser l'allocation aux adultes handicapés\r\n\r\nCela assurera l'autonomie financière des personnes en situation de handicap.",
+    "text": "## Un emploi pour toutes et tous\r\n\r\n### Réduire le temps de travail\r\n\r\nC'est l'une des grandes mesures de l'Avenir en commun. La réduction du temps de travail est le moteur de l'emploi : le temps de travail annuel a été divisé par deux depuis 150 ans, permettant la création de millions d'emplois. De nombreux pays voisins continuent de diminuer ce temps dans la journée, la semaine, l'année et plus globalement dans la vie. La France doit faire de même alors que quatre millions sont privés d'emplois et que le temps de travail moyen est de plus de 37 heures, un rééquilibrage s'impose.\r\n\r\nIl faut appliquer véritablement les 35 heures, adopter une sixième semaine de congés payés, passer les métiers pénibles et de nuit à 32 h, pour ensuite les généraliser.\r\n\r\n### Rétablir la retraite à 60 ans après 40 années de cotisation\r\n\r\n### La garantie d'emploi\r\n\r\nTout chômeur de longue durée pourra se voir proposer d’être embauché au moins au SMIC revalorisé dans un secteur d’urgence.\r\n\r\n### Porter le SMIC à 1400 euros net\r\n\r\n### Punir sévèrement le non-respect de l’égalité de rémunération entre les femmes et les hommes\r\n\r\nCréer dans l’entreprise une commission de contrôle salarié sur l’égalité entre les femmes et les hommes.\r\n\r\n### Instaurer un quota maxima de 10 % de contrats précaires dans les PME, 5 % dans les grandes entreprises\r\n\r\nUn travailleur sur sept travaille sans CDI, chez les jeunes ce taux atteint 50 %. Cela empêche de se projeter, d'obtenir un crédit ou de trouver du sens à son travail.\r\n\r\n### Revenir sur la réforme Macron de l'assurance-chômage\r\n\r\nIl faut indemniser les chômeurs dès le premier jour, ils reçoivent l'argent qu'ils ont eux-même cotisé en travaillant. Des études ont monté que baisser les prestations sociales n'a aucun impact sur le taux de chômage.\r\n\r\nravail le dimanche\r\n\r\n### Engager un plan global de rénovation de nos infrastructures pour les adapter au changement climatique\r\n\r\nUn tel plan, évoqué dans la planification écologique, débouchera sur la création de plusieurs centaines de milliers d'emplois.\r\n\r\n### Instaurer un quota maxima de 10 % de contrats précaires dans les PME, 5 % dans les grandes entreprises\r\n\r\nUn travailleur sur sept travaille sans CDI, chez les jeunes ce taux atteint 50 %. Cela empêche de se projeter, d'obtenir un crédit ou de trouver du sens à son travail.\r\n\r\n### Revenir sur la réforme Macron de l'assurance-chômage\r\n\r\nIl faut indemniser les chômeurs dès le premier jour, ils reçoivent l'argent qu'ils ont eux-même cotisé en travaillant. Des études ont monté que baisser les prestations sociales n'a aucun impact sur le taux de chômage.\r\n\r\n### Titulariser les précaires des trois fonctions publiques\r\n\r\n### Encadrer la sous-traitance en garantissant par la loi la responsabilité des donneurs d’ordre vis-à-vis de leurs sous-traitants et en la limitant à un seul niveau \r\n\r\n## Le partage des richesses\r\n\r\n### Refondre l'impôt sur le revenu\r\n\r\nL'Avenir en commun veut rétablir l'ISF : 1 % des plus riches captent en effet 80 % de la richesse produite. L'impôt sur le revenu sera plus progressif grâce à 14 tranches. Il faut également faire payer les entreprises multinationales en fonction de leur activité en France.\r\n\r\nPour faire face aux éventuelles expatriations de riches, l'impôt universel sera appliqué : les Français à l'étranger paieront la différence entre l'impôt pratiqué dans leur pays d'accueil et le barème en France.\r\n\r\n### Garantie d'autonomie\r\n\r\nNul ne doit vivre sous le seuil de pauvreté. Chacun verra son revenu complété si besoin.\r\n\r\n### Zéro SDF\r\n\r\nLes logements adéquats seront réquisitionnés pour sortir de la rue les trois cent milles personnes sans domicile.\r\n\r\n### Sécurité alimentaire\r\n\r\nPour réduire les inégalités, le prix de cinq fruits et légumes de saison seront bloqués. La cantine solaire publique sera gratuite.\r\n\r\n### Renationaliser les aéroports, autoroutes, Française des jeux\r\n\r\n### Établir de nouveaux indicateurs de progrès humain\r\n\r\nL'économie doit être au service de critères de bien-vivre : la santé, l'éducation, etc.\r\n\r\n## L'Égalité réelle maintenant\r\n\r\n### Mettre en œuvre un plan d'action contre les discriminations sous toutes ses formes : emploi, logement, éducation, santé, etc.\r\n\r\nLes actes racistes ont augmenté de 38 % en 2019, pour lutter contre les contrôles au faciès, l'Avenir en commun veut instaurer les récépissé de contrôle d'identité, ainsi que des formations.\r\n\r\nLa majorité des contrats précaires et smicards sont occupés par des femmes. Elles demeurent aussi moins payées que les hommes à poste équivalent. Plus de cent d'entre elles meurent chaque année assassinées par leur conjoint. L'Avenir en commun veut agir de manière urgente.\r\n\r\nLes discriminations à l'égard des personnes LGBTI restent nombreuses. L'Avenir en commun veut interdire les thérapies de conversions contre les comportement homosexuels ainsi qu'un plan d'éradication des violence contre ces personnes. Il sera possible de modifier son état-civil gratuitement devant un officier d'état-civil, et la PMA sera accessible aux personnes trans. \r\n\r\n### Adopter une loi de lutte contre le sexisme et les violences faites aux femmes\r\n\r\nUn milliard d'euros y sera alloué, notamment en matière de formation et de places d'hébergement.\r\n\r\n### Inscrire dans la Constitution la non-marchandisation du corps humain et le droit de disposer de soi en toutes circonstances.\r\n\r\n### Construire un service public de la dépendance pour aider les seniors à rester à domicile\r\n\r\nLe modèle actuel maltraite les aînés, en particulier les femmes ; l'Avenir en commun veut en sortir : chacun a droit a des conditions de vieillesse dignes.\r\n\r\n### Revaloriser et Déconjugaliser l'allocation aux adultes handicapés\r\n\r\n1ela assurera l'autonomie financière des personnes en situation de handicap.",
     "manifesto": 1
   }
 },
@@ -577,7 +731,7 @@
   "pk": 5,
   "fields": {
     "topic": 7,
-    "text": "## Garantir la sûreté et la justice\r\n\r\n### Refonder les activités de police pour garantir le droit à la sûreté\r\n\r\nAlors que de nombreux policiers dénoncent une loi du silence dans ses rangs et que des violences restent souvent impunies, la police doit à nouveau entretenir une relation sereine avec la population.\r\n\r\nL'Avenir en commun veut, au profit de la BAC actuelle, réhabiliter la police de proximité et mener des actions dans la durée dans les quartiers.\r\n\r\n### Améliorer l'accès à la justice\r\n\r\nPour assurer un accès à la justice pour tous, l'Avenir en commun prévoit d'augmenter l'aide juridictionnelle et de veiller au retour des tribunaux de proximité. Cela permettra de respecter des délais raisonnables dans les décisions de justice. En effet, celle-ci manque de moyens financiers et humains, si bien que six Français sur dix estiment qu'elle fonctionne mal.\r\n\r\n### Confier au Parlement l'orientation de la politique pénale\r\n\r\nUn texte de loi sera voté chaque année à l'issue d'un débat.\r\n\r\n### Élaborer une nouvelle stratégie antiterroriste\r\n\r\nEn misant sur les moyens humains, l'Avenir en commun espère enfin établir une loi contre le terrorisme efficace et durable.\r\n\r\n### Légaliser et encadrer la production et la vente de cannabis par un monopole d'État\r\n\r\nUn changement de stratégie s'impose : la répression contre cette drogue doit faire place à un usage encadré propice à la lutte contre l'addiction. Les recettes de cette légalisation encadrée financeront les politiques de prévention et de désintoxication. De plus, les moyens policiers seront concentrés sur le démantèlement des trafics.\r\n\r\n### Faire respecter la Convention internationale des droits de l'enfant\r\n\r\nPour mieux les protéger, français ou étrangers. Elle concerne aussi l'interdiction des violences \"éducatives\" et le soutien à la parentalité.",
+    "text": "## Une justice au nom du peuple et efficace dans sa politique\r\n\r\n### Améliorer l'accès à la justice\r\n\r\nPour assurer un accès à la justice pour tous, l'Avenir en commun prévoit d'augmenter l'aide juridictionnelle et de veiller au retour des tribunaux de proximité. Cela permettra de respecter des délais raisonnables dans les décisions de justice. En effet, celle-ci manque de moyens financiers et humains, si bien que six Français sur dix estiment qu'elle fonctionne mal.\r\n\r\n### Mettre fin à la disparition progressive des jurés populaires\r\n\r\n### Garantir la gratuité des procédures les plus courantes comme le divorce\r\n\r\n### Confier au Parlement l'orientation de la politique pénale\r\n\r\nUn texte de loi sera voté chaque année à l'issue d'un débat.\r\n\r\n### Renforcer l'indépendance de la justice vis à vis de l'exécutif\r\n\r\nL'Avenir en commun veut interdire les instructions et les remontées d'information individuelles sauf lorsqu'elles appellent à une intervention directe en matière d'ordre public, comme le terrorisme.\r\n\r\n### Garantir le contrôle par le juge judiciaire des opérations de lutte contre le terrorisme\r\n\r\n### Lutter contre la délinquance financière\r\n\r\nL'Avenir en commun veut doubler les effectifs des services qui luttent contre les infractions financières, supprimer réellement le verrou de Bercy, donner plus de moyens humains aux brigades en charge de la délinquance financière, augmenter le nombre de juges d’instruction et supprimer la convention judiciaire d’intérêt public.\r\n\r\n### Lutter contre l’impunité des agresseurs sexuels et la correctionnalisation des viols\r\n\r\n## Garantir la sûreté et la justice\r\n\r\n### Refonder les activités de police pour garantir le droit à la sûreté\r\n\r\nAlors que de nombreux policiers dénoncent une loi du silence dans ses rangs et que des violences restent souvent impunies, la police doit à nouveau entretenir une relation sereine avec la population.\r\n\r\nL'Avenir en commun veut, au profit de la BAC actuelle, réhabiliter la police de proximité et mener des actions dans la durée dans les quartiers. Il faut changer les pratiques lors des manifestations : interdire les tasers, grenades de désencerclement, les *flash-ball*, interdire les techniques d'immobilisation létales comme le plaquage ventral, enfin, interdire la technique de la \"nasse\" ou \"encerclement\" sauf en cas de mise en danger pour les personnes.\r\n\r\n### Intégrer les effectifs de police municipale à la nouvelle police de proximité\r\n\r\nAprès une formation de quelques mois, la répartir en fonction de la taille de la population et des besoins objectifs, et la placer sous l’autorité fonctionnelle du maire et l’autorité hiérarchique du préfet.\r\n\r\n### Supprimer l’Inspection générale de la Police nationale (IGPN) et l’Inspection générale de la Gendarmerie nationale (IGGN)\r\n\r\nIl faut les remplacer par une autorité indépendante incluant des magistrats, des universitaires, des citoyens, rattachée au Défenseur des droits, remplaçant le service actuel, et lui octroyant une capacité de sanctions disciplinaires propre sur les agents fautifs.\r\n\r\n### Rétablir le code de déontologie de la police de 1986\r\n\r\n### Titulariser et former les policiers adjoints qui le souhaitent\r\n\r\n### Interdire dans la loi tout usage des technologies de reconnaissance faciale dans les espaces et établissements publics sur le territoire français, ainsi que leur expérimentation\r\n\r\n### Élaborer une nouvelle stratégie antiterroriste\r\n\r\nEn misant sur les moyens humains, l'Avenir en commun espère enfin établir une loi contre le terrorisme efficace et durable.\r\n\r\n### Légaliser et encadrer la production et la vente de cannabis par un monopole d'État\r\n\r\nUn changement de stratégie s'impose : la répression contre cette drogue doit faire place à un usage encadré propice à la lutte contre l'addiction. Les recettes de cette légalisation encadrée financeront les politiques de prévention et de désintoxication. De plus, les moyens policiers seront concentrés sur le démantèlement des trafics.\r\n\r\n### Confier le pilotage de la politique de lutte contre les drogues au ministère de la Santé et non plus de l’Intérieur\r\n\r\n### Lutter contre les organisateurs du trafic de cigarettes et viser une jeunesse « zéro tabac »\r\n\r\n### Faire respecter la Convention internationale des droits de l'enfant\r\n\r\nPour mieux les protéger, français ou étrangers. Elle concerne aussi l'interdiction des violences \"éducatives\" et le soutien à la parentalité.",
     "manifesto": 1
   }
 },
@@ -588,6 +742,447 @@
     "topic": 8,
     "text": "## Une grande nation artistique, scientifique et sportive\r\n\r\n### Porter le budget consacré à l'art, à la culture et à la création à 1 % du PIB\r\n\r\n### Soutenir la création, le spectacle vivant et l'appropriation pour tous des œuvres et pratiques culturelles\r\n\r\nL'Avenir en commun défend une politique publique de l'art et la culture. Chaque citoyen doit pouvoir s'y exprimer, contribuer, s'impliquer. La culture permet de s'émanciper et d'échapper à l'obscurantisme.\r\n\r\n### Améliorer le régime des intermittents du spectacle\r\n\r\nDepuis les années 1960, les intermittents dépendent d'un régime spécifique pour prendre en compte la spécificité discontinue de leur métier, constitué d'une alternance entre périodes travaillées et chômées, successives ou simultanées. Ce régime est essentiel pour préserver la création, et doit être étendu aux travailleurs discontinus comme les \"extras\" de l'hôtellerie ou les guides-conférenciers",
     "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 7,
+  "fields": {
+    "topic": 4,
+    "text": "## Une grande nation scientifique et sportive\r\n\r\n### Financer des plans généraux de thèmes de recherche sur des secteurs d'avenir\r\n\r\nLa France doit reprendre la main sur la recherche. Pour l'Avenir en commun, il en va de sa souveraineté : on constate un précarisation des métiers de la recherche, une baisse de la participation française aux congrès internationaux et une fuite de chercheurs vers d'autre pays.\r\n\r\n### Créer une association sportive dans tous les établissements scolaires du premier degré\r\n\r\nL'Avenir en commun veut par cette voie rendre la pratique du sport encadrée par des professionnels gratuite et accessible à tous.\r\n\r\n## Une école de l'égalité et de l'émancipation\r\n\r\n### Assurer la gratuité de l'éducation publique : cantines, transport, périscolaire, manuels et fournitures\r\n\r\n### Reconstruire l'école de l'égalité et de l'émancipation\r\n\r\nEn renforçant les moyens de l'éducation nationale, en revalorisant son personnel, notamment en augmentant les salaires d'environ 30 %. Elle doit devenir un levier de la bifurcation écologique et sociale.\r\n\r\n### Augmenter le nombre de classes dans les lycées professionnels et agricoles et ouvrir de nouveaux établissements\r\n\r\nLa bifurcation écologique nécessite la formation de travailleurs qualifiés dans tous les secteurs et à tous les niveaux.\r\n\r\n### Démantèlement de Parcoursup et Instauration de la gratuité totale\r\n\r\nGrâce à cette mesure, l'Avenir en commun veut garantir à tous les bacheliers l'accès à la formation de leur choix.\r\n\r\n### Mettre fin à l'illettrisme\r\n\r\nL'Avenir en commun veut y mettre fin avant 2027, il touche particulièrement les Outre-mer.\r\n\r\n### Création de 500 000 places de crèches en cinq ans\r\n\r\n### Mise en place d'un service citoyen\r\n\r\nObligatoire, il serait à effectuer avant l'âge de 25 ans. Il durera neuf mois et sera rémunéré au SMIC. En outre les citoyens seront formés et pourront obtenir le permis de conduire. Ceux qui le souhaitent pourront intégrer la garde nationale, placée sous commandement civil.",
+    "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 8,
+  "fields": {
+    "topic": 2,
+    "text": "## Energie : \r\n- neutralité carbone d’ici 2050.\r\n- construction de 8 EPR (réacteur nucléaire 3ème génération)\r\n- moratoire sur les fermetures des 14 réacteurs prévu d’ici 2035\r\n\r\n## Transport :\r\n- Gratuité des transports en commun urbains et investissement de 50 milliards sur 15 ans",
+    "manifesto": 11
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 9,
+  "fields": {
+    "topic": 5,
+    "text": "## Santé\r\n- Création de 100 000 postes à l’hôpital public.\r\n- Déconjugalisation de l’Allocation Adultes Handicapé.\r\n\r\n## Une révolution du travail et la revalorisation des salaires \r\n\r\n### La semaine de travail passera à 32 heures, sans diminution de salaires\r\nPour permettre aux salariés de retrouver un gain de productivité",
+    "manifesto": 11
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 10,
+  "fields": {
+    "topic": 4,
+    "text": "## Ecole\r\n\r\n- Augmentation du temps scolaire : 27h en primaire, 32h au collège et au lycée, sans augmenter le temps de travail des enseignants.\r\n\r\n- En finir avec les devoirs : tout le travail scolaire doit se faire en classe. \r\n\r\n- Réduction des effectifs : pas plus de 20 en maternelle et en primaire, pas plus de 25 dans l’enseignement secondaire.\r\n\r\n### Professeurs\r\n\r\nRecrutement de 90 000 enseignantes et enseignants",
+    "manifesto": 11
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 11,
+  "fields": {
+    "topic": 6,
+    "text": "## Rompre avec les traités européens et désobéir\r\n\r\n### Dans tous les cas, appliquer le programme de l'Avenir en commun\r\n\r\n### Plan A : Proposer aux pays de l'Union européenne une rupture concertée avec les traités actuels\r\n\r\n### Plan B : Appliquer le programme au niveau national en assumant la confrontation avec les autres états membres\r\n\r\nL'Avenir en commun veut profiter du poids de la France dans l'Union européenne pour faire évoluer ses règles : ses deux plans s'alimentent mutuellement pour entraîner les autres pays européens. \r\n\r\n## Une diplomatie altermondialiste pour la paix\r\n\r\n### Se retirer immédiatement du commandement intégré de l'OTAN\r\n\r\nAvant d'en sortir par étape pour se préparer à d'éventuelles sanctions américaines, la France doit sortir du commandement de l'OTAN pour sortir de la vision \"atlantiste et occidentale\" et retrouver une voix indépendante.\r\n\r\n### Adopter une loi de programmation militaire\r\n\r\nPour restaurer l'indépendance de la France et s'adapter au changement climatique\r\n\r\n### Porter des propositions de rupture avec le néolibéralisme auprès des institutions internationales\r\n\r\nAvec une position non alignée suite à la sortie de l'OTAN, la France pourra pousser à des coopérations d'intérêt général, à des réponses à la crise climatique, au désarmement nucléaire multilatéral, à la protection et à l'accès aux biens communs.\r\n\r\n### Développer une politique migratoire réaliste et humaniste\r\n\r\nL'Avenir en commun veut notamment augmenter le nombre de structures d'accueil en France et renforcer le droit d'asile et améliorer l'insertion des migrants grâce à une nouvelle politique de délivrance des titres de séjour et un renforcement des dispositifs d'apprentissage de la langue française.",
+    "manifesto": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 12,
+  "fields": {
+    "topic": 1,
+    "text": "## Stopper l'immigration actuelle et défendre les valeurs de la République\r\n\r\nEmmanuel Macron n'a pas réussi à maîtriser les flux migratoires entrant sur le territoire, comme le montrent le nombre record de délivrances de titres de séjour et l'incapacité à reconduire les clandestins dans leurs pays d'origine. Pour que les Français conservent leur mode de vie, il faut à contrôler l'immigration. Valérie Pécresse prévoit donc de soumettre à référendum un projet de loi constitutionnel permettant les mesures suivantes.\r\n\r\n### Mise en place de quotas d'accueil par métier et par pays\r\n\r\n### Suspendre la délivrance de nouveaux visas d'entrée pour les pays qui refusent de délivrer des laissez-passez pour le retour de leurs ressortissants clandestins\r\n\r\n### Supprimer le versement des prestations sociales non contributives à tous les étrangers\r\n\r\nS'ils n'ont pas résidé 5 ans en France de manière régulière en France. En outre, l'aide médicale d'État sera recentrée sur la médecine urgente et les maladies contagieuses.\r\n\r\n### En finir avec le droit du sol automatique\r\n\r\nLes enfants nés en France de parents étrangers pourront accéder à la nationalité française s'ils maîtrisent la langue française et s'ils respectent les valeurs de la République.\r\n\r\n### Expulser immédiatement les clandestins représentant une menace grave\r\n\r\n### Rendre nécessaire la maîtrise du français l'obtention de la carte de séjour\r\n\r\n## Lutte contre l'islamisme radical\r\n\r\n### Fermeture de toute mosquée où il est tenu un discours hostile à la France\r\n\r\n### Imposer un serment de respect de la laïcité et des valeurs républicaines pour le recrutement de tout agent public\r\n\r\n### Faire de la radicalisation un motif de licenciement\r\n\r\n### Utiliser la reconnaissance faciale dans les transports en commun pour repérer les personnes du fichier anti-terroriste\r\n\r\n### Maintenir enfermés les terroristes radicalisés en prison à l'issue de leurs peines\r\n\r\n### Interdiction du port du voile forcé, du port du voile pour les accompagnatrices scolaires et du port du burkini\r\n\r\n## Renforcement de l'intégration\r\n\r\n### Éradiquer en dix ans les ghettos en plafonnant le nombre de logements sociaux par quartier à 30 %\r\n\r\n### Renforcer l'enseignement de l'histoire de France à l'école",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 13,
+  "fields": {
+    "topic": 7,
+    "text": "## Rétablir l'ordre de la rue\r\n\r\n### Consacrer cinq milliards d'euros à l'équipement des forces de l'ordre\r\n\r\nLa loi sera modifiée pour permettre l'utilisation des technologies du maintien de l'ordre et d'enquête plus performantes.\r\n\r\n### Instaurer des peines plancher contre ceux qui s'en prennent aux forces de l'ordre\r\n\r\n### Rendre obligatoire l'armement des polices municipales dans les villes de plus de cinq mille habitants\r\n\r\n## Augmenter les moyens de la justice\r\n\r\nValérie Pécresse considère que l'impunité règne en France : 5 % des faits constatés aboutissent à une condamnation. Il faut rompre avec dix ans de laxisme, la justice doit être plus efficace.\r\n\r\n### Augmenter de 50 % les moyens des tribunaux sur cinq ans\r\n\r\nCela va engendrer notamment 16 000 recrutements supplémentaires, parmi les juges, procureurs, greffiers, juristes assistants et personnels techniques.\r\n\r\n### Consacrer 1,8 milliard par an à la mise à disposition de la justice des équipements informatiques performants\r\n\r\nCela permettra de mieux cibler les 6 % des délinquants qui, d'après une étude britannique, sont responsables de 60 % es infractions.\r\n\r\n### Simplifier la procédure pénale pour réduire massivement les délais de jugement\r\n\r\n### Instruire en 72 heures et juger en 15 jours les violences intrafamiliales\r\n\r\nCette mesure cible en particulier les violences conjugales. Les autres violences et délits du quotidien seront jugés en moins de six mois, appels compris.\r\n\r\n### Ouvrir des centres correctionnels fermés pour en finir avec l'aménagement des courtes peines\r\n\r\nLe nombre de places de travaux d'intérêt général sera doublé en cinq ans, de même pour les centres éducatifs fermés pour mineurs. Enfin, 20 000 places de prison seront construites.\r\n\r\n### Généraliser les retenues sur salaires et prestations sociales\r\n\r\nIl s'agit de lutter contre les amendes impayées, soit 50 % des amendes pénales.\r\n\r\n### Abaisser la majorité pénale à 16 ans",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 14,
+  "fields": {
+    "topic": 5,
+    "text": "## Réformer et réduire la bureaucratie pour augmenter fortement les revenus\r\n\r\n### Provoquer une augmentation de 10 % des salaires nets\r\n\r\nValérie Pécresse veut mécaniquement augmenter les salaires en transférant les cotisations vieillesse payées par les salariés aux entreprises. Cette mesure concerne tous les salaires compris entre 1 et 2,2 SMIC, représentant une hausse net par an de 1510 € à 3321 €.\r\n\r\n### Demander aux entreprises cotées de s'organiser pour que les salariés détiennent au moins 10 % du capital d'ici 5 ans\r\n\r\n### Lancer la réforme des retraites dès le printemps 2022\r\n\r\nSon objectif : monter l'âge légal de départ à la retraite à 65 ans d'ici 2030 et fournir à tous ceux qui ont travaillé toute leur vie au minimum un SMIC net par mois.\r\n\r\n### Remplacer le Contrat d'engagement par le RJA (Revenu Jeune Actif)\r\n\r\nLes jeunes qui s'engageront dans une formation qualifiante dans les secteurs en tension uniquement, recevront 670 € par mois.\r\n\r\n### Renforcer la dégressivité des allocations chômage\r\n\r\nCette mesure s'appliquera pour tous les salariés de moins de 50 ans et rémunérés plus de deux SMIC.\r\n\r\n### Créer un droit au logement prioritaire pour les travailleurs de première ligne\r\n\r\nLes personnels soignants, policiers, professeurs, etc. doivent pouvoir habiter dans leur ville d'exercice.\r\n\r\n## Réduire les dépenses publiques\r\n\r\nValérie Pécresse veut supprimer 200 000 postes de fonctionnaires en 5 ans dans l'administration de l'État et des collectivités locales et créer 50 000 postes consacrés à l'éducation, aux soins et à la police.\r\n\r\n## Remettre la famille au cœur de nos politiques\r\n\r\n### Création d'une prime à la natalité\r\n\r\n900€ par an jusqu'aux 18 ans du premier enfant\r\n\r\n### Revaloriser les allocations familiales des familles de deux et trois enfants\r\n\r\n### Restaurer l'universalité des allocations familiales\r\n\r\nElles seront versées sans condition de ressource. Plus d'un million de familles devraient alors voir leurs allocations augmenter.\r\n\r\n### Redévelopper la vie familiale à domicile\r\n\r\nEn doublant le crédit d'impôt pour développer les emplois de service à la personne. Un véritable statut d'aménagement de la vie professionnelle sera créé pour les aidants familiaux qui s'occupent d'enfants handicapés ou de personnes âgées dépendantes. Ainsi, dans les entreprises de plus de 10 personnes, un salarié pourra demander un aménagement du temps ou du lieu de travail pour s'occuper d'un proche. Ce \"droit de demander\" est repris d'une mesure britannique qui a fait ses preuves.\r\n\r\n### Défiscaliser les pensions alimentaires du parent seul\r\n\r\nPour protéger les familles fragiles. 97 % des mères perdent 20 % de leur niveau de vie après séparation ; cette mesure touchera environ quatre millions de parents.\r\n\r\n### Accompagner les jeunes dans leur passage à l'âge adulte\r\n\r\nPour faciliter la vie des adolescents et jeunes, Valérie Pécresse propose trois mesures clés :\r\n\r\n- Création d'un congé parental aménageable, pour que les parents puissent soutenir leurs enfants en cas de difficultés scolaires ou de problèmes de santé.\r\n- Faciliter la transmission du patrimoine grâce à des dons défiscalisés possibles tous les six ans, pour financer leurs études ou projets de vie.\r\n- Créer une banque des jeunes qui proposent des prêts à remboursement différé après l'entrée dans la vie active.\r\n\r\n### Faciliter le maintien à domicile de nos aînés en développant des services à domicile sur l'ensemble du territoire\r\n\r\n### Réorganiser le fonctionnement des établissements d'accueil pour personnes âgées dépendantes pour améliorer leurs conditions de vie\r\n\r\n## Un plan d'urgence pour la santé et pour la prise en charge du handicap\r\n\r\nLes personnels soignants ressortent épuisés de la crise de Covid-19. Elle a révélé les failles du système de santé, il est temps d'agir pour Valérie Pécresse.\r\n\r\n### Donner un nouveau souffle à l'hôpital\r\n\r\n- Recruter 25 000 soignants en 5 ans à l'hôpital public.\r\n- Associer les hôpitaux publics, privés, et la médecine de ville au bénéfice des patients.\r\n- Mettre en place un mode de financement davantage tourné vers la qualité des soins.\r\n\r\n### Éradiquer les déserts médicaux\r\n\r\nValérie Pécresse demandera à l'Assurance maladie et prévoir une dotation de lutte contre la désertification sanitaire par région. Elle permettra d'aider les jeunes médecins à s'installer et à exercer dans les zones en manques de médecins, par exemple dans des maisons de santé.\r\n\r\nLes carrières des infirmières et des sages-femmes seront revalorisées financièrement par des pratiques avancées et davantage de responsabilités.\r\n\r\n### Autoriser et développer les stages d'internes dans les hôpitaux privés\r\n\r\nPour déverrouiller en pratique le numerus clausus\r\n\r\n### En finir avec les surprimes d'assurance que subissent les personnes en risque de santé quand elles veulent emprunter\r\n\r\n### Prendre humainement toutes les formes de handicap\r\n\r\n- Mettre systématiquement en œuvre la scolarisation en milieu ordinaire jusqu'à la fin du collège lorsque c'est possible.\r\n- Demander des engagements aux entreprises et associations pour qu'elles emploient 6 % de personnes en situation de handicap.\r\n- Harmoniser les règles de reconnaissance et de compensation du handicap.\r\n- Revaloriser les métiers de l'accompagnement spécialisé, oubliés lors du Ségur de la santé\r\n- Déconjugaliser l'allocation aux adultes handicapés",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 15,
+  "fields": {
+    "topic": 3,
+    "text": "## Libéraliser l'économie pour créer davantage de richesses et d'emplois\r\n\r\nLe code du travail a doublé en nombre d'articles en vingt ans, pourtant la France a toujours un mauvais taux de chômage (deux fois plus important qu'en Allemagne). Pour Valérie Pécresse, il faut libéraliser l'économie et sortir de l'enfer bureaucratique.\r\n\r\n### Mettre fin aux 35 heures et libéraliser le temps de travail\r\n\r\nPar défaut, sauf accord, le temps de travail sera de 39 heures. Cependant, celui-ci pourra être négocié par branche ou par entreprise pour s'adapter aux nouvelles façons de travailler.\r\n\r\n### Céder les participations minoritaires de l'État\r\n\r\nCes opérations permettent d'espérer 15 milliards de recettes d'ici 2027 issues des privatisations.\r\n\r\n### Renforcer le crédit d'impôt recherche pour les PME\r\n\r\n### Supprimer la Contribution sociale de solidarité des sociétés (C3S)\r\n\r\nCet impôt pénalise la compétitivité des entreprises françaises. \r\n\r\n### Privatisation de la certification des formations professionnelles\r\n\r\nValérie Pécresse veut supprimer France Compétence et confier la politique de la formation professionnelle aux régions. De plus, des opérateurs privés certifieront ces formations.\r\n\r\n## Garantir la souveraineté économique de la France face à la concurrence déloyale\r\n\r\n### Créer un Haut Conseil de la souveraineté économique et numérique\r\n\r\nCette entité placée auprès du Premier ministre sera chargée d'autoriser les investissements étrangers en accord avec les intérêts stratégiques du pays. Elle aura la possibilité de s'opposer à des rachats d'entreprises et de technologiques par des géants étrangers.\r\n\r\n### Mettre en place un \"cloud souverain\" d'ici 2030\r\n\r\n### Créer l'École Nationale du Numérique\r\n\r\nValérie Pécresse veut ainsi rehausser le niveau de la France dans se secteur très concurrentiel. Ses étudiants, rémunérés, devront travailler dans la fonction publique pendant dix ans.\r\n\r\n### Rassembler les ministères de la recherche et de l'industrie\r\n\r\nIl s'agit de mener des projets stratégiques, de la recherche fondamentale aux applications, en associant secteurs public et privé.\r\n\r\n## Agriculture et Emplois ruraux\r\n\r\n### Défendre la taxe carbone aux frontières de l'Union européenne\r\n\r\n### Création de l'aide à l'investissement de proximité\r\n\r\n### Accélération du déploiement du très haut débit sur tout le territoire\r\n\r\nUn euro public sera investi pour chaque euro dépensé dans la politique de la ville.",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 16,
+  "fields": {
+    "topic": 2,
+    "text": "## Faire de la lutte contre le réchauffement climatique une opportunité pour nos emplois\r\n\r\nValérie Pécresse veut remettre la France sur le bon rythme de la transition écologique avec comme objectifs principaux :\r\n\r\n- La \"neutralité carbone\" en 2050\r\n- La promotion des énergies non carbonées\r\n- La protection des espaces naturels\r\n\r\n### Développer les incitations financières\r\n\r\nPour décarboner la consommation des ménages, Valérie Pécresse ne croit pas en une \"écologie punitive\", mais dans l'incitation à remplacer les véhicules ou chaudières polluantes.\r\n\r\n### Défendre la taxe carbone aux frontières de l'Union européenne\r\n\r\n### Mise en place du Livret vert, fusion du Livret A et du Livret développement durable\r\n\r\n### Mettre fin aux véhicules fonctionnant à l'énergie fossile en 2035, fin des véhicules hybrides en 2040\r\n\r\nEn parallèle, il faudra veiller à l'installation des infrastructure de recharge nécessaire et à développer les filières françaises industrielles pour produire tous les modes de transport électrique.\r\n\r\n### Réinvestir dans l'énergie nucléaire\r\n\r\nValérie Pécresse veut notamment lancer la construction de six nouveaux réacteurs EPR et redémarrer le projet ASTRID de réacteur de 4e génération. De plus, le développement des petits réacteurs sera également soutenu.\r\n\r\n### Développer les énergies renouvelables et les capacités de stockage\r\n\r\n### Réformer le tarif régulé\r\n\r\nLes Français doivent pouvoir profiter de la compétitivité de l'électricité nucléaire.\r\n\r\n### Mettre en place des zones interdites d'implantation d'éoliennes\r\n\r\n###",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 17,
+  "fields": {
+    "topic": 4,
+    "text": "## Refaire de l'école un puissant levier d'intégration et de promotion\r\n\r\n### Une école des fondamentaux\r\n\r\nL'enseignement du français et des mathématiques sera renforcé en primaire de respectivement 2 et 1 heure. Valérie Pécresse veut également mettre en place un examen d'entrée en 6e pour vérifier la maîtrise de la lecture, de l'écriture et du calcul et des classes de consolidation à petits effectifs. Enfin, une réserve éducative constituée de professeurs retraités volontaires notamment, apportera une aide aux devoirs gratuits du primaire au lycée.\r\n\r\n### Une école du respect\r\n\r\nTous les faits d'agression ou d'outrage envers un enseignant donneront lieu à des poursuites judiciaires. Des structures de réinsertion scolaire avec encadrement renforcé pour les élèves perturbateurs seront créées.\r\n\r\n### Création d'établissements publics sous contrat\r\n\r\nPour donner plus d'autonomie aux établissements, Valérie Pécresse veut créer des établissement d'enseignement publics sous contrat, celui-ci serait triple : entre l'établissement et l'État pour déterminer le projet éducatif, les enseignants, et les parents et élèves. Ces établissements auront une liberté totale de recrutement. Sans sélection à l'entrée et suivant le programme du ministère, ils pourront néanmoins exclure des élèves ne respectant pas ce contrat. Valérie Pécresse souhaite atteindre le chiffre de 10 % d'établissements scolaires publics sous contrat en 5 ans.\r\n\r\n### Créer des contrats de mission éducative de 5 ans\r\n\r\nPour réduire la précarité des enseignants vacataires.\r\n\r\n### Exonérer totalement de charges patronales les entreprises de moins de 10 salariés prenant un jeune en apprentissage",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 18,
+  "fields": {
+    "topic": 8,
+    "text": "## Promouvoir les arts et la culture\r\n\r\n### Mettre en place une journée nationale des héros français\r\n\r\nElle célébrera les grandes figures françaises dans les écoles : Jeanne d'Arc, de Gaulle, Molière, Pasteur, etc.\r\n\r\n### Donner le goût et l'accès de la culture aux enfants\r\n\r\nValérie Pécresse souhaite développer les sorties scolaires et jumeler chaque école avec un établissement culturel de son territoire. De plus, les structures culturelles seront incitées à développer des actions d'éducation artistique et culturelle auprès des jeunes.\r\n\r\n### Renforcer les lois sur le mécénat pour sauvegarder le patrimoine\r\n\r\n### Soutenir la création\r\n\r\nLes grand établissements culturels étant concentrés à Paris, Valérie Pécresse veut qu'une part significative de leur budget soit consacré à la diffusion des créations partout en France.\r\n\r\nLes aides au cinéma seront également simplifiées pour être plus efficaces.\r\n\r\n## Mettre fin à une gouvernance verticale, solitaire et inefficace\r\n\r\n### Réunir les présidents de région trois fois par an et les présidents de départements au moins une fois par an\r\n\r\nPour rétablir un dialogue de confiance entre l'état et les collectivités.\r\n\r\n### Donner davantage d'autonomie financière et fiscale aux régions\r\n\r\nPour Valérie Pécresse, l'État doit déléguer les missions essentielles aux collectivités : protéger, éduquer, soigner. De plus, une telle autonomie permettra de rétablir le lien démocratique entre les citoyens et les politiques publiques.\r\n\r\n### Déléguer aux régions la rénovation urbaine et les politiques du logement, ainsi que la présidence des ARS\r\n\r\n### Déléguer aux départements les moyens humains et financiers du secteur médico-social\r\n\r\n### Déléguer aux communes les compétences de l'urbanisme et de l'habitat\r\n\r\n### Faire des maire les présidents d'un conseil d’administration dans l'hôpital de la commune\r\n\r\n### Poursuivre tous les auteurs d'agressions contre les élus, en comparution immédiate en cas de flagrant délit",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 19,
+  "fields": {
+    "topic": 6,
+    "text": "## Faire de nouveau rayonner la France dans le monde\r\n\r\n### Défendre les intérêts stratégiques de la France\r\n\r\n- Rétablir un dialogue constructif avec les États-Unis.\r\n- Construire un dialogue de fermeté avec la Russie et la Chine fondé sur la symétrie des engagements.\r\n\r\n### L'Union européenne comme vecteur d'exercice de la puissance et des intérêts de la France\r\n\r\n- Accélérer le recrutement des gardes-frontières de Frontex\r\n- Soutenir un plan Marshall pour l'Afrique\r\n- Bâtir une indépendance alimentaire avec la politique agricole commune (PAC)\r\n- Instaurer une taxe carbone aux frontières pour réussir la transition climatique\r\n- Piloter la transition numérique\r\n\r\nValérie Pécresse refusera tout nouvel élargissement dans l'Union européenne. En parallèle elle demandera à ce quel e processus d'intégration de la Turquie prenne fin.\r\n\r\n### Concentrer l'aide au développement sur l'Afrique\r\n\r\nL'aide au développement est trop diluée, il faut la concentrer là où se situent nos intérêts stratégiques, en particulier en Afrique et en Méditerranée. Il faut stopper toute aide au développement à la Chine.\r\n\r\n### Redynamiser la francophonie pour étendre notre influence culturelle\r\n\r\n### Augmenter les capacités opérationnelles de l'armée française\r\n\r\nNotamment en renseignement stratégique et en cyberdéfense. Il faut également accroître le nombre d'équipements, la construction d'un nouveau porte-avions sera lancée, avec pour objectif 2038.\r\n\r\nLes savoir-faire industriel et la construction d'équipements militaires doit demeurer en France.\r\n\r\n### Restaurer notre leadership dans le domaine spatial\r\n\r\nValérie Pécresse veut notamment investir dans un lanceur spatial réutilisable Ariane 7, qui fonctionne sur le modèle de Space-X.",
+    "manifesto": 2
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 20,
+  "fields": {
+    "topic": 7,
+    "text": "## Restaurer une justice ferme\r\n\r\n- Peines planchers pour chaque crime et délit\r\n- Rétablir la peine de perpétuité pour les criminels les plus dangereux\r\n\r\n### Renvoyer certains étrangers\r\n\r\n- Déchoir de la nationalité française les criminels multirécidivistes binationaux\r\n- Expulser immédiatement plus de 10 000 étrangers actuellement emprisonnés afin de désengorger les prisons.\r\n\r\n## Immigration\r\n\r\n### Stopper les flux\r\n\r\nLimiter le [droit d'asile](https://www.vie-publique.fr/eclairage/20174-droit-dasile-et-politique-migratoire) à seulement \"une poignée d'individus\" par an. \r\n\r\n### Supprimer le droit du sol\r\n\r\n### Renvoyer tous les étrangers indésirables\r\nRenvoyer tous les étrangers clandestins",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 21,
+  "fields": {
+    "topic": 3,
+    "text": "## Entreprises\r\n\r\n### Restaurer la compétitivité des entreprises\r\n\r\n- Réduire les impôts de productions de 30 Milliards €\r\n- Baisser le taux d'impôt sur les sociétés à 15% pour les petites entreprises. Le taux dit \"normal\" est de 26.5% actuellement(source: [service-public.fr](https://www.service-public.fr/professionnels-entreprises/vosdroits/F23575#:~:text=Le%20taux%20de%2015%20%25%20s,%C3%A0%20partir%20de%20janvier%202022.)\r\n\r\n### Protéger et favoriser la production française\r\n\r\n- Créer un grand fonds souverain alimenté par les fonds du livret A.\r\n- Fin des droits de donation et de succession pour la transmission des entreprises familiales.\r\n\r\n\r\n## Pouvoir d'achat\r\n\r\n### Soutenir les travailleurs\r\n\r\nAugmenter le salaire net jusqu'a plus de 100€ par mois pour les travailleurs au SMIC en baissant les impôts sociaux (comme la [CSG](https://www.vie-publique.fr/fiches/21973-quest-ce-que-la-csg-contribution-sociale-generalisee))\r\n\r\n### Supprimer la redevance audiovisuelle\r\n\r\nGrâce à la privatisation des principales chaines de l'audiovisuel public. La redevance est de 138€ par an",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 22,
+  "fields": {
+    "topic": 4,
+    "text": "## Écoles : entre réforme et restauration\r\n\r\n### Primaire : retour du certificat d'étude  en fin de scolarité ainsi que du port de la blouse\r\n\r\n### Fin du collège unique\r\n\r\nAvec la création de classes de niveaux et des filières d'apprentissage dès 14 ans. Les CPE seront transformés en des surveillants généraux avec comme rôle le maintien de l'ordre scolaire\r\n\r\n### Lycée : restaurer les 3 filières et refaire du BAC un examen national et anonyme\r\n\r\n\r\n## Ministère et institutions\r\n\r\n### Créer un grand ministère de l'instruction publique\r\n\r\n### Recruter des professeurs\r\n\r\n- Recrutement et formation plus exigeante\r\n- Multiplication des primes \r\n- Accélérer la progressions des carrières au mérite.\r\n\r\n### Suspendre les allocations familiales des parents d'élèves perturbateurs et absentéistes",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 23,
+  "fields": {
+    "topic": 5,
+    "text": "### D'avantage de contrôle\r\n\r\n- Créer une brigade nationale de lutte anti-fraude\r\n- Suspendre pendant 5 ans les allocations à tout fraudeur récidivistes\r\nMise en place d'un registre unique par bénéficiaire listant l'ensemble des allocations perçues.\r\n\r\n### Mise en place d'une carte vitale à empreinte digitale\r\n\r\n## Aides aux travailleurs automobilistes\r\n\r\n### Participation obligatoire des entreprise aux frais de carburant si aucune alternative de transport\r\nL'entreprise devra rembourser 50% des frais dans la limit de 40€ par mois",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 24,
+  "fields": {
+    "topic": 8,
+    "text": "## Islam\r\n\r\n### Interdire le port du voile islamique dans l'espace publique\r\n\r\n### Stopper l'endoctrinement\r\n- Fermeture définitive des lieux de promotion du djihad\r\n- Interdire les \"Frères musulmans\"\r\n\r\n## Ruralité\r\n\r\n### Toute naissance dans une comme rurale donnera droit à une bourse de 10 000€\r\n\r\n### Réorienter les fonds publics destinés à la politique de la ville vers nos campagnes\r\n\r\n### Améliorer la télécommunication\r\nEn accélérant le déploiements de la 4G et de l'internet Haut Début sur l'ensemble du territoire.\r\nDésenclaver les bourgs avec une offre local d'accès aux transports",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 25,
+  "fields": {
+    "topic": 2,
+    "text": "## Préserver nos paysages\r\n\r\n### Interdire tout projet de construction éolienne\r\nGeler les projets en cours d'éolien en mer.\r\n\r\nPlutôt que ce soutien aux énergies éoliennes et solaires : soutien des énergies renouvelables thermiques\r\n\r\n### Limiter les nouvelles constructions\r\n\r\n- Interdire la construction de nouvelles grandes surfaces à l'entrée des villes\r\n- Abroger la [loi SRU](https://www.cohesion-territoires.gouv.fr/loi-solidarite-et-renouvellement-urbain-sru) , *cette loi impose à certaines communes de disposer d’un nombre minimum de logements sociaux*\r\n\r\n### Mise en place de politique de développement durable\r\n\r\n- Faire émerger une filière industrielle dans le recyclage des plastiques\r\n- Etablir une stratégie forestière nationale",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 26,
+  "fields": {
+    "topic": 1,
+    "text": "## Automobilistes\r\n\r\n### Supprimer le permis à point\r\n\r\n### Restaurer la limitation de vitesse de 90km/h\r\n\r\n### Revenir à la limite de 50km/h en ville",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 27,
+  "fields": {
+    "topic": 6,
+    "text": "## Europe\r\n\r\n### Défendre les intérêts des français en Europe\r\nGrâce à la reprise du contrôle de nos frontières et de notre politique migratoire\r\n\r\n### Construire une Europe des Nations\r\n- Réorienter l'UE vers un respect de la dignité des peuples et des Etats\r\n- Refuser toute nouvelles adhésion et mettre fin au processus d'adhésion de la Turquie",
+    "manifesto": 4
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 28,
+  "fields": {
+    "topic": 1,
+    "text": "## Arrêter l'immigration incontrôlée en donnant la parole aux Français par référendum\r\n\r\n### Mettre fin à l'immigration de peuplement et au regroupement familial\r\n\r\n### Traiter les demandes de droit d'asile uniquement à l'étranger\r\n\r\n### Réserver les aides sociales aux Français, et conditionner à 5 années de travail en France l'accès aux prestations de solidarité\r\n\r\n### Assurer la priorité nationale d'accès au logement social et à l'emploi\r\n\r\n### Renvoyer tout étranger n'ayant pas travaillé depuis un an en France\r\n\r\n### Expulser systématiquement clandestins, délinquants et criminels étrangers\r\n\r\n### Supprimer le droit du sol et limiter l'accès à la nationalité à la seule naturalisation sur des critères de mérite et d'assimilation\r\n\r\n## Éradiquer les idéologies islamistes et l'ensemble de leurs réseaux du territoire national\r\n\r\n## Instaurer le Référendum d'Initiative Citoyenne et mettre en place la proportionnelle",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 29,
+  "fields": {
+    "topic": 7,
+    "text": "## Faire de la sécurité partout et pour tous une priorité du quinquennat\r\n\r\n### Rétablir les peines planchers pour que tout criminel et délinquant aient une sanction\r\n\r\n### Supprimer toute possibilité de réduction et d'aménagements de peine, en particulier pour les violences contres les personnes\r\n\r\n### Instituer une présomption de légitime défense pour les forces de l'ordre\r\n\r\n### Accélérer les procédures judiciaires en visant le doublement du nombre de magistrats en 5 ans\r\n\r\n### Inscrire au fichier des délinquants sexuels les harceleurs de rue\r\n\r\n### Atteindre 85 000 places de prison en 2027\r\n\r\n## Créer un ministère de la lutte contre les fraudes\r\n\r\nToutes les fraudes sont comprises : fiscales, aux cotisations et prestations sociales, aux importations, ententes, ...",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 30,
+  "fields": {
+    "topic": 3,
+    "text": "## Baisser la TVA de 20% à 5,5% sur les produits énergétiques en tant que biens de première nécessité\r\n\r\nLes produits énergétiques concernés sont les carburants, le fioul, le gaz et l'électricité.\r\n\r\n## Permettre aux entreprises d'augmenter les salaires de 10% en les exonérant de cotisations patronales\r\n\r\nCette mesure est applicable aux salaires allant jusqu'à 3 fois le smic.\r\n\r\n## Supprimer l'IFI qui taxe l'enracinement et créer un IFF, impôt sur la fortune financière, pour taxer la spéculation\r\n\r\nIFI : impôt sur la fortune immobilière\r\n\r\n## Mettre en place le patriotisme économique pour réindustrialiser et produire les richesses en France\r\n\r\n### Donner la priorité aux PME pour les marchés publics\r\n\r\n### Conditionner les subventions à la création d'emplois au titre d'une politique d'aménagement du territoire\r\n\r\n### Supprimer la Cotisation Foncière des Entreprises (CFE) qui pénalise les PME-TPE locales et les impôts de production qui nuisent à la relocalisation\r\n\r\n### Protéger notre économie de la concurrence déloyale et revoir les accords de libre-échange qui ne respectent pas les intérêts de la France\r\n\r\n## Créer un \"fonds souverain français\" pour augmenter la rémunération de l'épargne des Français et l'orienter vers des secteurs stratégiques et l'innovation",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 32,
+  "fields": {
+    "topic": 5,
+    "text": "## Encourager les projets des jeunes et leur entrée dans la vie active\r\n\r\n### Exonérer d'impôt sur le revenu tous les jeunes actifs jusqu'à 30 ans pour qu'ils restent en France et fondent leur famille chez nous\r\n\r\n### Supprimer l'impôt sur les sociétés pour les entrepreneurs de moins de 30 ans pendant les 5 premières années pour éviter leur départ à l'étranger\r\n\r\n### Instituer la gratuité des transports aux heures creuses pour les 18-25 ans plutôt que de faire rouler des trains à moitié vide\r\n\r\n## Soutenir les familles françaises\r\n\r\n### Instituer une part fiscale complète dès le deuxième enfant\r\n\r\n### Doubler le soutien aux mères isolées élevant des enfants tout en renforçant les contrôles pour éviter les fraudes\r\n\r\n### Créer un prêt à 0% pour les jeunes familles françaises transformé en subvention pour les couples qui auront un troisième enfant\r\n\r\n### Construire en 5 ans 100 000 nouveaux logements étudiants\r\n\r\n### Supprimer les impôts sur l'héritage direct pour les familles modestes et les classes moyennes\r\n\r\n### Exonérer les donations des parents mais aussi des grands-parents à leurs enfants et petits-enfants jusqu'à 100 000€ par enfant tous les dix ans\r\n\r\n## Garantir à nos ainés une retraite sereine et digne\r\n\r\n### Réindexer les retraites sur l'inflation pour un pouvoir d'achat respectueux d'une vie de travail\r\n\r\n### Revaloriser le minimum vieillesse à 1000€ par mois et augmenter les petites retraites\r\n\r\n### Refuser tout allongement de l'âge de départ à la retraite\r\n\r\n### Permettre à ceux qui ont commencé à travaillé avant 20 ans pendant 40 annuités de prendre leur retraite à 60 ans\r\n\r\n### Restaurer la demi-part fiscale en faveur des veuves et des veufs\r\n\r\n### Créer un droit opposable aux visites dans les établissements et accroître fortement la présence de personnel médical dans les EHPAD\r\n\r\n## Assurer les droits de nos compatriotes en situation de handicap\r\n\r\n### Déconjugaliser et revaloriser l'Allocation Adulte Handicapée\r\n\r\n### Lancer un grand plan sur l'accès à la scolarité pour les enfants touchés par le handicap\r\n\r\n### Appliquer la loi sur l'accès à tous les lieux et transports publics\r\n\r\n### Revaloriser et augmenter la durée des aides destinées aux proches aidants\r\n\r\n## Lancer un plan de soutien d'urgence pour la santé de 20 milliards d'euros\r\n\r\n### Arrêter les fermetures des lits à l'hôpital public et des maternités\r\n\r\n### Revaloriser les salaires des personnels soignants à hauteur de leur travail\r\n\r\n### Investir dans les technologies de santé et rapatrier la fabrication des médicaments\r\n\r\n### Créer des urgences gériatriques dédiées à nos aînés\r\n\r\n### Supprimer les ARS et réduire à 10% les postes administratifs dans les hôpitaux pour libérer des moyens pour les soignants\r\n\r\n### Agir contre les déserts médicaux grâce à des incitations financières fortes pour les soignants et augmenter le nombre de maisons de santé\r\n\r\n### Donner plus de place à la prévention, notamment grâce aux visites médicales scolaires qui redeviendront systématiques",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 33,
+  "fields": {
+    "topic": 4,
+    "text": "## Aider les jeunes pendant leurs études\r\n\r\n### Créer un chèque-formation mensuel de 200 à 300€ pour les apprentis, les alternants et leurs employeurs\r\n\r\n### Verser un complément de salaire de 200 à 300€ pour les jeunes qui travaillent durant leurs études et valident leurs examens\r\n\r\n## Restaurer notre système éducatif pour qu'il retrouve sa mission de transmission des savoirs\r\n\r\n### Remettre au cœur des programmes l'enseignement du français, des mathématiques et de l'histoire\r\n\r\n### Revaloriser les salaires des enseignants et refonder leur formation\r\n\r\n### Rétablir l'autorité de l'institution scolaire par l'instauration d'un uniforme au primaire et au collège tout en sanctionnant les absences et les incivilités\r\n\r\n### Supprimer la bureaucratie de l’Éducation Nationale pour libérer des moyens financiers, réduire les effectifs des classes et arrêter les fermetures d'écoles",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 34,
+  "fields": {
+    "topic": 2,
+    "text": "## Assurer notre indépendance énergétique pour baisser la facture des français\r\n\r\n### Rendre aux ménages les 5 milliards de subventions versées notamment aux éoliennes\r\n\r\n### Arrêter les projets éoliens et démanteler progressivement les parcs existants\r\n\r\n### Relancer la filière nucléaire, hydroélectrique et investir dans la filière hydrogène",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 35,
+  "fields": {
+    "topic": 8,
+    "text": "## Privatiser l'audiovisuel public\r\n\r\nDans l'objectif de supprimer les 138€ de redevance.\r\n\r\n## Défendre nos agriculteurs et une alimentation de qualité pour tous\r\n\r\n### Garantir aux paysans des prix respectueux de leur travail et mettre un terme aux marges abusives de la grande distribution\r\n\r\n### Interdire les importations de produits agricoles ne respectant pas les normes de production française\r\n\r\n### Contraindre les cantines à utiliser 80% de produits agricoles français\r\n\r\n### Mettre en place un \"plan abattoirs\" pour assurer des conditions dignes et interdire l'abattage sans étourdissement\r\n\r\n### Généraliser l'étiquetage sur l'origine et la qualité des produits alimentaires\r\n\r\n## Renationaliser les autoroutes\r\n\r\nLes péages seraient ainsi abaissés de 15%.\r\n\r\n## Favoriser l'accès à la propriété et au logement des français\r\n\r\n### Construire 100 000 logements sociaux par an dont 20 000 en faveur des étudiants et jeunes travailleurs\r\n\r\n### Lancer un plan de réhabilitation de l'habitat ancien grâce à des aides efficaces\r\n\r\n### Créer un Fonds de Garantie des Loyers pour protéger les propriétaires\r\n\r\n## Créer un ministère d’État de la Mer et de l'Outre-mer",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 36,
+  "fields": {
+    "topic": 6,
+    "text": "## Conduire une diplomatie de défense réellement souveraine\r\n\r\n### Se retirer du commandement intégré de l'OTAN\r\n\r\n### Arrêter les coopérations structurantes avec l'Allemagne\r\n\r\nTels que les coopérations sur les avions d'armes et les chars de combat.\r\n\r\n### Soutenir les exportations de défense\r\n\r\n## Réarmer la France\r\n\r\n### Moderniser la dissuasion, renforcer la protection du domaine ultramarin, technologique et industriel\r\n\r\n### Porter le budget de la défense à 55 milliards d'euros à l'horizon 2027\r\n\r\n### Garantir à nos soldats l'équipement et les moyens nécessaires pour garantir et protéger les intérêts nationaux\r\n\r\nCela implique une revalorisation des soldes, une modernisation des infrastructures, la création d'un plan famille et d'un plan de rééquipement individuel des militaires.\r\n\r\n## Relancer une politique industrielle dans l'armement\r\n\r\n### Allouer un budget de 1,5 milliards d'euros par an à la Recherche et la Technologie\r\n\r\n### Consolider l'industrie autour des maîtres d’œuvre nationaux\r\n\r\n### Créer un fonds souverain de défense\r\n\r\nPour soutenir l'exportation de la défense : être plus ferme face aux détracteurs, financer, renseigner et promouvoir l'exportation.",
+    "manifesto": 9
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 37,
+  "fields": {
+    "topic": 5,
+    "text": "## Revendiquer des mesures pour changer le sort des travailleurs\r\n\r\n### Augmenter massivement et généralement les salaires avec un minimum de 2000 euros net\r\n\r\n### Indexer les revenus des travailleurs sur l'augmentation des prix\r\n\r\n## Répartir le travail entre tous\r\n\r\n### Objectif zéro chômeur\r\n\r\n### Créer de nouveaux emplois utiles\r\n\r\n## Soigner plutôt que faire du chiffre",
+    "manifesto": 12
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 38,
+  "fields": {
+    "topic": 3,
+    "text": "## Donner aux travailleurs la possibilité de décider et choisir\r\n\r\n### Contrôle des comptes des entreprises, des capitalistes et des politiciens par les travailleurs\r\n\r\n### Lever le secret commercial\r\n\r\n### Rendre public l'utilisation des profits et la fortune des actionnaires",
+    "manifesto": 12
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 39,
+  "fields": {
+    "topic": 6,
+    "text": "## Permettre la libre circulation et la libre installation des personnes",
+    "manifesto": 12
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 40,
+  "fields": {
+    "topic": 2,
+    "text": "## Lutter pour l'environnement en contestant le pouvoir des capitalistes",
+    "manifesto": 12
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 41,
+  "fields": {
+    "topic": 5,
+    "text": "## Revaloriser le travail\r\n\r\n### Augmenter les salaires\r\n\r\nPar une augmentation du SMIC de 15%, soit 200 € net et une révision des grilles de qualification dans les conventions collectives.\r\n\r\n### Mettre fin aux écarts indécents de rémunération\r\n\r\nAvec une limitation des rémunérations d'un facteur 1 à 20 au sein d'une même entreprise.\r\n\r\n### Assurer l'égalité réelle des salaires entre femmes et hommes\r\n\r\nImposer des pénalités aux entreprises ne respectant pas la loi.\r\n\r\n### Allonger le congé paternité\r\n\r\nDe 16 semaines dont 6 obligatoires.\r\n\r\n### Réformer l'assurance-chômage avec les partenaires sociaux\r\n\r\n### Renforcer le service public de l'emploi\r\n\r\n### Inciter à réduire le temps de travail\r\n\r\n### Accompagner la création d'un système d’œuvres sociales et culturelles mutualisées\r\n\r\nA l'image des comités d'entreprises des grandes entreprises.\r\n\r\n### Donner des droits aux travailleurs des plateformes\r\n\r\nÉtablir une présomption de salariat pour les travailleurs indépendants tels que les livreurs.\r\n\r\n## Préserver la retraite\r\n\r\n### Plafonner l'âge légal de départ à la retraite à 62 ans\r\n\r\n### Revaloriser le minimum vieillesse\r\n\r\nA 1000€ net, et rétablir les critères de pénibilité.\r\n\r\n## Consolider le rôle de l'hôpital public\r\n\r\n### Maîtriser les dépenses de santé\r\n\r\nEn fixant des objectifs de santé publique plutôt que des indicateurs budgétaires.\r\n\r\n### Lutter contre les déserts médicaux\r\n\r\nAvec la formation d'un nombre plus important de personnel médical et l'ajout d'une année de professionnalisation dans les déserts médicaux.\r\n\r\n### Prioriser la santé publique et la prévention\r\n\r\nDes maladies chroniques, des addictions, de la santé mentale, ...\r\n\r\n## Élargir les sécurités sociales\r\n\r\n### Accompagner les seniors et prévenir la perte d'autonomie\r\n\r\nEn soutenant le maintien à domicile et les Ehpad.\r\n\r\n### Garantir l'accessibilité à toutes les personnes en situation de handicap\r\n\r\n### Organiser une réflexion sur la légalisation du cannabis\r\n\r\n### Permettre l'accueil public de la petite enfance\r\n\r\n### Favoriser l'accès au logement\r\n\r\nPorter à  150 000 le nombre de nouveaux logements par an.\r\n\r\n### Créer un \"minimum jeunesse\"\r\n\r\nSous condition de ressources, pour les plus de 18 ans.\r\n\r\n### Mieux accompagner la fin de vie\r\n\r\nEn généralisant les soins palliatifs et l'accès à l'aide active à mourir.\r\n\r\n## Garantir un accueil digne des migrants\r\n\r\n### Permettre l'accès au travail, à la culture et à la langue française",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 42,
+  "fields": {
+    "topic": 2,
+    "text": "## Mettre l'écologie au cœur des institutions\r\n\r\n### Consacrer les droits de la nature\r\n\r\nLa préservation de l'environnement sera assuré par un Défenseur de l'environnement. Le crime d'écocide sera reconnu en France et l'ambition de la création d'un Tribunal Pénal International de l'Environnement sera porté en Europe et à l'ONU.\r\n\r\n### Planifier l'écologie\r\n\r\nL'objectif est de décarboner l'économie. Le ministre du Climat, de la Biodiversité et de l'Economie sera le second du gouvernement.\r\n\r\n### Créer une fiscalité écologique avec un Impôt de Solidarité sur la Fortune Climatique et Biodiversité\r\n\r\nConsacrer la moitié du budget à des mesures sociales pour la transformation de nos modes de vie pour les ménages moins aisés.\r\n\r\n## Une énergie et des modes de vie décarbonés\r\n\r\n### Objectif 100% d'énergie renouvelable\r\n\r\nUtiliser le nucléaire comme énergie de transition sans construction de nouveaux équipements nucléaires.\r\n\r\n### Promouvoir la voiture électrique et le ferroviaire\r\n\r\n### Rénover énergétiquement 760 000 logements par an\r\n\r\n### Baisser la TVA sur l'énergie pour les particuliers\r\n\r\n### Œuvrer pour la sobriété numérique\r\n\r\n## Permettre la souveraineté alimentaire\r\n\r\n### Aider à l'installation de jeunes agriculteurs et contribuer à la stabilité des revenus des agriculteurs\r\n\r\n### Investir dans l'agroécologie\r\n\r\n### Lutter contre la précarité alimentaire\r\n\r\n### Mettre en œuvre une PAC juste et verte\r\n\r\nLa Politique Agricole Commune vise aujourd'hui à développer l’agriculture à l'échelle européenne.\r\n\r\n## S'adapter au dérèglement climatique et protéger la biodiversité",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 43,
+  "fields": {
+    "topic": 8,
+    "text": "## Améliorer la vie des ultramarins\r\n\r\n### Lutter contre la vie chère, investir dans les infrastructures et les services publics\r\n\r\n### Objectif autonomie alimentaire et énergétique\r\n\r\n## Replacer la culture au cœur du projet républicain\r\n\r\n### Favoriser la création dans les institutions publiques\r\n\r\n### Développer les arts visuels dans les lieux publics\r\n\r\n## Renforcer le service public de l'audiovisuel\r\n\r\n## Favoriser l'accueil d'artistes en résidence",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 44,
+  "fields": {
+    "topic": 1,
+    "text": "## Redonner le goût de la démocratie\r\n\r\n### Rendre les citoyens acteurs de la démocratie et faciliter le référendum\r\n\r\nFaciliter le Référendum d'Initiative Partagée et créer un Référendum d'Initiative Citoyenne.\r\n\r\n### Établir le droit de vote à 16 ans\r\n\r\n### Prendre en compte le vote blanc\r\n\r\n### Donner un rôle plus important au Parlement, élu à la proportionnelle\r\n\r\n## Décentraliser le pouvoir\r\n\r\n### Donner plus d'autonomie aux collectivités territoriales\r\n\r\nSur le plan financier et avec la possibilité de déroger aux règles nationales.\r\n\r\n### Garantir les services publics dans chaque commune",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 45,
+  "fields": {
+    "topic": 4,
+    "text": "### Augmenter la rémunération des enseignants\r\n\r\nRattraper l'écart de rémunération par rapport aux autres pays européens et porter la rémunération au niveau de celui des cadres.\r\n\r\n### Déployer des pédagogies ouvertes et inclusives\r\n\r\n### Mettre en place un \"plan mixité\"\r\n\r\nPour mettre fin aux ghettos scolaires.\r\n\r\n### Promouvoir les valeurs de citoyenneté et de respect\r\n\r\nRepenser l'enseignement civique et sanctionner les atteintes à la laïcité. Lutter contre le harcèlement scolaire.\r\n\r\n###  Supprimer Parcoursup\r\n\r\nPermettre un accès plus large à l'enseignement supérieur avec la création de nouvelles places.\r\n\r\n### Agir contre le décrochage scolaire\r\n\r\n### Augmenter le nombre de diplômés de l'enseignement supérieur\r\n\r\nGénéraliser l'alternance dans toutes les formations.\r\n\r\n### Favoriser la culture et les arts à l'école",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 46,
+  "fields": {
+    "topic": 7,
+    "text": "## Donner aux armées les moyens de faire face aux nouvelles menaces\r\n\r\n### Augmenter les moyens pour la recherche et le développement militaire\r\n\r\n### Soumettre au Parlement la décision de poursuite des opérations militaires\r\n\r\n## Assurer la sécurité au quotidien\r\n\r\n### Renforcer la présence des policiers et gendarmes sur le terrain\r\n\r\nAvec plus de recrutements, des formations et un budget d'équipement adapté.\r\n\r\n### Lutter contre le terrorisme\r\n\r\nPar plus de moyens alloués aux services de renseignements.\r\n\r\n### Lutter contre les violences faites aux femmes\r\n\r\nAvec la création d'un ministère des Droits des femmes et de formations spécialisées pour tous les acteurs : policiers, magistrats, ...\r\n\r\n### Lutter contre les discriminations\r\n\r\nQuelles soient religieuses, ethniques, sexistes et de genre. Un Observatoire de lutte contre les discriminations sera créé, ainsi qu'une commission nationale des réseaux sociaux pour prévenir en pénaliser le harcèlement.\r\n\r\n## Améliorer la justice du quotidien\r\n\r\n### Lancer un plan de recrutement de magistrats, greffiers et travailleurs sociaux\r\n\r\n### Garantir l'indépendance du parquet\r\n\r\n### Préférer des alternatives à l'incarcération",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 47,
+  "fields": {
+    "topic": 3,
+    "text": "## Relocaliser les activités économiques\r\n\r\n### Créer un fonds pour la réindustrialisation et l'emploi local\r\n\r\n### Axer le développement industriel autour de la santé, de l'énergie, de la mobilité et du numérique\r\n\r\n### Privilégier l'innovation et la recherche publique\r\n\r\n## Pour une économie sociale et écologique\r\n\r\n### Créer un ministère de l'économie sociale et solidaire\r\n\r\n### Renforcer l'économie circulaire\r\n\r\n### Conditionner les aides publiques au respect des critères sociaux et environnementaux\r\n\r\n### Pénaliser les investissements dans les secteurs polluants et les énergies fossiles",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 48,
+  "fields": {
+    "topic": 6,
+    "text": "## Renforcer le rôle de l'Union Européenne\r\n\r\n### Modifier les règles budgétaires\r\n\r\nAvec une taxation des transactions financières et une contribution carbone aux frontières de l'UE.\r\n\r\n### Négocier un nouveau programme social\r\n\r\nAvec la mise en place d'un salaire minimum et la protection des travailleurs.\r\n\r\n### Proposer la mise en place d'une TVA réduite sur les \"produits verts\"\r\n\r\nC'est-à-dire les produits issus de l'agriculture biologique, du réemploi ou du recyclage.\r\n\r\n### Défendre une fiscalité plus forte des multinationales\r\n\r\n### Mettre en place une politique migratoire\r\n\r\n### Engager plus largement les français dans l'Union européenne\r\n\r\n## Agir dans le monde\r\n\r\n### Valoriser la francophonie\r\n\r\n### Redonner des moyens à la démocratie pour les français de l'étranger\r\n\r\n### Proposer une trajectoire zéro carbone dans le prolongement de la COP21\r\n\r\n### Reconnaître l'écocide\r\n\r\nAvec un tribunal pénal international dédié aux atteintes environnementales\r\n\r\n### Garantir l'accès à la santé dans le monde\r\n\r\nEn luttant contre les épidémies : Covid, sida, ...",
+    "manifesto": 7
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 49,
+  "fields": {
+    "topic": 1,
+    "text": "## Refonder nos institutions et susciter l'engagement citoyen\r\n\r\n### Instaurer le Référendum d'Initiative Citoyenne\r\n\r\nLe RIC est un type de référendum qui peut être engagé à partir de 700 000 soutiens citoyens et qui est donc plus facile à mettre en action que le Référendum d'Initiative Populaire actuel.\r\n\r\n### Créer un Service National Universel militaire ou civil\r\n\r\nLes objectifs variés sont entre autres le développement de l'esprit de groupe, de l'entraide, de la mixité sociale, et des notions de citoyenneté et de fraternité. Ce sera l'occasion d'acquérir des formations comme le permis de conduire.\r\n\r\n### Élaborer un nouveau contrat social\r\n\r\nAvec la convocation d'un Conseil national de la Résistance\r\n\r\n### Reconnaître le vote blanc\r\n\r\n### Revoir la durée du mandat présidentiel\r\n\r\n### Redonner vie au Conseil Économique, Social et Environnemental\r\n\r\nEn tant que lieu de réflexion sur la Recherche et les aspirations citoyennes.\r\n\r\n### Aligner les régimes sociaux des parlementaires sur le droit commun\r\n\r\n### Abolir la Cour de justice de la République et placer les ministres sous le coup de la justice ordinaire",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 50,
+  "fields": {
+    "topic": 4,
+    "text": "## Relancer la Recherche\r\n\r\n### Développer la recherche en biologie, nouvelles technologies, psychologie, sociologie, organisation du travail et sur la famille\r\n\r\n### Investir dans la recherche de la fusion nucléaire\r\n\r\n### Développer la recherche sur les océans et la biodiversité marine\r\n\r\nPlus précisément en rapport avec les courants océaniques, les algues et l'aquaculture pour des application énergétique, pharmaceutique et alimentaire.\r\n\r\n### Développer la recherche spatiale\r\n\r\nDans un esprit pionnier et souverain pour ne pas le laisser libre à l'appropriation des milliardaires.\r\n\r\n### Lancer des appels d'offres pour la recherche pharmaceutique sur les maladies orphelines\r\n\r\nEt remplacer les actuels crédits d'impôts qui orientent la recherche vers les marchés les plus lucratifs.\r\n\r\n### Libérer le savoir issu de la Recherche publique en garantissant son libre accès en ligne\r\n\r\n### Créer une commission habilitée à lever les brevets dont l'usage et l'exploitation sont vitaux\r\n\r\n## Repenser l'instruction publique\r\n\r\n### Revaloriser le salaire et le statut des enseignants\r\n\r\nL'objectif est de ramener le salaire au niveau de celui des années 70, soit 1,95 fois le SMIC, ce qui correspond à 2400 euros nets par mois. Cela permettrait de rattraper l'écart par rapport aux autres pays de la Zone euro.\r\n\r\n### Alléger les programmes scolaires en insistant sur les savoirs fondamentaux\r\n\r\n### Limiter le nombre d'élèves par classe dans toutes les écoles primaires ainsi que dans les collèges et lycées REP et REP+\r\n\r\n### Agir pour l'accueil des élèves en situation de handicap\r\n\r\nAvec une formation adaptée pour les enseignants accueillant des élèves en situation de handicap. Les RASED (Réseaux d'Aides Spécialisées aux Élèves en Difficulté) et les classes ULIS (Unités Localisées pour l'Inclusion Scolaire) seront multipliées.\r\n\r\n### Enseigner une seconde langue, étrangère ou régionale, dès le primaire\r\n\r\n### Valoriser l'alternance et les filières professionnelles\r\n\r\nLes stages en entreprises et les enseignements de matières artisanales seront développées. L'alternance sera facilitée avec des aides aux entreprises. Les passerelles entre formations seront facilitées.\r\n\r\n### Créer une matière pour maîtriser les outils numérique\r\n\r\nAvec la formation d'enseignants par un CAPES spécifique.\r\n\r\n### Revenir sur la réforme du baccalauréat\r\n\r\n### Nommer une majorité d'enseignants au sein du Conseil supérieur des programmes\r\n\r\nLes personnes qui y siègent sont aujourd'hui simplement nommées par le ministre de l’Éducation nationale mais ne sont pas forcément des enseignants.\r\n\r\n### Instaurer des voyages de découverte, à l'étranger, à la campagne ou à la montagne, au collège et au lycée\r\n\r\nCes voyages seront financés par l’État à hauteur de 500 euros par élève et par an.\r\n\r\n### Donner du temps aux activités périscolaires\r\n\r\nLes jeunes pourront ainsi découvrir de nouvelles passions à travers les apprentissages du sport, de l'art, de la littérature et de la culture.",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 51,
+  "fields": {
+    "topic": 2,
+    "text": "## Préparer la transition énergétique\r\n\r\n### Rénover les centrales nucléaires et développer celles de 4ème génération.\r\n\r\n### Stopper l'éolien\r\n\r\nInterdire les projets non validés par les habitants.\r\n\r\n### Développer le photovoltaïque et les centrales solaires\r\n\r\nEn misant sur la recherche de viabilité et de rentabilité, que ce soit pour la production ou le stockage.\r\n\r\n### Développer les énergies de la mer\r\n\r\nTelles que la houle ou les écarts thermiques entre surface ou fonds marins.",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 52,
+  "fields": {
+    "topic": 5,
+    "text": "## Réorganiser notre système de santé\r\n\r\n### Recruter 100 000 infirmiers et aides-soignants en cinq ans\r\n\r\n### Couvrir toutes les dépenses de santé avec la Sécurité Sociale\r\n\r\nPour simplifier le système et améliorer les remboursements, comme cela est déjà le cas en Alsace-Moselle.\r\n\r\n### Rendre l'Agence Européenne du Médicament indépendante des laboratoires pharmaceutiques\r\n\r\n### Revoir le fonctionnement des \"ordres\" médicaux afin qu'ils travaillent mieux entre eux\r\n\r\nEn revoyant les statuts des professionnels de santé et en valorisant les spécialités avec des formations et rémunérations adaptées.\r\n\r\n### Avoir un hôpital à moins de 40 minutes de route partout sur le territoire\r\n\r\n### Modifier le système de formation des soignants\r\n\r\nAvec l'augmentation du nombre de places dans les universités de médecine et le financement des études pour ceux qui s'engagent dans des études longues dans des territoires déficitaires. Les critères de sélection au concours seront revus.\r\n\r\n### Ouvrir 20 000 lits d'hôpitaux et engager plus de personnel soignant\r\n\r\n### Créer une unité de gestion des crises de santé\r\n\r\n### Remplacer les ARS par des Directions Départementales des Affaires Sanitaires et Sociales\r\n\r\n## Améliorer le pouvoir d'achat\r\n\r\n### Revaloriser le SMIC à 1400 euros net\r\n\r\n### Rétablir l'ISF et supprimer l'IFI (Impôt sur la Fortune Immobilière)\r\n\r\n### Maintenir la retraite par répartition\r\n\r\nAvec la création d'un organisme dédié au calcul des points. Les étudiants pourraient aussi cotiser.\r\n\r\n## Pour une politique du logement\r\n\r\n### Assurer un toit à chaque sans abri\r\n\r\nEn améliorant l'information et l'information et en encourageant le bénévolat.\r\n\r\n### Augmenter les logements sociaux à bas loyer\r\n\r\n### Faire respecter un nombre minimal de logement sociaux pour favoriser la mixité\r\n\r\n### Augmenter le montant des [APL](https://www.service-public.fr/particuliers/vosdroits/F12006), et notamment pour les jeunes\r\n\r\n### Favoriser l'accès au logement pour les primo accédant et les locaux\r\n\r\nCes derniers seront favorisés à la place des hébergements touristiques et des résidences secondaires.\r\n\r\n### Développer le principe de location-accession\r\n\r\nQui permet au locataire d'être propriétaire lorsque le montant des mensualités dépasse la valeur du bien.\r\n\r\n### Développer les logements intergénérationnels\r\n\r\nLes logements intergénérationnels permettent plus de cohésion sociale entre étudiants et personnes âgées. Les étudiants, en échange de quelques heures auprès des personnes âgées, pourront bénéficier de loyers préférentiels.\r\n\r\n## Agir pour le handicap\r\n\r\n### Mieux prendre en charge les personnes handicapées\r\n\r\nDes Maisons départementales des personnes handicapées seront restructurées pour réduire les délais de prise en charge.\r\n\r\n### Supprimer les seuils d'âge de la prestation de compensation du handicap\r\n\r\n### Déconjugaliser l'allocation aux adultes handicapés\r\n\r\n### Former et revaloriser les accompagnants d'élèves en situation de handicap\r\n\r\nLes accompagnants auront une formation adaptée. Le temps plein à 24 heures sera généralisé avec un salaire net à 1700 euros.\r\n\r\n### Revaloriser le salaire et le statut des aidants des personnes en situation de handicap\r\n\r\n## Agir pour le troisième âge\r\n\r\n### Reconnaître les retraités comme troisième partenaire social officiel\r\n\r\nC'est-à-dire en plus des deux partenaires sociaux que sont les syndicats de salariés et les organisations professionnelles d'employeurs. Cela leur ouvrira l'accès au Conseil Économique Social et Environnemental, au Conseil d'Orientation des Retraites, au Comité de Suivi des Retraites et à toutes les caisses (par exemple d'Assurance Maladie).\r\n\r\n### Garantir le pouvoir d'achat des retraités face à l'inflation\r\n\r\nCela sera garanti par la Constitution.\r\n\r\n### Revaloriser le statut et le salaire des aides à domicile s'occupant des personnes en situation de dépendance.\r\n\r\n## Pour une politique de la jeunesse\r\n\r\n### Étendre le RSA aux jeunes sur critères de revenus et/ou sous condition de formation\r\n\r\n### Accorder aux étudiants un prêt garanti par l’État de 20 000 euros à taux zéro\r\n\r\n### Accompagner les élèves victimes de harcèlement\r\n\r\nAvec la mise en place d'un suivi psychologique et une aide à l'insertion.\r\n\r\n### Étendre la gratuité des transports publics, ou la création de tarifs préférentiels pour les jeunes",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 53,
+  "fields": {
+    "topic": 3,
+    "text": "## Relancer notre économie\r\n\r\n### Baisser la TVA sur les hydrocarbures de 20% à 5,5%\r\n\r\n### Réaliser un audit citoyen de la dette\r\n\r\n### Réaliser un audit du droit du travail pour simplifier les réglementations\r\n\r\n### Renationaliser les entreprises dans les secteurs clés de l'économie\r\n\r\nTels qu'EDF, les autoroutes et les entreprises de Défense nationale. Les entreprises sensibles et stratégiques (industrie, énergies renouvelables, automobile, ...) seront rachetées par la [BPI](https://www.gouvernement.fr/du-concret-pour-vous-bpifrance) (Banque Publique d'Investissement).\r\n\r\n## Revitaliser nos territoires\r\n\r\n### Créer des zones franches pour favoriser l'installation d'entreprises dans les petites communes\r\n\r\nEn dispensant les entreprises de taxe foncière et d'impôt sur les sociétés si leur siège se situe dans une commune de moins de 15 000 habitants.\r\n\r\n### Exonérer les TPE et PMI de charges sociales à l'embauche des deux premiers salariés\r\n\r\n### Donner la priorité aux PME dans les appels d'offres des collectivités locales\r\n\r\n### Définir un plan Marshall de réindustrialisation",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 54,
+  "fields": {
+    "topic": 8,
+    "text": "## Pour une politique de la ville\r\n\r\n### Élaborer une plan de coconstruction de la politique de la ville\r\n\r\nLes citoyens, les élus, les acteurs institutionnels et associatifs seront incluent dans cette réflexion menée au sein d'\"états généraux pour la banlieue\".\r\n\r\n### Encadrer les loyers\r\n\r\n### Adapter les logements, centres de loisirs et équipements urbains aux personnes à mobilité réduite\r\n\r\n## Pour la décentralisation\r\n\r\n### Laisser le choix à une commune d'intégrer ou non une intercommunalité à taille humaine\r\n\r\nPour cela, les lois [NOTRe](https://www.vie-publique.fr/loi/20721-loi-notre-loi-du-7-aout-2015-nouvelle-organisation-territoriale-de-la) et [Maptam](https://www.vie-publique.fr/loi/20674-loi-maptam-action-publique-territoriale-et-daffirmation-des-metropoles) seront abrogées.\r\n\r\n### Restaurer les compétences des communes ainsi que leur autonomie financière et fiscale\r\n\r\n### Remplacer les Régions par des Provinces\r\n\r\nLes Provinces seront déterminées en cohérence avec des critères historiques, politiques, économiques et culturels. Cela permettra une valorisation des territoires par les produits, les savoir-faire, les savoir-être et les langues patrimoniales.\r\n\r\n### Rétablir les mandats de député-maire et député-sénateur pour renouer le lien entre les territoires et la représentation nationale\r\n\r\n## Valoriser la culture et le patrimoine\r\n\r\n### Orienter les financements publics vers la création indépendante\r\n\r\n### Conditionner le financement public des médias privés et de la culture à l'indépendance des propriétaires\r\n\r\n### Créer un fonds dédié pour subventionner les lieux culturels qui facilitent l'accès aux plus défavorisés\r\n\r\n### Revaloriser le statut et le salaire des intermittents du spectacle\r\n\r\n### Créer des événements fédérateurs autour de la culture\r\n\r\nAvec trois fêtes : la Fête des Sports le 21 septembre, la Fête de l'engagement le 21 décembre, et la Fête du Savoir le 21 mars.\r\n\r\n## Soutenir les campagnes\r\n\r\n### Soutenir les campagnes à hauteur de 3 milliards d'euros par an\r\n\r\n### Revoir la distribution de la PAC\r\n\r\nLes aides iront aux paysans respectueux de la terre et des bêtes, et bénéficieront plus équitablement aux petits agriculteurs.\r\n\r\n### Favoriser les première et deuxième transformations près des territoires de production\r\n\r\nDes emplois et la valeur ajoutée locale seront alors conservés et promus. Les outils de transformation doteront toutes les filières.\r\n\r\n### Mettre en place un \"ticket paysan\"\r\n\r\nSur le même modèle que les tickets restaurants, les tickets paysans soutiendront les agriculteurs locaux et les circuits courts.\r\n\r\n### Replacer les coopératives agricoles sous la responsabilité des exploitants\r\n\r\n### Désenclaver les campagnes avec plus de services publics\r\n\r\nPartout sur le territoire, seront maintenus ou créés des écoles, transports, services de santé, fibre optique et 4G.\r\n\r\n### Faciliter le changement d'usage agricole à usage d'habitation\r\n\r\nCela permettra l'émergence de projets novateurs dans les campagnes, quand ils ne nuisent pas aux campagnes. Ainsi, on s'adaptera mieux à la diversité des territoires.\r\n\r\n### Développer des passerelles entre ruralité et centres urbains\r\n\r\nAfin de soutenir les produits locaux dans les cantines et les circuits courts.\r\n\r\n### Conditionner l'octroi des Signes de Qualité et d'Origine\r\n\r\nLes exploitations labellisées devront respecter des critères sociaux tels que le bien-être des paysans et la transmissibilité aux générations à venir.\r\n\r\n### Entretenir les paysages en biens communs\r\n\r\n### Défendre les traditions populaires agricoles\r\n\r\nLa pêche et la chasse font partie du patrimoine national. La présence de grands prédateurs comme les ours et les loups n'est pas compatible avec l'élevage.\r\n\r\n## Pour la France ultramarine\r\n\r\n### Renforcer les liens avec les territoires d'Outre-mer\r\n\r\n### Développer le tourisme ultramarin\r\n\r\nLe tourisme sera soutenu par des aides de l’État.\r\n\r\n### Promouvoir les énergies nouvelles et prévenir les ouragans\r\n\r\n### Lutter contre les inégalités territoriales dans la santé",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 55,
+  "fields": {
+    "topic": 7,
+    "text": "## Pour une France sûre et paisible\r\n\r\n### Recruter 6000 gendarmes et policiers\r\n\r\n### Ouvrir plus largement les bureaux de police et de gendarmerie de proximité\r\n\r\n### Renforcer les effectifs où se concentre l'immigration illégale tout en respectant le droit d'asile\r\n\r\n### Remettre des [officiers traitants](https://www.dgse.gouv.fr/fr/le-recrutement/nos-metiers/renseignement) sur le terrain\r\n\r\n### Créer une Unité de réserve communale de sûreté (URCS)\r\n\r\nSur le même modèle que les pompiers volontaires, ces unités pourront servir lors de missions ponctuelles pour renforcer la police municipale.\r\n\r\n### Rebâtir notre industrie d'armement et d'équipement\r\n\r\n### Créer une Garde Nationale\r\n\r\nEn appui à l'armée régulière, elle assurera une force d'appoint.\r\n\r\n### Renforcer l'armée de la cyberdéfense\r\n\r\nElle sera indépendante des sociétés informatiques et bénéficiera d'un budget conséquent, équivalent à 1/4 de celui consacré aux autres armées.\r\n\r\n## La justice avant le droit\r\n\r\n### Renforcer la médiation dans le règlement des différends\r\n\r\nEn soutenant les [modes alternatifs de règlement des différends](https://www.cours-appel.justice.fr/angers/les-modes-alternatifs-de-reglement-des-differends-mard) pour développer la négociation, la conciliation et la médiation avec des médiateurs. Ces médiateurs seront des anciens juges, gendarmes, policiers, responsables syndicaux, ...\r\n\r\n### Augmenter le nombre de magistrats dans les tribunaux\r\n\r\nLeur recrutement sera réorganisé avec 1/3 par voie de concours et 2/3 par passerelle, réservé aux professionnels judiciaires de plus de quinze ans de pratique. Le corporatisme sera évité chez les magistrats administratifs.\r\n\r\n### Lancer un plan de construction de prisons\r\n\r\nCes nouvelles prisons seront à taille humaine pour un respect des conditions d'hygiène et de sécurité. Les peines courtes pourront alors être effectivement appliquées.\r\n\r\n### Améliorer le dispositif de l'aide juridictionnelle\r\n\r\n### Créer des liens avec les entreprises lors des formations en prison\r\n\r\n### Légaliser le cannabis\r\n\r\nLa vente sera strictement encadrée et les recettes serviront à lutter contre l'addiction.",
+    "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 56,
+  "fields": {
+    "topic": 6,
+    "text": "## Pour de meilleures relations avec l'Afrique\r\n\r\n### Soutenir l'instruction et le développement d'infrastructures dans les pays qui le désirent\r\n\r\nLes relations nouvelles entre la France et l'Afrique seront à la base d'échanges plus équitables sur les ^plans culturels et économiques.\r\n\r\n### Mettre fin à la supervision du franc CFA par le Trésor français\r\n\r\n## Pour une France souveraine en Europe\r\n\r\n### Faire approuver les législations européennes par le Parlement plutôt que par l'exécutif\r\n\r\nLes débats et les votes remplaceront les ordonnances prises par l'exécutif.\r\n\r\n### Faciliter la coopération bilatérale\r\n\r\n### Revoir la participation financière de la France au budget européen\r\n\r\n### Réviser nos marges de décision sur plusieurs points\r\n\r\nTels que le budget, la PAC, la Directive habitats, ...\r\n\r\n### Rester souverain dans les traités de protection des investissements internationaux\r\n\r\nLa France est aujourd'hui représentée sur ces sujets par la Commission européenne. Les négociations d'accords internationaux comme le CETA seront interrompues.\r\n\r\n## Pour une France souveraine dans le monde\r\n\r\n### Préparer la sortie de l'OTAN\r\n\r\n### Ouvrir le [Conseil de Défense](https://www.elysee.fr/la-presidence/le-conseil-de-defense-et-de-securite-nationale) à la représentation nationale\r\n\r\nLe contrôle de l'engagement ou du retrait des forces françaises dans un conflit pourra être fait par référendum ou par vote au Parlement.\r\n\r\n### Déplacer le commandement des forces françaises des Émirats Arabes Unis\r\n\r\nCes forces seront rapatriées à La Réunion.\r\n\r\n### Revoir les traités de défense passés avec nos anciennes colonies\r\n\r\n### Permettre au Parlement de contrôler les ventes d'armes à l'étranger",
+    "manifesto": 8
   }
 }
 ]
