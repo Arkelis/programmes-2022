@@ -6,7 +6,7 @@
   --flag-blue: #051440;
   --flag-red: #ec1920;
   --bg-light: #fAf6f6;
-  --grey: #312727;
+  --grey: #535353;
 }
 
 @import "./mixins";
@@ -16,12 +16,12 @@
 
 html {
   scroll-behavior: smooth;
-}
+  font-size: 18px;
 
-html {
-  scroll-behavior: smooth;
+  @media screen and (max-width: 90ch) {
+    font-size: 15px;
+  }
 }
-
 
 body {
   box-sizing: border-box;
@@ -41,7 +41,6 @@ body {
 
 * {
   font-family: "Fira Sans", sans-serif;
-  font-size: 18px;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -60,4 +59,8 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.disabled {
+  opacity: .5;
 }

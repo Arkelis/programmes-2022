@@ -1,17 +1,23 @@
-@import './base.scss';
-
+@import "./base.scss";
 
 .container--manifesto-intro {
   background-color: var(--bg-light);
   padding: 3rem 0;
+  margin-top: 6rem;
+
+  .title--image {
+    margin-top: 0;
+  }
 }
 
-.manifesto-menu {
-  position: fixed;
-  top: 8em;
-  z-index: 2;
+.manifesto-toc {
+  grid-area: "toc";
+  position: sticky;
+  margin-top: 2.5rem;
+  top: 1rem;
   margin-left: 1.8em;
-  
+  align-self: start;
+
   @media screen and (max-width: 1260px) {
     & {
       display: none;
@@ -31,22 +37,24 @@
     max-width: 20ch;
     line-height: 25px;
     font-weight: bold;
-    color: #A38585;
+    color: #a38585;
   }
 
   a {
     display: block;
+    width: fit-content;
   }
 }
 
-
 .manifesto-intro {
   @include text-container;
+  position: relative;
 
-  h1 {
+  h1,
+  h1.title--image img {
     font-family: "PT Serif", serif;
     font-weight: 700;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
   }
 
   .manifesto-summary {
@@ -60,40 +68,57 @@
   }
 
   img.party {
-    height: 160px;
+    width: 20ch;
+    display: block;
   }
 
   img.candidate {
     position: absolute;
-    top: 3em;
-    right: 16em;
-    width: 200px;
-    height: 200px;
+    top: -8rem;
+    right: 0;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 100%;
   }
 }
 
 .container--manifesto-paragraphs {
   padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 20rem 80ch 20rem;
+  grid-template-areas: "toc content";
+  justify-content: center;
+
+  @media screen and (max-width: 1500px) {
+    grid-template-columns: 20rem 80ch;
+  }
+
+  @media screen and (max-width: 1270px) {
+    grid-template-areas: "content";
+    grid-template-columns: minmax(100%, 80ch);
+  }
 }
 
 .manifesto-paragraphs {
+  grid-area: "content";
   @include text-container;
 }
 
 .manifesto-paragraph {
   h1 {
-    position: sticky;
     top: 0;
     text-align: center;
-    z-index: 2;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: linear-gradient(white 85%, transparent);
-    color: var(--grey);
+    color: var(--flag-blue);
     font-size: 2rem;
     font-family: "PT Serif", serif;
     font-weight: 700;
+
+    @media screen and (max-width: 1270px) {
+      display: none;
+      position: sticky;
+    }
   }
 
   h2,
@@ -110,26 +135,26 @@
     text-transform: uppercase;
   }
 
-  h3 {
+  h3,
+  details {
     margin-top: 1rem;
     color: var(--grey);
     font-size: 1rem;
+    font-weight: bold;
+    position: relative;
   }
 
   h3::before {
-    content: '▶';
+    content: "\2023";
     color: var(--flag-blue);
-    font-size: .75rem;
-    margin-bottom: 1rem;
-    margin-left: -1.4rem;
-    margin-top: .1rem;
-    margin-right: .5rem;
+    margin-left: -1.1rem;
+    margin-right: 0.5rem;
     position: absolute;
   }
 
   p,
   h3 {
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
   }
 
   li {
@@ -138,17 +163,97 @@
   }
 }
 
-
 p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.manifesto-intro>h2,
-.manifesto-paragraphs>h1 {
+.manifesto-intro > h2,
+.manifesto-paragraphs > h1 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   margin-top: 2rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-size: 1.5rem;
   color: var(--flag-blue);
+}
+
+details {
+  cursor: pointer;
+
+  h3 {
+    cursor: pointer;
+  }
+
+  &:hover h3 {
+    color: var(--flag-blue);
+  }
+}
+
+details[open] {
+  background-color: var(--bg-light);
+  padding: 0.5rem;
+  padding-left: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+
+  h3 {
+    color: var(--flag-blue);
+  }
+
+  p {
+    color: black;
+  }
+}
+
+.breadcrumb {
+  display: none;
+  position: sticky;
+  top: 0;
+
+  @media screen and (max-width: 1270px) {
+    margin-top: 5px;
+    display: block;
+    background: linear-gradient(white 85%, transparent);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    z-index: 2;
+
+    div {
+      font-family: "PT Serif", serif;
+      font-size: 1.2rem;
+      color: var(--flag-blue);
+    }
+  }
+  
+  > div {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 90ch) {
+  .container--manifesto-intro,
+  .container--manifesto-paragraphs {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  
+  .manifesto-intro {
+    margin-top: 8rem;
+    
+    img.candidate {
+      top: -16rem;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 50ch) {
+  .manifesto-intro img.party {
+    width: 100%;
+  }
 }

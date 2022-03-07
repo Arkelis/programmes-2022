@@ -1,4 +1,4 @@
-@mixin header-font($style: normal, $weight: 300, $family: sans-serif, $size: 24px) {
+@mixin header-font($style: normal, $weight: 300, $family: sans-serif, $size: 1rem) {
   font-size: $size;
   font-weight: $weight;
   font-style: $style;
@@ -14,7 +14,8 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 2rem;
+  vertical-align: top;
+  margin: 1.5rem;
 
   &.nav--home {
     position: absolute;
@@ -73,7 +74,7 @@ nav > ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 
     li {
@@ -87,12 +88,11 @@ nav > ul {
   }
 }
 
-@media all and (max-width: 500px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    width: 100%;
+@media all and (max-width: 90ch) {
+  nav {
+    margin: 1rem;
+    & > ul > li {
+      margin-right: 1rem;
+    }
   }
 }

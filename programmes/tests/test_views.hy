@@ -16,7 +16,7 @@
         content (to-text resp.content))
   (assert (in "L'avenir en commun" content))
   (assert (in "Jean-Luc Mélenchon (La France insoumise)" content))
-  (assert (in "En mai prochain se déroulera en France l'élection présidentielle de 2022."
+  (assert (in "En avril prochain se déroulera en France l'élection présidentielle de 2022."
               content))))
 
 

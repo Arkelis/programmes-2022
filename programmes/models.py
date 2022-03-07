@@ -118,6 +118,7 @@ class Manifesto(models.Model):
         blank=True)
     summary = models.TextField(verbose_name="Résumé synthétique du programme")
     website = models.URLField()
+    logo = models.ImageField(verbose_name="Logo du programme", upload_to="img/", null=True)
 
     objects = models.Manager()
     active_objects = ActiveManifestoManager()
