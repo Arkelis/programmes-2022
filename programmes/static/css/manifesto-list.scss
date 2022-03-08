@@ -1,5 +1,9 @@
 @import "./base.scss";
 
+main#content {
+  margin-top: 4rem;
+}
+
 .title-container {
   @include text-container;
 

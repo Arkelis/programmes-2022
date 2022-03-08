@@ -10,16 +10,19 @@
   (render-in-page
     (intro manifesto)
     (paragraphs manifesto)
-   :style "manifesto"))
+   :style "manifesto"
+   :manifesto-title manifesto.name))
 
-(defn toc [paragraphs title]
+(defn toc [paragraphs]
     ['div {'class "manifesto-toc"}
-      ['a {'href "#intro"} ['h2 title ]]
+      ['h2 "Thématiques" ]
       (gfor paragraph (paragraphs)
-        ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])])
+        ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])
+      ['h2.hint
+        "Cliquez sur une mesure pour plus de détails."]])
 
 (defn intro [manifesto]
-  ['div {'class "container--manifesto-intro" 'id "intro"}
+  ['div {'class "container--manifesto-intro"}
     ['div {'class "manifesto-intro"}
       ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.photo)) 'class "candidate"}]
       (if manifesto.logo
@@ -32,13 +35,13 @@
   
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}
-    (toc manifesto.paragraphs.all manifesto.name)
+    (toc manifesto.paragraphs.all)
     ['div {'class "manifesto-paragraphs"}
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}
               ['div {'class "breadcrumb" 'aria-hidden True}
                 (link-to (reverse "manifesto-list") "Programmes") " / "
-                (link-to "#intro" manifesto.name)
+                (link-to "#top" manifesto.name)
                 ['div paragraph.topic.name]]
               ['h1 {'id (slugify paragraph.topic.name)} paragraph.topic]
               (markdown paragraph.text)])]])

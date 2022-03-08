@@ -8,7 +8,7 @@
     "party": 1,
     "profession": "Professeur, Journaliste",
     "website": "https://melenchon2022.fr/",
-    "photo": "static/melenchon.jpg",
+    "photo": "img/melenchon_QBT3AxG.jpg",
     "biography": "Jean-Luc Mélenchon",
     "is_active": true
   }
@@ -36,7 +36,7 @@
     "party": 3,
     "profession": "Enseignante",
     "website": "https://www.nathalie-arthaud.info/",
-    "photo": "static/arthaud.jpg",
+    "photo": "img/arthaud.jpg",
     "biography": "Nathalie Arthaud",
     "is_active": true
   }
@@ -50,7 +50,7 @@
     "party": 6,
     "profession": "Administrateur civil",
     "website": "https://debout-la-france.fr/",
-    "photo": "static/dupont-aignan.jpg",
+    "photo": "img/dupont-aignan.jpg",
     "biography": "Nicolas Dupont-Aignan",
     "is_active": true
   }
@@ -64,7 +64,7 @@
     "party": 7,
     "profession": "Technicien agricole",
     "website": "https://resistons-france.fr/",
-    "photo": "static/lassalle.jpg",
+    "photo": "img/lassalle.jpg",
     "biography": "Jean Lassalle",
     "is_active": true
   }
@@ -78,7 +78,7 @@
     "party": 8,
     "profession": "Avocate",
     "website": "https://mlafrance.fr/",
-    "photo": "static/lepen.jpg",
+    "photo": "img/lepen.jpg",
     "biography": "Marine Le Pen",
     "is_active": true
   }
@@ -92,7 +92,7 @@
     "party": 12,
     "profession": "Ouvrier d'usine",
     "website": "https://poutou2022.org/",
-    "photo": "static/static/poutou.jpg",
+    "photo": "img/poutou.jpg",
     "biography": "Poutou",
     "is_active": true
   }
@@ -106,7 +106,7 @@
     "party": 13,
     "profession": "Journaliste",
     "website": "https://www.fabienroussel2022.fr/",
-    "photo": "static/static/roussel.jpg",
+    "photo": "img/roussel.jpg",
     "biography": "Roussel",
     "is_active": true
   }
@@ -162,7 +162,7 @@
     "party": 18,
     "profession": "Banquier d'affaires",
     "website": "https://en-marche.fr",
-    "photo": "static/static/macron.jpg",
+    "photo": "img/macron.jpg",
     "biography": "EM",
     "is_active": true
   }
@@ -541,27 +541,30 @@
     "name": "L'Avenir en commun",
     "candidate": 1,
     "summary": "L'Avenir en commun porte l'idée que le peuple peut, par son action collective, renverser le système actuel  dirigé par des \"dominants\" par la voie démocratique et ainsi faire face aux enjeux que sont la crise climatique et la fracture sociale.\r\n\r\nPour y parvenir, la mesure phare du programme est l’adoption d’une nouvelle constitution qui conduirait la France vers la Sixième République. Parmi les autres points forts de l’Avenir en commun : la justice, l’écologie, le retour de la souveraineté dont le manque se fait ressentir pendant la pandémie, le travail, le partage des richesses, l’accès à l’éducation, l’égalité, la remise en question des traités européens en faisant face aux autres pays de l’Union européenne.",
-    "website": "https://melenchon2022.fr/programme/"
+    "website": "https://melenchon2022.fr/programme/",
+    "logo": "img/aec.webp"
   }
 },
 {
   "model": "programmes.manifesto",
   "pk": 2,
   "fields": {
-    "name": "Le courage de dire et la volonté de faire",
+    "name": "Nouvelle France",
     "candidate": 14,
     "summary": "Synthèse du programme",
-    "website": "https://www.valeriepecresse.fr/mon-projet/"
+    "website": "https://www.valeriepecresse.fr/projets/",
+    "logo": ""
   }
 },
 {
   "model": "programmes.manifesto",
   "pk": 3,
   "fields": {
-    "name": "Vivant 2022",
+    "name": "Changeons !",
     "candidate": 15,
-    "summary": "Programme de Yannick Jadot",
-    "website": "https://lesecologistes.fr/"
+    "summary": "Le projet porté par Yannick Jadot veux nous réconcilier avec notre avenir et entre nous. Pour relever les défis actuels, nous avons besoin d'une vision d'ensemble, et seule l'écologie est à la hauteur. Inspiré des énergies et des solutions innovantes déjà expérimentées, il faut étendre ces initiatives à tous. Le projet, c'est de remettre l’État au service de la Nation et d'extirper les lobbies pour viser une direction plus profitable pour l'ensemble de la société.",
+    "website": "https://www.jadot2022.fr/",
+    "logo": "img/changeons.png"
   }
 },
 {
@@ -571,17 +574,19 @@
     "name": "Pour que la France reste la France",
     "candidate": 16,
     "summary": "La France aux Français",
-    "website": "https://programme.zemmour2022.fr/"
+    "website": "https://programme.zemmour2022.fr/",
+    "logo": ""
   }
 },
 {
   "model": "programmes.manifesto",
   "pk": 6,
   "fields": {
-    "name": "Le bon sens en action !",
+    "name": "Libérons nous !",
     "candidate": 6,
     "summary": "La France mérite qu’on se batte pour elle.\r\n\r\nJe veux la sauver avec un projet présidentiel à la fois ambitieux, concret et solide, fruit de milliers de rencontres avec les Français et de centaines d’heures de travail avec des acteurs de terrain et des experts reconnus.",
-    "website": "https://2022nda.fr"
+    "website": "https://2022nda.fr",
+    "logo": ""
   }
 },
 {
@@ -591,7 +596,8 @@
     "name": "Hidalgo!2022",
     "candidate": 2,
     "summary": "Une France réconciliée, une France pour tous, qui retrouve sa sérénité, son unité autour des valeurs de la République, le goût du débat citoyen et l’énergie pour affronter dans la justice les grands défis du siècle à venir à mener contre les désordres et écologiques, économiques et démocratiques. C’est ainsi qu'Anne Hidalgo présente sa candidature à l'élection présidentielle.",
-    "website": "https://www.2022avechidalgo.fr"
+    "website": "https://www.2022avechidalgo.fr",
+    "logo": "img/hidalgo2022.png"
   }
 },
 {
@@ -601,7 +607,8 @@
     "name": "La France authentique",
     "candidate": 7,
     "summary": "La France authentique entend avant tout porter la parole des Français au cœur de nos institutions, maintenir les services publics de proximité, encourager les initiatives locales et rebâtir un État fort. Il est organisé autour de l’écoute et de l’échange, préalables essentiels au renouveau du peuple souverain, à la régénérescence de la démocratie et à la consolidation de la République. Jean Lassalle souhaite reconstruire un État au service de nos compatriotes et redonner à l’espace public le pouvoir financier dont il ne dispose plus. Pour cela, il faut réapprendre à gérer en bien commun nos précieux territoires et nos merveilleuses cités.",
-    "website": "https://jl2022.fr"
+    "website": "https://jl2022.fr",
+    "logo": ""
   }
 },
 {
@@ -611,7 +618,8 @@
     "name": "M La France",
     "candidate": 8,
     "summary": "Relever les défis de la submersion et du déclassement et faire entrer notre pays dans le 3e millénaire avec énergie et imagination, telle est l'ambition du programme porté par Marine Le Pen. Autour d’un État restauré dans ses fonctions régaliennes, la Nation sera rétablie dans sa souveraineté et ses libertés. Avec des perspectives de résultats rapides l'action de redressement s’ordonnance autour d’un triptyque Protection, Projection, Transmission. L'objectif est de remettre la France en ordre et lui faire retrouver la sécurité et la prospérité et ainsi renouer avec le bonheur d’y vivre pour tous les Français patriotes.",
-    "website": "https://mlafrance.fr"
+    "website": "https://mlafrance.fr",
+    "logo": "img/mlafrance.png"
   }
 },
 {
@@ -621,7 +629,8 @@
     "name": "La France des jours heureux",
     "candidate": 12,
     "summary": "fabienroussel2022",
-    "website": "https://www.fabienroussel2022.fr/le_programme"
+    "website": "https://www.fabienroussel2022.fr/le_programme",
+    "logo": ""
   }
 },
 {
@@ -631,7 +640,30 @@
     "name": "Le camp des travailleurs",
     "candidate": 3,
     "summary": "Faire entendre le camp des travailleurs est l'objectif majeur de Nathalie Arthaud à l'élection présidentielle. Il faut dénoncer les conditions de travail et augmenter les salaires, lutter contre les inégalités. Il faut pour cela combattre le capitalisme à travers un programme de luttes et révolutionnaire.",
-    "website": "https://www.nathalie-arthaud.info/programme"
+    "website": "https://www.nathalie-arthaud.info/programme",
+    "logo": "img/campdestravailleurs.jpg"
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 13,
+  "fields": {
+    "name": "Avec vous",
+    "candidate": 17,
+    "summary": "Avec vous",
+    "website": "https://avecvous.fr",
+    "logo": ""
+  }
+},
+{
+  "model": "programmes.manifesto",
+  "pk": 14,
+  "fields": {
+    "name": "Philippe Poutou 2022",
+    "candidate": 11,
+    "summary": "PP 2022",
+    "website": "https://poutou2022.org",
+    "logo": ""
   }
 },
 {
@@ -1183,6 +1215,15 @@
     "topic": 6,
     "text": "## Pour de meilleures relations avec l'Afrique\r\n\r\n### Soutenir l'instruction et le développement d'infrastructures dans les pays qui le désirent\r\n\r\nLes relations nouvelles entre la France et l'Afrique seront à la base d'échanges plus équitables sur les ^plans culturels et économiques.\r\n\r\n### Mettre fin à la supervision du franc CFA par le Trésor français\r\n\r\n## Pour une France souveraine en Europe\r\n\r\n### Faire approuver les législations européennes par le Parlement plutôt que par l'exécutif\r\n\r\nLes débats et les votes remplaceront les ordonnances prises par l'exécutif.\r\n\r\n### Faciliter la coopération bilatérale\r\n\r\n### Revoir la participation financière de la France au budget européen\r\n\r\n### Réviser nos marges de décision sur plusieurs points\r\n\r\nTels que le budget, la PAC, la Directive habitats, ...\r\n\r\n### Rester souverain dans les traités de protection des investissements internationaux\r\n\r\nLa France est aujourd'hui représentée sur ces sujets par la Commission européenne. Les négociations d'accords internationaux comme le CETA seront interrompues.\r\n\r\n## Pour une France souveraine dans le monde\r\n\r\n### Préparer la sortie de l'OTAN\r\n\r\n### Ouvrir le [Conseil de Défense](https://www.elysee.fr/la-presidence/le-conseil-de-defense-et-de-securite-nationale) à la représentation nationale\r\n\r\nLe contrôle de l'engagement ou du retrait des forces françaises dans un conflit pourra être fait par référendum ou par vote au Parlement.\r\n\r\n### Déplacer le commandement des forces françaises des Émirats Arabes Unis\r\n\r\nCes forces seront rapatriées à La Réunion.\r\n\r\n### Revoir les traités de défense passés avec nos anciennes colonies\r\n\r\n### Permettre au Parlement de contrôler les ventes d'armes à l'étranger",
     "manifesto": 8
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 57,
+  "fields": {
+    "topic": 2,
+    "text": "## Le changement climatique : anticiper, réagir, agir ensemble\r\n\r\n### Définir un",
+    "manifesto": 3
   }
 }
 ]
