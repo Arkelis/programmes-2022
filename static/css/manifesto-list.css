@@ -193,15 +193,18 @@ details > summary::-webkit-details-marker {
   display: none; }
 
 nav {
+  background: linear-gradient(white 85%, transparent);
   display: flex;
   justify-content: space-between;
   vertical-align: top;
-  margin: 1.5rem; }
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
   nav.nav--home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0; }
+    position: absolute; }
 
 nav .site-name {
   font-size: 1rem;
@@ -327,6 +330,9 @@ li {
 
 .disabled {
   opacity: .5; }
+
+main#content {
+  margin-top: 4rem; }
 
 .title-container {
   max-width: 80ch;

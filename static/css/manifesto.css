@@ -193,15 +193,18 @@ details > summary::-webkit-details-marker {
   display: none; }
 
 nav {
+  background: linear-gradient(white 85%, transparent);
   display: flex;
   justify-content: space-between;
   vertical-align: top;
-  margin: 1.5rem; }
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
   nav.nav--home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0; }
+    position: absolute; }
 
 nav .site-name {
   font-size: 1rem;
@@ -328,6 +331,9 @@ li {
 .disabled {
   opacity: .5; }
 
+main#content {
+  margin-top: 4rem; }
+
 .container--manifesto-intro {
   background-color: var(--bg-light);
   padding: 3rem 0;
@@ -339,7 +345,7 @@ li {
   grid-area: "toc";
   position: sticky;
   margin-top: 2.5rem;
-  top: 1rem;
+  top: 5rem;
   margin-left: 1.8em;
   align-self: start; }
   @media screen and (max-width: 1260px) {
@@ -375,14 +381,13 @@ li {
     font-style: italic;
     font-weight: 300; }
   .manifesto-intro img.party {
-    width: 20ch;
-    display: block; }
+    width: 20ch; }
   .manifesto-intro img.candidate {
     position: absolute;
     top: -8rem;
     right: 0;
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%; }
 
 .container--manifesto-paragraphs {
@@ -500,15 +505,19 @@ details[open] {
   .breadcrumb > div {
     font-weight: bold; }
 
+.hint {
+  font-style: italic;
+  margin-top: 1rem; }
+
 @media screen and (max-width: 90ch) {
   .container--manifesto-intro,
   .container--manifesto-paragraphs {
     padding-right: 1rem;
     padding-left: 1rem; }
   .manifesto-intro {
-    margin-top: 8rem; }
+    margin-top: 6rem; }
     .manifesto-intro img.candidate {
-      top: -16rem;
+      top: -14rem;
       margin-left: auto;
       margin-right: auto;
       left: 0;
