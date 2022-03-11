@@ -17,7 +17,7 @@
     ['body
       ['header (navbar {'class (when home? "nav--home")} manifesto-title)]
       ['main {'id "content"} (iter content)]]
-      (full-footer home?)))
+      (footer home?)))
 
 (defelem navbar [manifesto-title]
   ['nav
@@ -29,21 +29,22 @@
     ['div {'class "site-name"} "Programmes" ['span "2022"]]])
 
 #@(cache
-(defelem full-footer [home?]
+(defelem footer [home?]
     ['footer
-      (if (not home?)
-        ['div
-          ['p {'class "title"} "Programmes"]
-          ['div {'class "manifestos"}
-            #* (lfor
-                manifesto (Manifesto.active_objects.all)
-                ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))])]])
+      ['div
+        (if (not home?)
+          ['div
+            ['h3 {'class "title"} "Les programmes"]
+            ['div {'class "manifestos"}
+              #* (lfor
+                  manifesto (Manifesto.active_objects.all)
+                  ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))])]])
       
-      ['p {'class "title"} "Programmes 2022"]
-      ['p
-        ['span (link-to (reverse "about") "À propos du site")]
-        ['span (link-to (reverse "legals") "Mentions légales")]
-        ['span (link-to {'target "_blank"} "https://github.com/Arkelis/programmes-2022" "Code source")]]]))
+        ['p {'class "title"} "Programmes-2022.fr"]
+        ['p
+          ['span (link-to (reverse "about") "À propos du site")]
+          ['span (link-to (reverse "about") "Mentions légales")]
+          ['span (link-to {'target "_blank"} "https://github.com/Arkelis/programmes-2022" "Code source")]]]]))
 
 #@(cache
 (defn manifesto-submenu []

@@ -1,0 +1,42 @@
+@import "./base";
+
+main#content {
+  @include text-container;
+  margin-top: 4rem;
+
+  h1 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--flag-blue);
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--flag-red);
+  }
+
+  a {
+    color: var(--flag-blue);
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 90ch) {
+  main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

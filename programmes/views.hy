@@ -28,6 +28,3 @@
 
 (defn about [request]
   (render "programmes/about"))
-
-(defn legals [request]
-  (render "programmes/legals"))

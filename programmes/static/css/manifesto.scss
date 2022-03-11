@@ -22,7 +22,7 @@ main#content {
   margin-left: 1.8em;
   align-self: start;
 
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1270px) {
     & {
       display: none;
     }
@@ -63,6 +63,14 @@ main#content {
 
   .manifesto-summary {
     font-weight: 300;
+  }
+
+  ul {
+    color: var(--flag-red);
+
+    a {
+      font-weight: bold;
+    }
   }
 
   .candidate-party {
@@ -181,8 +189,6 @@ p {
 }
 
 details {
-  cursor: pointer;
-
   h3 {
     cursor: pointer;
   }
@@ -227,7 +233,7 @@ details[open] {
       color: var(--flag-blue);
     }
   }
-  
+
   > div {
     font-weight: bold;
   }
@@ -245,10 +251,9 @@ details[open] {
     padding-left: 1rem;
   }
 
-  
   .manifesto-intro {
     margin-top: 6rem;
-    
+
     img.candidate {
       top: -14rem;
       margin-left: auto;

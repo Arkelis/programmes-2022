@@ -110,3 +110,14 @@ ul.manifesto-list {
     display: block;
   }
 }
+
+@media screen and (max-width: 90ch) {
+  .container--manifesto-hero {
+    padding: 0;
+    .manifesto-hero {
+      margin: 0;
+      max-width: 100%;
+      border-radius: 0;
+    }
+  }
+}

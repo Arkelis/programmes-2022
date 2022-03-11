@@ -31,7 +31,10 @@
         ['h1 manifesto.name])
       ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]
       ['h2 "En bref"]
-      ['div {'class "manifesto-summary"} (markdown manifesto.summary)]]])
+      ['div {'class "manifesto-summary"} (markdown manifesto.summary)]
+      ['ul
+        ['li (link-to {'target "_blank"} manifesto.website "Site web du programme ➜")]
+        ['li (link-to {'target "_blank"} manifesto.candidate.website f"Site web de {manifesto.candidate} ➜")]]]])
   
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}

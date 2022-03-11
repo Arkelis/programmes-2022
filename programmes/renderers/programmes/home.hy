@@ -20,5 +20,7 @@
              S'il s'agira d'élire la personnalité qui guidera la politique du pays pour
              les cinq prochaines années, ce site va tenter de synthétiser les programmes
              portés par chacun des candidats, afin de vous éclairer dans votre choix."]
-          (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats")
-          ['div {'class ["link--candidates" "disabled"]} "En savoir plus sur les candidats"]]])))
+          ['ul.milestones
+            ['li.milestone "Premier tour : " ['em "10 avril 2022"]]
+            ['li.milestone "Second tour : " ['em "24 avril 2022"]]]
+          (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats ➜")]])))

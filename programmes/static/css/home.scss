@@ -7,7 +7,7 @@
 }
 
 .container h1 {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
 }
 
 .title-word {
@@ -25,7 +25,7 @@
 
 .abstract {
   @include text-container;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @mixin link-button($bg-color) {
@@ -39,7 +39,17 @@
 }
 
 .link--programmes {
-  @include link-button(var(--flag-blue));
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  color: var(--flag-blue);
+
+  &:hover {
+    text-decoration: none;
+    @include underline-red;
+  }
 }
 
 .link--candidates {
@@ -57,6 +67,34 @@
     }
     .title-year {
       font-size: 2.25rem;
+    }
+  }
+}
+
+.milestones {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  .milestone {
+    font-weight: bold;
+    color: var(--grey);
+
+    &:not(&:first-child) {
+      margin-left: 1rem;
+    }
+
+    em {
+      font-style: normal;
+      font-weight: bold;
+      color: var(--flag-red);
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+
+    & .milestone:not(& .milestone:first-child) {
+      margin-left: 0;
     }
   }
 }
