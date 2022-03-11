@@ -8,7 +8,13 @@
   programmes.renderers.layouts.page [render-in-page])
   
 (defn render []
-  (->> #** (dict :home? True  :style "home")
+  (->> #** (dict
+             :home? True
+             :title "Programmes 2022 - Les programmes de l'Élection présidentielle de 2022"
+             :description "Ce site internet expose les programmes portés par
+                           les candidats de l'Élection présidentielle de 2022."
+             :url "https://www.programmes-2022.fr/"
+             :style "home")
     (render-in-page
       ['div {'class "container"}
         ['div {'class "center-block"}

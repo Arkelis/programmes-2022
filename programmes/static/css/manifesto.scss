@@ -56,6 +56,8 @@ main#content {
 
   h1,
   h1.title--image img {
+    margin: 0;
+    max-width: 25ch;
     font-family: "PT Serif", serif;
     font-weight: 700;
     margin-bottom: 0.25rem;

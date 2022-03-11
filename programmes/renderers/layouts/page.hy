@@ -8,16 +8,31 @@
         programmes.util.render [include-scss]
         programmes.models [Manifesto])
 
-(defn render-in-page [#* content [home? False] [manifesto-title None] style ]
-  (html5
+(defn render-in-page 
+  [#*
+   content
+   [home? False]
+   [manifesto-title ""]
+   [title ""]
+   [description ""]
+   [url ""]
+   style]
+  (html5 :lang "fr"
     ['head
+      ['title title]
+      ['link {'rel "canonical" 'href url}]
+      ['meta {'property "og:locale" 'content "fr_FR"}]
+      ['meta {'property "og:site_name" 'content "Programmes 2022"}]
+      ['meta {'property "og:title" 'content title}]
+      ['meta {'property "og:url" 'content url}]
+      ['meta {'property "og:description" 'content description}]
       ['meta {'charset "UTF-8"}]
       ['meta {'name "viewport" 'content "width=device-width, initial-scale=1"}]
       #* (include-scss f"/static/css/{style}.scss")]
     ['body
       ['header (navbar {'class (when home? "nav--home")} manifesto-title)]
-      ['main {'id "content"} (iter content)]]
-      (footer home?)))
+      ['main {'id "content"} (iter content)]
+      (footer home?)]))
 
 (defelem navbar [manifesto-title]
   ['nav

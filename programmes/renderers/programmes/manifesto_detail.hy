@@ -10,8 +10,12 @@
   (render-in-page
     (intro manifesto)
     (paragraphs manifesto)
-   :style "manifesto"
-   :manifesto-title manifesto.name))
+    :title f"{manifesto.name}, le programme porté par {manifesto.candidate} - Programmes 2022"
+    :description f"Liste des propositions du programme {manifesto.name} porté par
+                   {manifesto.candidate} pour l'Élection présidentielle de 2022."
+    :url f"https://www.programmes-2022.fr/programmes/{manifesto.slug}/"
+    :style "manifesto"
+    :manifesto-title manifesto.name))
 
 (defn toc [paragraphs]
     ['div {'class "manifesto-toc"}

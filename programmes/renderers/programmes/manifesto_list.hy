@@ -1,3 +1,5 @@
+(require hyrule [->>])
+
 (import
   django.utils.text [slugify]
   django.urls [reverse]
@@ -6,6 +8,11 @@
   programmes.util.render [markdown])
 
 (defn render [manifestos]
+  (->> #** (dict
+             :title f"Les programmes - Programmes 2022"
+             :description f"Liste des programmes pour l'Élection présidentielle de 2022."
+             :url "https://www.programmes-2022.fr/programmes/"
+             :style "manifesto-list")
   (render-in-page
     ['div.title-container ['h1 "Les programmes"]]
     ['ul.manifesto-list
@@ -14,9 +21,7 @@
           (link-to f"#{(slugify manifesto.name)}"
             ['div.manifesto manifesto.name]
             ['div.candidate-party (str manifesto.candidate) f" ({manifesto.candidate.party})"])])]
-    #* (map manifesto-hero manifestos)
-    :style "manifesto-list"))
-
+    #* (map manifesto-hero manifestos))))
 
 (defn manifesto-hero [manifesto]
   ['section.container--manifesto-hero {'id (slugify manifesto.name)}
