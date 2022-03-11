@@ -20,7 +20,7 @@
 (defn toc [paragraphs]
     ['div {'class "manifesto-toc"}
       ['h2 "Thématiques" ]
-      (gfor paragraph (paragraphs)
+      (gfor paragraph paragraphs
         ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])
       ['h2.hint
         "Cliquez sur une mesure pour plus de détails."]])
@@ -42,7 +42,7 @@
   
 (defn paragraphs [manifesto]
   ['section {'class "container--manifesto-paragraphs"}
-    (toc manifesto.paragraphs.all)
+    (toc (manifesto.paragraphs.order-by "order"))
     ['div {'class "manifesto-paragraphs"}
       (gfor paragraph (manifesto.paragraphs.all)
             ['section {'class "manifesto-paragraph"}

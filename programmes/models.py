@@ -106,7 +106,7 @@ class PoliticalEntity(models.Model):
 
 class ActiveManifestoManager(models.Manager):
     def get_queryset(self):
-        return super().get_queryset().filter(candidate__is_active=True)
+        return super().get_queryset().filter(candidate__is_active=True).order_by("order")
         
 class Manifesto(models.Model):
     name = models.CharField(verbose_name="Nom du programme", max_length=128)
@@ -119,6 +119,7 @@ class Manifesto(models.Model):
     summary = models.TextField(verbose_name="Résumé synthétique du programme")
     website = models.URLField()
     logo = models.ImageField(verbose_name="Logo du programme", upload_to="img/", null=True)
+    order = models.IntegerField(verbose_name="Ordre")
 
     objects = models.Manager()
     active_objects = ActiveManifestoManager()
@@ -152,6 +153,7 @@ class ManifestoParagraph(models.Model):
         related_name="paragraphs",
         related_query_name="paragraph",
         on_delete=models.CASCADE)
+    order = models.IntegerField(verbose_name="Ordre")
 
     class Meta:
         verbose_name = "paragraphe de programme"
