@@ -70,9 +70,9 @@ main#content {
   ul {
     color: var(--flag-red);
 
-    a {
-      font-weight: bold;
-    }
+    // a {
+    //   font-weight: bold;
+    // }
   }
 
   .candidate-party {
@@ -119,10 +119,9 @@ main#content {
 
 .manifesto-paragraph {
   h1 {
-    top: 0;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
     color: var(--flag-blue);
     font-size: 2rem;
     font-family: "PT Serif", serif;
@@ -130,7 +129,6 @@ main#content {
 
     @media screen and (max-width: 1270px) {
       display: none;
-      position: sticky;
     }
   }
 

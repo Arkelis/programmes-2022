@@ -23,8 +23,8 @@
     (doto self
       (.setup-folder)
       (.content-at (reverse "home"))
+      (.content-at (reverse "about"))
       (.contents-of Manifesto "manifesto-list" "manifesto-detail")
-      ;; (.content-at (reverse "candidate-list"))
       (.copy-styles)
       (.copy-images))
     "Done! Result build is in 'site' folder.")

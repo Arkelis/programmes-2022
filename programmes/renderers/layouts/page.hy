@@ -57,8 +57,7 @@
       
         ['p {'class "title"} "Programmes-2022.fr"]
         ['p
-          ['span (link-to (reverse "about") "À propos du site")]
-          ['span (link-to (reverse "about") "Mentions légales")]
+          ['span (link-to (reverse "about") "À propos / Mentions légales")]
           ['span (link-to {'target "_blank"} "https://github.com/Arkelis/programmes-2022" "Code source")]]]]))
 
 #@(cache

@@ -3,9 +3,13 @@ $space-between: 2rem;
 footer {
   padding: $space-between 0;
   background-color: var(--bg-light);
-
+  
   > div {
     @include text-container;
+
+    * {
+      font-size: .8rem;
+    }
   }
 
   .manifestos {

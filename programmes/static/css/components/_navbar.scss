@@ -31,6 +31,7 @@ nav {
 
 nav .site-name {
   @include header-font(italic, 200, sans-serif);
+  white-space: nowrap;
 
   span {
     @include header-font(normal, 700, serif);
