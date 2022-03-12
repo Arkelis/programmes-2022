@@ -30,6 +30,8 @@
     "Done! Result build is in 'site' folder.")
   
   (defn content-at [self url]
+    (with [sm (open "site/sitemap.txt" "a")]
+      (sm.write f"https://www.programmes-2022.fr{url}\n"))
     (.mkdir (Path f"site{url}") :exist_ok True :parents True)
     (with [f (open f"site{url}index.html" "w")]
       (self.stdout.write f"Writing site{url}index.html")
