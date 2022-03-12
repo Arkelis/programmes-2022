@@ -250,7 +250,9 @@ nav > ul {
     border-radius: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 1rem; }
     .nav-submenu-container .nav-submenu li .manifesto {
       font-weight: bold; }
@@ -339,8 +341,9 @@ main#content {
 
 ul.manifesto-list {
   display: grid;
-  place-content: center;
   grid-template-columns: 25rem 25rem 25rem;
+  grid-template-rows: repeat(4, 1fr);
+  place-content: center;
   margin: 2rem; }
   ul.manifesto-list li {
     color: var(--grey); }
@@ -395,7 +398,9 @@ ul.manifesto-list {
 
 @media screen and (max-width: 1500px) {
   ul.manifesto-list {
-    grid-template-columns: 25rem 25rem; } }
+    grid-auto-flow: column;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: repeat(6, 1fr); } }
 
 @media screen and (max-width: 1000px) {
   .title-container {
