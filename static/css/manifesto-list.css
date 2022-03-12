@@ -204,7 +204,8 @@ nav {
   right: 0;
   top: 0; }
   nav.nav--home {
-    position: absolute; }
+    position: absolute;
+    background: transparent; }
 
 nav .site-name {
   font-size: 1rem;
@@ -231,11 +232,12 @@ nav > ul {
       text-transform: uppercase; }
       nav > ul > li > a:hover {
         text-decoration: none; }
-    nav > ul > li:hover .nav-submenu-container {
-      display: block; }
+    @media screen and (min-width: 90ch) {
+      nav > ul > li:hover .nav-submenu-container {
+        display: block; } }
     nav > ul > li:hover > a {
       color: var(--flag-blue);
-      background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat; }
+      background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 0.15rem, transparent 0.15rem) no-repeat; }
 
 .nav-submenu-container {
   display: none;
@@ -254,25 +256,23 @@ nav > ul {
     .nav-submenu-container .nav-submenu li .candidate-party {
       font-style: italic; }
 
-@media all and (max-width: 90ch) {
-  nav {
-    margin: 1rem; }
-    nav > ul > li {
-      margin-right: 1rem; } }
+@media screen and (max-width: 1270px) {
+  header nav {
+    position: static;
+    margin-top: 0; }
+    header nav li:nth-child(3) {
+      display: none; } }
 
 footer {
   padding: 2rem 0;
-  background-color: rgba(5, 20, 64, 0.05); }
-  footer > * {
+  background-color: var(--bg-light); }
+  footer > div {
     max-width: 80ch;
     margin: auto; }
-  footer > div {
+  footer .manifestos {
     margin-bottom: 2rem; }
-  footer p {
-    display: flex;
-    align-items: center; }
   footer span:not(:last-of-type)::after {
-    content: '\00a0\00a0•\00a0\00a0'; }
+    content: " • "; }
   footer .title {
     font-size: 18px;
     font-weight: 600;
@@ -280,14 +280,6 @@ footer {
     font-family: "Fira Sans Condensed", sans-serif;
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
-
-a.github {
-  display: inline-flex;
-  align-items: center; }
-  a.github img {
-    margin-right: 5px;
-    width: 20px;
-    height: 20px; }
 
 @media screen and (max-width: 90ch) {
   footer {
@@ -390,7 +382,7 @@ ul.manifesto-list {
     .container--manifesto-hero .manifesto-hero a:hover > h2 {
       display: inline-block;
       text-decoration: none;
-      background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 3px, transparent 3px) no-repeat; }
+      background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 0.15rem, transparent 0.15rem) no-repeat; }
     .container--manifesto-hero .manifesto-hero .manifesto-summary {
       font-weight: 300; }
     .container--manifesto-hero .manifesto-hero .candidate-party {
@@ -408,3 +400,11 @@ ul.manifesto-list {
     margin-right: 1rem; }
   ul.manifesto-list {
     display: block; } }
+
+@media screen and (max-width: 90ch) {
+  .container--manifesto-hero {
+    padding: 0; }
+    .container--manifesto-hero .manifesto-hero {
+      margin: 0;
+      max-width: 100%;
+      border-radius: 0; } }
