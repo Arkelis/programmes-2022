@@ -211,7 +211,8 @@ nav .site-name {
   font-size: 1rem;
   font-weight: 200;
   font-style: italic;
-  font-family: "Fira Sans", sans-serif; }
+  font-family: "Fira Sans", sans-serif;
+  white-space: nowrap; }
   nav .site-name span {
     font-size: 1rem;
     font-weight: 700;
@@ -269,6 +270,8 @@ footer {
   footer > div {
     max-width: 80ch;
     margin: auto; }
+    footer > div * {
+      font-size: .8rem; }
   footer .manifestos {
     margin-bottom: 2rem; }
   footer span:not(:last-of-type)::after {
