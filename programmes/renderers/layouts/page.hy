@@ -8,42 +8,58 @@
         programmes.util.render [include-scss]
         programmes.models [Manifesto])
 
-(defn render-in-page [#* content [home? False] style]
-  (html5
+(defn render-in-page 
+  [#*
+   content
+   [home? False]
+   [manifesto-title ""]
+   [title ""]
+   [description ""]
+   [url ""]
+   style]
+  (html5 :lang "fr"
     ['head
+      ['title title]
+      ['link {'rel "canonical" 'href url}]
+      ['meta {'property "og:locale" 'content "fr_FR"}]
+      ['meta {'property "og:site_name" 'content "Programmes 2022"}]
+      ['meta {'property "og:title" 'content title}]
+      ['meta {'property "og:url" 'content url}]
+      ['meta {'property "og:description" 'content description}]
       ['meta {'charset "UTF-8"}]
       ['meta {'name "viewport" 'content "width=device-width, initial-scale=1"}]
       #* (include-scss f"/static/css/{style}.scss")]
     ['body
-      ['header (navbar {'class (when home? "nav--home")})]
-      ['main {'id "content"} (iter content)]]
-      
-      (full-footer home?)))
+      ['header (navbar {'class (when home? "nav--home")} manifesto-title)]
+      ['main {'id "content"} (iter content)]
+      (footer home?)]))
 
-(defelem navbar []
+(defelem navbar [manifesto-title]
   ['nav
     ['ul
+      ['li (link-to (reverse "home") "Accueil")]
       ['li (link-to (reverse "manifesto-list") "Programmes")
         ['div {'class "nav-submenu-container"} (manifesto-submenu)]]
-      ['li (link-to (reverse "home") "Accueil")]]
+      (if manifesto-title ['li (link-to "#top" manifesto-title)])]
     ['div {'class "site-name"} "Programmes" ['span "2022"]]])
 
 #@(cache
-(defelem full-footer [home?]
+(defelem footer [home?]
     ['footer
-      (if (not home?)
-        ['div
-          ['p {'class "title"} "Programmes"]
-          ['div {'class "manifestos"}
-            #* (lfor
-                manifesto (Manifesto.active_objects.all)
-                ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))])]])
+      ['div
+        (if (not home?)
+          ['div
+            ['h3 {'class "title"} "Les programmes"]
+            ['div {'class "manifestos"}
+              #* (lfor
+                  manifesto (Manifesto.active_objects.all)
+                  ['span (link-to (reverse "manifesto-detail" :args [manifesto.slug]) (str manifesto))])]])
       
-      ['p {'class "title"} "Programmes 2022"]
-      ['p
-        ['span (link-to (reverse "about") "À propos du site")]
-        ['span (link-to (reverse "legals") "Mentions légales")]
-        ['span (link-to {'target "_blank"} "https://github.com/Arkelis/programmes-2022" "Code source")]]]))
+        ['p {'class "title"} "Programmes-2022.fr"]
+        ['p
+          ['span (link-to (reverse "about") "À propos du site")]
+          ['span (link-to (reverse "about") "Mentions légales")]
+          ['span (link-to {'target "_blank"} "https://github.com/Arkelis/programmes-2022" "Code source")]]]]))
 
 #@(cache
 (defn manifesto-submenu []

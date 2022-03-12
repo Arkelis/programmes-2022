@@ -12,16 +12,20 @@
 }
 
 nav {
+  background: linear-gradient(white 85%, transparent);
   display: flex;
   justify-content: space-between;
   vertical-align: top;
-  margin: 1.5rem;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 
   &.nav--home {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background: transparent;
   }
 }
 
@@ -49,15 +53,16 @@ nav > ul {
       }
     }
 
-    &:hover {
-      .nav-submenu-container {
-        display: block;
+    @media screen and (min-width: 90ch) {
+      &:hover {
+        .nav-submenu-container {
+          display: block;
+        }
       }
-
-      > a {
-        color: var(--flag-blue);
-        @include underline-red;
-      }
+    }
+    &:hover > a {
+      color: var(--flag-blue);
+      @include underline-red;
     }
   }
 }
@@ -88,11 +93,13 @@ nav > ul {
   }
 }
 
-@media all and (max-width: 90ch) {
-  nav {
-    margin: 1rem;
-    & > ul > li {
-      margin-right: 1rem;
+@media screen and (max-width: 1270px) {
+  header nav {
+    position: static;
+    margin-top: 0;
+
+    li:nth-child(3) {
+      display: none;
     }
   }
 }

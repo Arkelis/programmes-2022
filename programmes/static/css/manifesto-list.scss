@@ -1,5 +1,9 @@
 @import "./base.scss";
 
+main#content {
+  margin-top: 4rem;
+}
+
 .title-container {
   @include text-container;
 
@@ -104,5 +108,16 @@ ul.manifesto-list {
 
   ul.manifesto-list {
     display: block;
+  }
+}
+
+@media screen and (max-width: 90ch) {
+  .container--manifesto-hero {
+    padding: 0;
+    .manifesto-hero {
+      margin: 0;
+      max-width: 100%;
+      border-radius: 0;
+    }
   }
 }

@@ -1,5 +1,9 @@
 @import "./base.scss";
 
+main#content {
+  margin-top: 4rem;
+}
+
 .container--manifesto-intro {
   background-color: var(--bg-light);
   padding: 3rem 0;
@@ -14,11 +18,11 @@
   grid-area: "toc";
   position: sticky;
   margin-top: 2.5rem;
-  top: 1rem;
+  top: 5rem;
   margin-left: 1.8em;
   align-self: start;
 
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1270px) {
     & {
       display: none;
     }
@@ -52,6 +56,8 @@
 
   h1,
   h1.title--image img {
+    margin: 0;
+    max-width: 25ch;
     font-family: "PT Serif", serif;
     font-weight: 700;
     margin-bottom: 0.25rem;
@@ -59,6 +65,14 @@
 
   .manifesto-summary {
     font-weight: 300;
+  }
+
+  ul {
+    color: var(--flag-red);
+
+    a {
+      font-weight: bold;
+    }
   }
 
   .candidate-party {
@@ -69,15 +83,14 @@
 
   img.party {
     width: 20ch;
-    display: block;
   }
 
   img.candidate {
     position: absolute;
     top: -8rem;
     right: 0;
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
   }
 }
@@ -178,8 +191,6 @@ p {
 }
 
 details {
-  cursor: pointer;
-
   h3 {
     cursor: pointer;
   }
@@ -224,10 +235,15 @@ details[open] {
       color: var(--flag-blue);
     }
   }
-  
+
   > div {
     font-weight: bold;
   }
+}
+
+.hint {
+  font-style: italic;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 90ch) {
@@ -237,12 +253,11 @@ details[open] {
     padding-left: 1rem;
   }
 
-  
   .manifesto-intro {
-    margin-top: 8rem;
-    
+    margin-top: 6rem;
+
     img.candidate {
-      top: -16rem;
+      top: -14rem;
       margin-left: auto;
       margin-right: auto;
       left: 0;
