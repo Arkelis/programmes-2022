@@ -41,10 +41,11 @@
         ['li (link-to {'target "_blank"} manifesto.candidate.website f"Site web de {manifesto.candidate} ➜")]]]])
   
 (defn paragraphs [manifesto]
+  (setv paragraphs (manifesto.paragraphs.order-by "order"))
   ['section {'class "container--manifesto-paragraphs"}
-    (toc (manifesto.paragraphs.order-by "order"))
+    (toc paragraphs)
     ['div {'class "manifesto-paragraphs"}
-      (gfor paragraph (manifesto.paragraphs.all)
+      (gfor paragraph paragraphs
             ['section {'class "manifesto-paragraph"}
               ['div {'class "breadcrumb" 'aria-hidden True}
                 (link-to (reverse "manifesto-list") "Programmes") " / "
