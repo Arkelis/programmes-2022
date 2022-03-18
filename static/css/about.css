@@ -248,12 +248,18 @@ nav > ul {
     padding: 1.5rem;
     background-color: var(--bg-light);
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1rem; }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
+    .nav-submenu-container .nav-submenu.nav-submenu--manifesto {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr); }
+    .nav-submenu-container .nav-submenu.nav-submenu--topic {
+      display: flex;
+      flex-direction: column; }
+      .nav-submenu-container .nav-submenu.nav-submenu--topic li:not(li:last-child) {
+        margin-bottom: 1rem; }
     .nav-submenu-container .nav-submenu li .manifesto {
       font-weight: bold; }
     .nav-submenu-container .nav-submenu li .candidate-party {
@@ -262,9 +268,7 @@ nav > ul {
 @media screen and (max-width: 1270px) {
   header nav {
     position: static;
-    margin-top: 0; }
-    header nav li:nth-child(3) {
-      display: none; } }
+    margin-top: 0; } }
 
 footer {
   padding: 2rem 0;

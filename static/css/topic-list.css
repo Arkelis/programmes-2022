@@ -332,74 +332,41 @@ li {
 .disabled {
   opacity: .5; }
 
-.container {
-  display: grid;
-  min-height: 100vh;
-  place-items: center; }
+main#content {
+  margin-top: 4rem; }
 
-.container h1 {
-  margin: 0 0 2rem 0; }
-
-.title-word {
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 200; }
-
-.title-year {
-  font-family: "PT Serif", serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-left: 0.25em; }
-
-.abstract {
+.title-container {
   max-width: 80ch;
-  margin: auto;
-  margin-bottom: 1rem; }
+  margin: auto; }
+  .title-container h1 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    margin-bottom: 0.25rem; }
 
-.link--programmes {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.25rem;
-  font-size: 1.25rem;
-  color: var(--flag-blue); }
-  .link--programmes:hover {
-    text-decoration: none;
-    background: linear-gradient(to top, var(--flag-red) 0%, var(--flag-red) 0.15rem, transparent 0.15rem) no-repeat; }
-
-.link--candidates {
-  display: block;
-  width: fit-content;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.25rem;
-  color: white;
-  background-color: var(--flag-red);
-  margin-bottom: 1rem; }
-
-@media screen and (max-width: 90ch) {
-  .center-block {
-    margin: 0 1rem; }
-  .container .title-word {
-    font-size: 2rem; }
-  .container .title-year {
-    font-size: 2.25rem; } }
-
-.milestones {
-  display: flex;
-  margin-bottom: 1.5rem; }
-  .milestones .milestone {
-    font-weight: bold;
+ul.manifesto-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 25rem 25rem;
+  grid-template-rows: repeat(5, 1fr);
+  place-content: center;
+  margin: 2rem; }
+  ul.manifesto-list li {
     color: var(--grey); }
-    .milestones .milestone:not(.milestones .milestone:first-child) {
-      margin-left: 1rem; }
-    .milestones .milestone em {
-      font-style: normal;
-      font-weight: bold;
-      color: var(--flag-red); }
-  @media screen and (max-width: 420px) {
-    .milestones {
-      flex-direction: column; }
-      .milestones .milestone:not(.milestones .milestone:first-child) {
-        margin-left: 0; } }
-.links li {
-  margin-bottom: 1rem; }
+    ul.manifesto-list li a {
+      display: block;
+      padding: 1rem; }
+    ul.manifesto-list li a:hover,
+    ul.manifesto-list li a:active {
+      color: var(--flag-blue);
+      text-decoration: none;
+      background-color: var(--bg-light);
+      border-radius: 0.5rem; }
+    ul.manifesto-list li .manifesto {
+      font-weight: bold; }
+
+@media screen and (max-width: 1000px) {
+  .title-container {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  ul.manifesto-list {
+    display: block; } }
