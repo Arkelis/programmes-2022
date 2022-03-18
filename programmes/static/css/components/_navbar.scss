@@ -79,11 +79,22 @@ nav > ul {
     border-radius: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1rem;
+    &.nav-submenu--manifesto {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    &.nav-submenu--topic {
+      display: flex;
+      flex-direction: column;
+
+      li:not(li:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
 
     li {
       .manifesto {
@@ -100,9 +111,5 @@ nav > ul {
   header nav {
     position: static;
     margin-top: 0;
-
-    li:nth-child(3) {
-      display: none;
-    }
   }
 }

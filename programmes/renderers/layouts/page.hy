@@ -6,7 +6,7 @@
         hyccup.element [link-to]
         hyccup.page [html5]
         programmes.util.render [include-scss]
-        programmes.models [Manifesto])
+        programmes.models [Manifesto Topic])
 
 (defn render-in-page 
   [#*
@@ -40,7 +40,8 @@
       ['li (link-to (reverse "home") "Accueil")]
       ['li (link-to (reverse "manifesto-list") "Programmes")
         ['div {'class "nav-submenu-container"} (manifesto-submenu)]]
-      (if manifesto-title ['li (link-to "#top" manifesto-title)])]
+      ['li (link-to (reverse "topic-list") "Thématiques")
+        ['div {'class "nav-submenu-container"} (topic-submenu)]]]
     ['div {'class "site-name"} "Programmes" ['span "2022"]]])
 
 #@(cache
@@ -62,10 +63,20 @@
 
 #@(cache
 (defn manifesto-submenu []
-  ['ul {'class "nav-submenu"}
+  ['ul.nav-submenu.nav-submenu--manifesto
     #* (lfor 
       manifesto (Manifesto.active_objects.all)
       ['li 
         (link-to (reverse "manifesto-detail" :args [manifesto.slug])
           ['div {'class "manifesto"} (str manifesto)]
           ['div {'class "candidate-party"} (str manifesto.candidate) f" ({manifesto.candidate.party})"])])]))
+
+
+#@(cache
+(defn topic-submenu []
+  ['ul.nav-submenu.nav-submenu--topic
+    #* (lfor 
+      topic (Topic.objects.all)
+      ['li 
+        (link-to (reverse "topic-detail" :args [topic.slug])
+          ['div {'class "manifesto"} topic.name])])]))

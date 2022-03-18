@@ -4,7 +4,8 @@
   django.urls [reverse]
   programmes.renderers.layouts.page [render-in-page]
   programmes.util.render [markdown]
-  hyccup.element [link-to])
+  hyccup.element [link-to]
+  hyccup.core [raw])
 
 (defn render [manifesto]
   (render-in-page
@@ -17,21 +18,21 @@
     :style "manifesto"
     :manifesto-title manifesto.name))
 
-(defn toc [paragraphs]
+(defn toc [paragraphs manifesto]
     ['div {'class "manifesto-toc"}
-      ['h2 "Thématiques" ]
+      (link-to "#top" ['h2.title manifesto.name])
       (gfor paragraph paragraphs
-        ['a {'href (+ "#" (slugify paragraph.topic.name))} paragraph.topic])
+        (link-to f"#{paragraph.topic.slug}" paragraph.topic))
       ['h2.hint
-        "Cliquez sur une mesure pour plus de détails."]])
+        "Cliquez sur une mesure" ['br] "pour plus de détails."]])
 
 (defn intro [manifesto]
   ['div {'class "container--manifesto-intro"}
     ['div {'class "manifesto-intro"}
-      ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.photo)) 'class "candidate"}]
+      ['img {'src (+ settings.MEDIA-URL (str manifesto.candidate.photo)) 'class "candidate" 'alt (raw "")}]
       (if manifesto.logo
         ['h1 {'class "title--image"} 
-          ['img {'src (+ settings.MEDIA-URL (str manifesto.logo)) 'class "party" 'alt "L'Avenir en commun"}]]
+          ['img {'src (+ settings.MEDIA-URL (str manifesto.logo)) 'class "party" 'alt manifesto.name}]]
         ['h1 manifesto.name])
       ['p {'class "candidate-party"} manifesto.candidate f" ({manifesto.candidate.party})"]
       ['h2 "En bref"]
@@ -43,7 +44,7 @@
 (defn paragraphs [manifesto]
   (setv paragraphs (manifesto.paragraphs.order-by "order"))
   ['section {'class "container--manifesto-paragraphs"}
-    (toc paragraphs)
+    (toc paragraphs manifesto)
     ['div {'class "manifesto-paragraphs"}
       (gfor paragraph paragraphs
             ['section {'class "manifesto-paragraph"}
@@ -51,5 +52,5 @@
                 (link-to (reverse "manifesto-list") "Programmes") " / "
                 (link-to "#top" manifesto.name)
                 ['div paragraph.topic.name]]
-              ['h1 {'id (slugify paragraph.topic.name)} paragraph.topic]
+              ['h1 {'id paragraph.topic.slug} paragraph.topic]
               (markdown paragraph.text)])]])

@@ -543,19 +543,19 @@
     "summary": "L'Avenir en commun porte l'idée que le peuple peut, par son action collective, renverser le système actuel  dirigé par des \"dominants\" par la voie démocratique et ainsi faire face aux enjeux que sont la crise climatique et la fracture sociale.\r\n\r\nPour y parvenir, la mesure phare du programme est l’adoption d’une nouvelle constitution qui conduirait la France vers la Sixième République. Parmi les autres points forts de l’Avenir en commun : la justice, l’écologie, le retour de la souveraineté dont le manque se fait ressentir pendant la pandémie, le travail, le partage des richesses, l’accès à l’éducation, l’égalité, la remise en question des traités européens en faisant face aux autres pays de l’Union européenne.",
     "website": "https://melenchon2022.fr/programme/",
     "order": 7,
-    "logo": "img/aec.webp"
+    "logo": "img/aec.png"
   }
 },
 {
   "model": "programmes.manifesto",
   "pk": 2,
   "fields": {
-    "name": "Nouvelle France",
+    "name": "Le Courage de faire",
     "candidate": 14,
-    "summary": "Synthèse du programme",
+    "summary": "Pour Valérie Pécresse, la France a perdu de sa grandeur avec les quinquennats Hollande et Macron, qui lui l'ont immobilisée. D'autre part, le pays est menacé par le désordre que pourraient amener Marine Le Pen ou Eric Zemmour.\r\n\r\nSe revendiquant Gaulliste, Valérie Pécresse veut reprendre le pays en main et avoir le \"courage de faire\" de grandes réformes : réduire la dette et les impôts, débureaucratiser l'état et construire une croissance durable. Elle veut retrouver la souveraineté de la France, tant bien industrielle, militaire, agricole que scientifique. Elle veut enfin rétablir l'ordre dans la rue et garantir l'égalité des chances.",
     "website": "https://www.valeriepecresse.fr/projets/",
     "order": 10,
-    "logo": ""
+    "logo": "img/pecresse_1kfLLDG.jpg"
   }
 },
 {
@@ -579,7 +579,7 @@
     "summary": "Pour Eric Zemmour, la France souffre de deux maux : l’immigration et la désindustrialisation. Il appelle cela “le grand remplacement”. \r\nLes mesures phares d’Eric Zemmour portent sur les thématiques identitaires, de la sécurité et de l’immigration\r\nLe candidat prévoit de redonner la France aux français, grace par exemple aux aides sociales qui seront attribuées en priorité aux français.\r\nLe parti reconquête souhaite aussi appliquer un certains nombre de mesures pour redonner du pouvoir d’achat aux français.",
     "website": "https://programme.zemmour2022.fr/",
     "order": 6,
-    "logo": ""
+    "logo": "img/zemmour_ycxsxAC.jpg"
   }
 },
 {
@@ -591,7 +591,7 @@
     "summary": "Nicolas Dupont-Aignan veut mettre l'accent sur la solidité et le sérieux de son programme, aboutissement de nombreuses rencontres sur le terrain et d'heures de travail avec des experts reconnus. Gaulliste et patriote, il axe celui-ci sur cinq points majeurs :\r\n\r\n1. l'indépendance et la liberté ;\r\n2. la récompense du travail et le produire en France ;\r\n3. une restructuration du service public dans les territoires ;\r\n4. la cohésion nationale et l'ordre ;\r\n5. la recherche et l'écologie pour préparer le pays à 2050.",
     "website": "https://2022nda.fr",
     "order": 12,
-    "logo": ""
+    "logo": "img/liberonsnous.jpg"
   }
 },
 {
@@ -615,7 +615,7 @@
     "summary": "La France authentique entend avant tout porter la parole des Français au cœur de nos institutions, maintenir les services publics de proximité, encourager les initiatives locales et rebâtir un État fort. Il est organisé autour de l’écoute et de l’échange, préalables essentiels au renouveau du peuple souverain, à la régénérescence de la démocratie et à la consolidation de la République. Jean Lassalle souhaite reconstruire un État au service de nos compatriotes et redonner à l’espace public le pouvoir financier dont il ne dispose plus. Pour cela, il faut réapprendre à gérer en bien commun nos précieux territoires et nos merveilleuses cités.",
     "website": "https://jl2022.fr",
     "order": 4,
-    "logo": ""
+    "logo": "img/lfrauthentique.jpg"
   }
 },
 {
@@ -627,7 +627,7 @@
     "summary": "Relever les défis de la submersion et du déclassement et faire entrer notre pays dans le 3e millénaire avec énergie et imagination, telle est l'ambition du programme porté par Marine Le Pen. Autour d’un État restauré dans ses fonctions régaliennes, la Nation sera rétablie dans sa souveraineté et ses libertés. Avec des perspectives de résultats rapides l'action de redressement s’ordonnance autour d’un triptyque Protection, Projection, Transmission. L'objectif est de remettre la France en ordre et lui faire retrouver la sécurité et la prospérité et ainsi renouer avec le bonheur d’y vivre pour tous les Français patriotes.",
     "website": "https://mlafrance.fr",
     "order": 5,
-    "logo": "img/mlafrance.png"
+    "logo": "img/lepen.png"
   }
 },
 {
@@ -639,7 +639,7 @@
     "summary": "La France des jours heureux",
     "website": "https://www.fabienroussel2022.fr/le_programme",
     "order": 2,
-    "logo": ""
+    "logo": "img/roussel_DmnG5oC.jpg"
   }
 },
 {
@@ -660,10 +660,10 @@
   "fields": {
     "name": "Avec vous",
     "candidate": 17,
-    "summary": "Avec vous",
-    "website": "https://avecvous.fr",
+    "summary": "Le projet présidentiel d'Emmanuel Macron vise à l’émancipation de chacune et chacun et à la transmission de nos valeurs et de notre culture, pour rendre notre pays plus fort. Trois pactes sont présentés pour bâtir la France : un nouveau contrat social entre générations, un pacte productif pour gagner en force et en indépendance économique, et un pacte républicain renouvelé pour faire nation. Avec et pour nous tous.",
+    "website": "https://avecvous.fr/projet-presidentiel",
     "order": 3,
-    "logo": ""
+    "logo": "img/macron.png"
   }
 },
 {
@@ -675,7 +675,7 @@
     "summary": "PP 2022\r\nProgramme de rupture avec le capitalisme pour la construction d'une société écologique et socialiste de proximité selon les priorités collectives, avec un modèle internationaliste.",
     "website": "https://poutou2022.org",
     "order": 11,
-    "logo": ""
+    "logo": "img/poutou_F3Rj6Eb.jpg"
   }
 },
 {
@@ -823,7 +823,7 @@
   "pk": 8,
   "fields": {
     "topic": 10,
-    "text": "## Energie\r\n- neutralité carbone d’ici 2050.\r\n\r\n## Pour le nucléaire\r\n- construction de 8 EPR (réacteur nucléaire 3ème génération)\r\n- moratoire sur les fermetures des 14 réacteurs prévu d’ici 2035\r\n\r\n## Transport :\r\n\r\n### Gratuité des transports en commun urbains et investissement de 50 milliards sur 15 ans\r\n\r\n### Relancer le fret ferroviaire et les petites lignes",
+    "text": "## Énergie\r\n\r\n### Atteindre la neutralité carbone d’ici 2050\r\n\r\n## Construire 8 EPR (réacteur nucléaire 3ème génération)\r\n\r\n### Engager un moratoire sur les fermetures des 14 réacteurs nucléaires prévues d’ici 2035\r\n\r\n## Transport\r\n\r\n### Gratuité des transports en commun urbains et investissement de 50 milliards sur 15 ans\r\n\r\n### Relancer le fret ferroviaire et les petites lignes",
     "manifesto": 11,
     "order": 1
   }
@@ -833,7 +833,7 @@
   "pk": 9,
   "fields": {
     "topic": 5,
-    "text": "## Santé\r\n- Création de 100 000 postes à l’hôpital public.\r\n- Déconjugalisation de l’Allocation Adultes Handicapé.\r\n\r\n## Une révolution du travail et la revalorisation des salaires \r\n\r\n### La semaine de travail passera à 32 heures, sans diminution de salaires\r\nPour permettre aux salariés de retrouver un gain de productivité",
+    "text": "## Santé\r\n\r\n### Création de 100 000 postes à l’hôpital public\r\n\r\n### Déconjugaliser l’Allocation Adultes Handicapé\r\n\r\n## Une révolution du travail et la revalorisation des salaires \r\n\r\n### La semaine de travail passera à 32 heures, sans diminution de salaire\r\n\r\nPour permettre aux salariés de retrouver un gain de productivité.",
     "manifesto": 11,
     "order": 1
   }
@@ -843,7 +843,7 @@
   "pk": 10,
   "fields": {
     "topic": 4,
-    "text": "## Ecole\r\n\r\n- Augmentation du temps scolaire : 27h en primaire, 32h au collège et au lycée, sans augmenter le temps de travail des enseignants.\r\n\r\n- En finir avec les devoirs : tout le travail scolaire doit se faire en classe. \r\n\r\n- Réduction des effectifs : pas plus de 20 en maternelle et en primaire, pas plus de 25 dans l’enseignement secondaire.\r\n\r\n### Professeurs\r\n\r\nRecrutement de 90 000 enseignantes et enseignants",
+    "text": "## Ecole\r\n\r\n### Augmentation du temps scolaire : 27h en primaire, 32h au collège et au lycée, sans augmenter le temps de travail des enseignants.\r\n\r\n### En finir avec les devoirs : tout le travail scolaire doit se faire en classe. \r\n\r\n### Réduction des effectifs : pas plus de 20 en maternelle et en primaire, pas plus de 25 dans l’enseignement secondaire.\r\n\r\n### Recruter 90 000 enseignantes et enseignants",
     "manifesto": 11,
     "order": 1
   }
@@ -1583,7 +1583,7 @@
   "pk": 94,
   "fields": {
     "topic": 3,
-    "text": "## Salaires\r\n\r\n### Augmenter de 30 % les salaires de la fonction publique\r\n\r\n### Parvenir en un an à l’égalité salariale\r\nLa fonction publique disposera de six mois pour parvenir à l’égalité salariale entre les hommes et les femmes, et les entreprises privées d’un an\r\n\r\n### Créer 500 000 postes de fonctionnaire\r\n\r\n### Nationaliser les grandes banques\r\nGrâce notamment à la  création d'un pôle financier public",
+    "text": "## Salaires\r\n\r\n### Augmenter de 30 % les salaires de la fonction publique\r\n\r\n### Parvenir en un an à l’égalité salariale\r\n\r\nLa fonction publique disposera de six mois pour parvenir à l’égalité salariale entre les hommes et les femmes, et les entreprises privées d’un an.\r\n\r\n### Créer 500 000 postes de fonctionnaire\r\n\r\n### Nationaliser les grandes banques\r\n\r\nGrâce notamment à la création d'un pôle financier public.",
     "manifesto": 11,
     "order": 1
   }
@@ -1603,7 +1603,7 @@
   "pk": 96,
   "fields": {
     "topic": 1,
-    "text": "### Abroger l'élection du président au suffrage universel\r\nLe Parlement sera maître de son ordre du jour. C’est à l’Assemblée nationale qu’il appartiendra d’investir le premier ministre et le gouvernement\r\n\r\n### Instaurer la proportionnelle intégrale aux législatives",
+    "text": "### Abroger l'élection du président au suffrage universel\r\n\r\nLe Parlement sera maître de son ordre du jour. C’est à l’Assemblée nationale qu’il appartiendra d’investir le premier ministre et le gouvernement.\r\n\r\n### Instaurer la proportionnelle intégrale aux législatives",
     "manifesto": 11,
     "order": 1
   }
@@ -1653,7 +1653,7 @@
   "pk": 101,
   "fields": {
     "topic": 2,
-    "text": "### Créer un cadre administratif et institutionnel intégré à une stratégie maritime nationale \r\n\r\n1. Créer un grand ministère de la Mer et de l'Outre-mer\r\n2. Lancer un grand projet d’exploration et d’inventaire de la ZEE\r\n3. Définir un « plan Mer »\r\n4. Sensibiliser les Français dès l’enfance à la dimension planétaire et maritime de la France et non simplement hexagonale\r\n\r\n### Mener une politique étrangère tournée vers nos espaces maritimes prenant en compte la dimension mondiale de la France\r\n\r\n5. Redonner à notre marine nationale les moyens d’une véritable politique concernant la ZEE\r\n6. Promouvoir nos intérêts et nos connaissances dans le domaine maritime\r\n\r\n### Exploiter nos immenses ressources maritimes pour redevenir un compétiteur économique mondial de premier ordre\r\n\r\n7. Développer la recherche et la production dans les domaines des technologies marines et sous-marines\r\n8. Reprendre l’exploitation de terres rares, abandonnée dans les années 1980 en posant un cadre écologique strict\r\n9. Favoriser et soutenir la recherche et le développement dans les énergies marines renouvelables (EMR)\r\n10. Favoriser l’investissement dans la recherche et la production biologique marine (santé, nourriture)\r\n\r\n### Rattraper d’urgence notre retard en matière de fret et d’infrastructures portuaires et fluviales et se servir de l’économie de la mer pour réindustrialiser la France \r\n\r\nDisposer de grands ports est un élément de souveraineté essentiel, un atout majeur de compétitivité, d’innovation et de création d’emplois. La recherche liée aux problématiques maritimes se fait principalement dans les villes portuaires en raison des partenariats entre les entreprises dont l’activité économique est liée à la mer et les institutions éducatives locales. Selon un rapport de l’OCDE, la compétitivité et l’attractivité des ports sont déterminées par cinq composantes principales :\r\n\r\n- La connectivité des ports à l’échelle nationale et internationale.\r\n- Des stratégies à long terme fondées sur la flexibilité et une approche imaginative plutôt que technocratique, approche adaptée à la configuration régionale de chacun des ports concernés.\r\n- De fortes connexions avec l’arrière-pays.\r\n- Des opérations portuaires efficaces et une logistique adaptée.\r\n- La sensibilisation de l’opinion publique et des acteurs locaux.\r\n\r\n### Développer le fret fluvial afin de mieux relier les ports entre eux et aux grandes villes\r\n\r\n11. Inciter à l’aménagement des quais fluviaux. Un des obstacles majeurs au développement du transport fluvial est la faible disponibilité de la place à quai.\r\n12. Poursuivre et relancer les projets à l’étude de connexions fluviales\r\n\r\n### Chercher les moyens de faire de la France une des portes d’entrée portuaire majeure de l’Europe\r\n\r\n13. Augmenter la connectivité des ports par la multiplication de partenariats intra et internationaux\r\n14. Instaurer un service minimum dans les grands ports afin de sécuriser leur fonctionnalité et améliorer leur attractivité auprès des acteurs économiques internationaux (armateurs, pétroliers…)\r\n15. Pour sensibiliser le public à l’importance du secteur maritime, plusieurs solutions ont été imaginées dans les ports principaux du monde, tous exemples à imiter et promouvoir\r\n\r\n### Soutenir le secteur nautique français en allégeant la fiscalité \r\n\r\n16. Développer le tourisme maritime et l’accueil des navires de croisières\r\n17. Elaborer en liaison avec tous les professionnels concernés et la Fédération des Industries Nautiques (FIN) une stratégie nationale pour développer la plaisance et les loisirs nautiques ainsi que le tourisme nautique et aquatique\r\n18. Préserver, puis augmenter, les moyens des Centres régionaux opérationnels de surveillance et de sauvetage (CROSS), et les autres moyens de l’État en mer\r\n19. Dresser un bilan avec les mairies et ports les plus concernés par les problématiques de disponibilités des anneaux et établir un plan d’action pour accroitre le nombre de places de ports (plaisance) ce qui facilite par effet induit les ventes de voiliers et de yachts à moteur\r\n20. Revenir sur la hausse de la taxe foncière pour les postes d’amarrage dans les ports de plaisance de 2013\r\n21. Faciliter les conditions d’accès au permis bateau\r\n22. Soutenir les structures des clubs et fédérations afin d’accroître leur accessibilité d’un point de vue financier comme géographique (pour les habitants des grandes villes par exemple)\r\n23. Promouvoir l’offre française et son image de marque au-travers des grands évènements sportifs (Vendée Globe, Route du Rhum, Transat Jacques Vabre)\r\n\r\n### Sauver la pêche française\r\n\r\n24. Renégocier les traités européens afin de pouvoir mettre en place une politique nationale des pêches, en collaboration avec la communauté des pays européens\r\n25. Mettre en place un plan de désendettement des armements\r\n26. Sanctuariser les « arrêts biologiques » rémunérés\r\n27. Simplifier la réglementation\r\n28. Soutenir la recherche sur l’étude d’un réensemencement d’alevins en milieu naturel, qui pourra déboucher en partenariat avec les fermes marines françaises à un geste écologique de grande ampleur\r\n29. Permettre aux petites pêcheries de participer activement à l’essor de la culture d’algues marines, l’or vert, en tant que revenu complémentaire\r\n30. Favoriser le développement de l’aquaculture de qualité, loin d’une aquaculture intensive\r\n\r\n### Densifier les politiques de préservation des océans\r\n\r\n- Se donner les moyens de contrôler et de protéger\r\n- En Europe, placer l’océan au cœur du pacte vert\r\n- À l’international, compléter les instruments juridiques et les faire appliquer\r\n- Quelques axes concrets pour changer le visage de la Méditerranée",
+    "text": "## Pour une vraie stratégie maritime nationale\r\n\r\n### Créer un cadre administratif et institutionnel intégré à une stratégie maritime nationale \r\n\r\n1. Créer un grand ministère de la Mer et de l'Outre-mer\r\n2. Lancer un grand projet d’exploration et d’inventaire de la ZEE\r\n3. Définir un « plan Mer »\r\n4. Sensibiliser les Français dès l’enfance à la dimension planétaire et maritime de la France et non simplement hexagonale\r\n\r\n### Mener une politique étrangère tournée vers nos espaces maritimes prenant en compte la dimension mondiale de la France\r\n\r\n5. Redonner à notre marine nationale les moyens d’une véritable politique concernant la ZEE\r\n6. Promouvoir nos intérêts et nos connaissances dans le domaine maritime\r\n\r\n### Exploiter nos immenses ressources maritimes pour redevenir un compétiteur économique mondial de premier ordre\r\n\r\n7. Développer la recherche et la production dans les domaines des technologies marines et sous-marines\r\n8. Reprendre l’exploitation de terres rares, abandonnée dans les années 1980 en posant un cadre écologique strict\r\n9. Favoriser et soutenir la recherche et le développement dans les énergies marines renouvelables (EMR)\r\n10. Favoriser l’investissement dans la recherche et la production biologique marine (santé, nourriture)\r\n\r\n### Rattraper d’urgence notre retard en matière de fret et d’infrastructures portuaires et fluviales et se servir de l’économie de la mer pour réindustrialiser la France \r\n\r\nDisposer de grands ports est un élément de souveraineté essentiel, un atout majeur de compétitivité, d’innovation et de création d’emplois. La recherche liée aux problématiques maritimes se fait principalement dans les villes portuaires en raison des partenariats entre les entreprises dont l’activité économique est liée à la mer et les institutions éducatives locales. Selon un rapport de l’OCDE, la compétitivité et l’attractivité des ports sont déterminées par cinq composantes principales :\r\n\r\n- La connectivité des ports à l’échelle nationale et internationale.\r\n- Des stratégies à long terme fondées sur la flexibilité et une approche imaginative plutôt que technocratique, approche adaptée à la configuration régionale de chacun des ports concernés.\r\n- De fortes connexions avec l’arrière-pays.\r\n- Des opérations portuaires efficaces et une logistique adaptée.\r\n- La sensibilisation de l’opinion publique et des acteurs locaux.\r\n\r\n### Développer le fret fluvial afin de mieux relier les ports entre eux et aux grandes villes\r\n\r\n11. Inciter à l’aménagement des quais fluviaux. Un des obstacles majeurs au développement du transport fluvial est la faible disponibilité de la place à quai.\r\n12. Poursuivre et relancer les projets à l’étude de connexions fluviales\r\n\r\n### Chercher les moyens de faire de la France une des portes d’entrée portuaire majeure de l’Europe\r\n\r\n13. Augmenter la connectivité des ports par la multiplication de partenariats intra et internationaux\r\n14. Instaurer un service minimum dans les grands ports afin de sécuriser leur fonctionnalité et améliorer leur attractivité auprès des acteurs économiques internationaux (armateurs, pétroliers…)\r\n15. Pour sensibiliser le public à l’importance du secteur maritime, plusieurs solutions ont été imaginées dans les ports principaux du monde, tous exemples à imiter et promouvoir\r\n\r\n### Soutenir le secteur nautique français en allégeant la fiscalité \r\n\r\n16. Développer le tourisme maritime et l’accueil des navires de croisières\r\n17. Elaborer en liaison avec tous les professionnels concernés et la Fédération des Industries Nautiques (FIN) une stratégie nationale pour développer la plaisance et les loisirs nautiques ainsi que le tourisme nautique et aquatique\r\n18. Préserver, puis augmenter, les moyens des Centres régionaux opérationnels de surveillance et de sauvetage (CROSS), et les autres moyens de l’État en mer\r\n19. Dresser un bilan avec les mairies et ports les plus concernés par les problématiques de disponibilités des anneaux et établir un plan d’action pour accroitre le nombre de places de ports (plaisance) ce qui facilite par effet induit les ventes de voiliers et de yachts à moteur\r\n20. Revenir sur la hausse de la taxe foncière pour les postes d’amarrage dans les ports de plaisance de 2013\r\n21. Faciliter les conditions d’accès au permis bateau\r\n22. Soutenir les structures des clubs et fédérations afin d’accroître leur accessibilité d’un point de vue financier comme géographique (pour les habitants des grandes villes par exemple)\r\n23. Promouvoir l’offre française et son image de marque au-travers des grands évènements sportifs (Vendée Globe, Route du Rhum, Transat Jacques Vabre)\r\n\r\n### Sauver la pêche française\r\n\r\n24. Renégocier les traités européens afin de pouvoir mettre en place une politique nationale des pêches, en collaboration avec la communauté des pays européens\r\n25. Mettre en place un plan de désendettement des armements\r\n26. Sanctuariser les « arrêts biologiques » rémunérés\r\n27. Simplifier la réglementation\r\n28. Soutenir la recherche sur l’étude d’un réensemencement d’alevins en milieu naturel, qui pourra déboucher en partenariat avec les fermes marines françaises à un geste écologique de grande ampleur\r\n29. Permettre aux petites pêcheries de participer activement à l’essor de la culture d’algues marines, l’or vert, en tant que revenu complémentaire\r\n30. Favoriser le développement de l’aquaculture de qualité, loin d’une aquaculture intensive\r\n\r\n### Densifier les politiques de préservation des océans\r\n\r\n- Se donner les moyens de contrôler et de protéger\r\n- En Europe, placer l’océan au cœur du pacte vert\r\n- À l’international, compléter les instruments juridiques et les faire appliquer\r\n- Quelques axes concrets pour changer le visage de la Méditerranée",
     "manifesto": 6,
     "order": 7
   }
@@ -1696,6 +1696,16 @@
     "text": "## Vers l'Europe fédérale du climat\r\n\r\nL'Europe n'est, selon Yannick Jadot, pas seulement un idéal mais aussi une nécessité. C'est à cette échelle que nous pourront relever les défis du siècle. Cela passe notamment par une réforme des institutions vers une construction politique et institutionnelle. D'abord, les décisions ne doivent plus être prises à l'unanimité. Il faut développer la coopération sur les prises de décision et augmenter les ressources du budget européen. Ensuite, une réforme des traités sera initiée avec la mise en place d'une Convention constituante pour l'Union européenne. Le rôle du Parlement européen sera renforcé et le Pacte de croissance sera remplacé par des critères conformes à la transition écologique.\r\n\r\n### Engager l'Europe dans l'action climatique\r\n\r\nUn traité environnemental européen engagera au principe de précaution et à la reconnaissance de l'écocide. Pour les énergies renouvelables par exemple, l'objectif sera porté à 50% en 2030.\r\n\r\n### Rendre les échanges commerciaux plus justes\r\n\r\nL'économie et la production locales seront favorisées dans les marchés publics. Les accords de libre-échange extra européens seront renégociés, tout comme les traités d'investissement.\r\n\r\n### Revoir la politique migratoire pour un meilleur accueil\r\n\r\nLes migrants ne seront plus refoulés aux frontières et ils pourront être relocalisés en fonction de leurs aspirations.\r\n\r\n### Défendre les droits des salariés et des citoyens\r\n\r\nPlusieurs mesures visent à plus d'égalité entre les pays comme notamment l'instauration d'un salaire minimum et le renforcement de la politique de santé.\r\n\r\n### Elargir les principes démocratiques et les droits de l'homme\r\n\r\nAvec par exemple l'adhésion de l'Europe à la Convention européenne des droits de l'homme.\r\n\r\n##\r\n\r\n### Faire appliquer les engagements de l'Accord de Paris\r\n\r\nLes Etats qui le souhaitent seront encouragés à transposer dans leur droit interne les engagements qu'ils ont pris afin de les appliquer réellement.\r\n\r\n### Pacifier nos rapports diplomatiques\r\n\r\nLe désarmement nucléaire sera proposé à l'échelle internationale. Le dialogue sera établi avec la Chine, la Turquie et la Russie tout en essayant de tendre vers une indépendance énergétique et sans concession sur les droits de l'homme.\r\n\r\n### Réformer les Organisations internationales et créer une Organisation mondiale de l'environnement\r\n\r\nCela permettra une meilleure efficacité et représentativité des états.\r\n\r\n### Adapter notre stratégie de défense aux défis du changement climatique\r\n\r\nLa trajectoire budgétaire de la loi de programmation militaire sera maintenue. L'exportation d'armes sera réellement encadrée, notamment par un contrôle parlementaire.\r\n\r\n### Se défendre avec l'Europe\r\n\r\nUne force de déploiement de 5000 hommes sera constituée.\r\n\r\n### Répondre aux objectifs du développement durable par la solidarité internationale\r\n\r\nL'aide au développement par le don sera privilégiée. Avec l'Union européenne, les services de santé publique seront développés en Afrique. Un dialogue coopératif sera mené entre les pays de la Méditerranée.",
     "manifesto": 3,
     "order": 1
+  }
+},
+{
+  "model": "programmes.manifestoparagraph",
+  "pk": 106,
+  "fields": {
+    "topic": 8,
+    "text": "## Économie Sociale et Solidaire (ESS) pour le sport et les associations : concilier solidarité, société et économie\r\n\r\n### Encourager la pratique du sport pour tous les Français et réduire les inégalités d’accès à la pratique sportive\r\n\r\n1. Déployer un plan « piscine à 1 euro »\r\n2. Généraliser à tous les enfants de 6 à 18 ans le pass’sport\r\n3. Développer la pratique du Sport à l’école, au collège et au lycée\r\n4. Développer les liens entre clubs sportifs et établissements scolaires\r\n5. Enrichir le sport à l’école grâce aux clubs municipaux\r\n6. Réduire les inégalités d’accès à la pratique sportive dans les territoires\r\n7. Financer des infrastructures sportives adaptées aux personnes en situation de handicap et médiatiser les compétitions paralympiques via le service public\r\n\r\n### Renforcer la compétitivité du sport de haut niveau en France pour accroître son rayonnement dans le monde\r\n\r\n1. Afficher comme une priorité politique l’accueil des grands événements sportifs\r\n2. Accroître la couverture par le service public des disciplines olympiques\r\n\r\n### Moderniser le fonctionnement de nos fédérations sportives et de nos clubs\r\n\r\n\r\n1. Favoriser les liens entre les organes fédéraux et les échelons intermédiaires et inférieurs\r\n2. Favoriser la représentativité des différents acteurs du sport dans les organes dirigeants des fédérations sportives (sportifs, entraîneurs, administratifs…)\r\n3. Encadrer la rémunération des dirigeants des fédérations sportives et interdire le cumul des mandats pour les membres des organes dirigeants des fédérations\r\n4. Proposer une continuité professionnelle aux sportifs de haut niveau en les impliquant dans l’obtention d’une formation diplômante et dans l’encadrement des clubs\r\n5. Faciliter la diversification des ressources des fédérations sportives, en assouplissant les conditions de recours au mécénat",
+    "manifesto": 6,
+    "order": 8
   }
 }
 ]

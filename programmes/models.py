@@ -142,6 +142,10 @@ class Topic(models.Model):
 
     def __str__(self):
         return self.name
+    
+    @property
+    def slug(self):
+        return slugify(self.name)
 
 
 class ManifestoParagraph(models.Model):

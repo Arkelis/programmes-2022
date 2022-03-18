@@ -29,4 +29,6 @@
           ['ul.milestones
             ['li.milestone "Premier tour : " ['em "10 avril 2022"]]
             ['li.milestone "Second tour : " ['em "24 avril 2022"]]]
-          (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats ➜")]])))
+          ['ul.links
+            ['li (link-to {'class "link--programmes"} (reverse "manifesto-list") "Consulter les programmes des candidats ➜")]
+            ['li (link-to {'class "link--programmes"} (reverse "topic-list") "Comparer les programmes par thématiques ➜")]]]])))
