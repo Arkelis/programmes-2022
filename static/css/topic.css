@@ -386,7 +386,8 @@ main#content {
   max-width: 80ch;
   margin: auto; }
 
-.manifesto-paragraph h1 {
+.manifesto-paragraph h1,
+.manifesto-paragraph h1 a {
   text-align: center;
   padding-top: 5rem;
   margin-bottom: 2rem;
@@ -395,8 +396,16 @@ main#content {
   font-family: "PT Serif", serif;
   font-weight: 700; }
   @media screen and (max-width: 1270px) {
-    .manifesto-paragraph h1 {
+    .manifesto-paragraph h1,
+    .manifesto-paragraph h1 a {
       display: none; } }
+  .manifesto-paragraph h1 span,
+  .manifesto-paragraph h1 a span {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic; }
+
 .manifesto-paragraph h2,
 .manifesto-paragraph h3 {
   margin-bottom: 1rem;
@@ -477,32 +486,17 @@ details[open] {
       padding-top: 1rem;
       padding-bottom: 1.5rem;
       z-index: 2; }
-      .breadcrumb div {
+      .breadcrumb div a {
         font-family: "PT Serif", serif;
         font-size: 1.2rem;
-        color: var(--flag-blue); } }
-  .breadcrumb > div {
-    font-weight: bold; }
-
+        color: var(--flag-blue);
+        font-weight: bold; } }
 .hint {
   font-style: italic;
   margin-top: 1rem; }
 
 @media screen and (max-width: 90ch) {
-  .container--manifesto-intro,
+  .title-container,
   .container--manifesto-paragraphs {
     padding-right: 1rem;
-    padding-left: 1rem; }
-  .manifesto-intro {
-    margin-top: 6rem; }
-    .manifesto-intro img.candidate {
-      top: -14rem;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      text-align: center; } }
-
-@media screen and (max-width: 50ch) {
-  .manifesto-intro img.party {
-    width: 100%; } }
+    padding-left: 1rem; } }

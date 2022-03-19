@@ -419,7 +419,8 @@ main#content {
   max-width: 80ch;
   margin: auto; }
 
-.manifesto-paragraph h1 {
+.manifesto-paragraph h1,
+.manifesto-paragraph h1 a {
   text-align: center;
   padding-top: 5rem;
   margin-bottom: 2rem;
@@ -428,7 +429,8 @@ main#content {
   font-family: "PT Serif", serif;
   font-weight: 700; }
   @media screen and (max-width: 1270px) {
-    .manifesto-paragraph h1 {
+    .manifesto-paragraph h1,
+    .manifesto-paragraph h1 a {
       display: none; } }
 .manifesto-paragraph h2,
 .manifesto-paragraph h3 {
@@ -465,7 +467,8 @@ main#content {
   list-style-type: disc;
   margin-left: 2rem; }
 
-.manifesto-paragraph ol, .manifesto-paragraph ul {
+.manifesto-paragraph ol,
+.manifesto-paragraph ul {
   margin-bottom: 1rem; }
 
 p {
@@ -509,13 +512,11 @@ details[open] {
       padding-top: 1rem;
       padding-bottom: 1.5rem;
       z-index: 2; }
-      .breadcrumb div {
+      .breadcrumb div a {
         font-family: "PT Serif", serif;
         font-size: 1.2rem;
-        color: var(--flag-blue); } }
-  .breadcrumb > div {
-    font-weight: bold; }
-
+        color: var(--flag-blue);
+        font-weight: bold; } }
 .hint {
   font-style: italic;
   margin-top: 1rem; }
