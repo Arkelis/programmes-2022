@@ -8,13 +8,14 @@
   programmes.renderers.layouts.page [render-in-page])
   
 (defn render []
-  (->> #** (dict
-             :home? True
-             :title "Programmes 2022 - Les programmes de l'Élection présidentielle de 2022"
-             :description "Ce site internet expose les programmes portés par
-                           les candidats de l'Élection présidentielle de 2022."
-             :url "https://www.programmes-2022.fr/"
-             :style "home")
+  (->> 
+    #** (dict
+          :home? True
+          :title "Programmes 2022 - Les programmes de l'Élection présidentielle de 2022"
+          :description "Ce site internet expose les programmes portés par
+                        les candidats de l'Élection présidentielle de 2022."
+          :url "https://www.programmes-2022.fr/"
+          :style "home")
     (render-in-page
       ['div {'class "container"}
         ['div {'class "center-block"}
@@ -23,9 +24,9 @@
             ['span {'class "title-year"} "2022"]]
           ['p {'class "abstract"}
             "En avril prochain se déroulera en France l'élection présidentielle de 2022.
-             S'il s'agira d'élire la personnalité qui guidera la politique du pays pour
-             les cinq prochaines années, ce site va tenter de synthétiser les programmes
-             portés par chacun des candidats, afin de vous éclairer dans votre choix."]
+             Ce site internet vous permet de prendre connaissance des programmes de
+             chaque candidat et de les comparer sur des grandes thématiques afin de vous
+             éclairer dans votre choix."]
           ['ul.milestones
             ['li.milestone "Premier tour : " ['em "10 avril 2022"]]
             ['li.milestone "Second tour : " ['em "24 avril 2022"]]]

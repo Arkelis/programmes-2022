@@ -15,8 +15,7 @@
     :description f"Liste des propositions du programme {manifesto.name} porté par
                    {manifesto.candidate} pour l'Élection présidentielle de 2022."
     :url f"https://www.programmes-2022.fr/programmes/{manifesto.slug}/"
-    :style "manifesto"
-    :manifesto-title manifesto.name))
+    :style "manifesto"))
 
 (defn toc [paragraphs manifesto]
     ['div {'class "manifesto-toc"}
@@ -51,6 +50,10 @@
               ['div {'class "breadcrumb" 'aria-hidden True}
                 (link-to (reverse "manifesto-list") "Programmes") " / "
                 (link-to "#top" manifesto.name)
-                ['div paragraph.topic.name]]
-              ['h1 {'id paragraph.topic.slug} paragraph.topic]
+                ['div (link-to {'title "Comparer les autres programmes sur cette thématique"}
+                        (reverse "topic-detail" :args [paragraph.topic.slug])
+                        paragraph.topic.name)]]
+              ['h1 {'id paragraph.topic.slug}
+                (link-to {'title "Comparer les autres programmes sur cette thématique"}
+                  (reverse "topic-detail" :args [paragraph.topic.slug]) paragraph.topic.name)]
               (markdown paragraph.text)])]])

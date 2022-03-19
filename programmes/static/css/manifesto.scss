@@ -129,7 +129,8 @@ main#content {
 }
 
 .manifesto-paragraph {
-  h1 {
+  h1,
+  h1 a {
     text-align: center;
     padding-top: 5rem;
     margin-bottom: 2rem;
@@ -183,8 +184,9 @@ main#content {
     list-style-type: disc;
     margin-left: 2rem;
   }
-  
-  ol, ul {
+
+  ol,
+  ul {
     margin-bottom: 1rem;
   }
 }
@@ -242,15 +244,12 @@ details[open] {
     padding-bottom: 1.5rem;
     z-index: 2;
 
-    div {
+    div a {
       font-family: "PT Serif", serif;
       font-size: 1.2rem;
       color: var(--flag-blue);
+      font-weight: bold;
     }
-  }
-
-  > div {
-    font-weight: bold;
   }
 }
 

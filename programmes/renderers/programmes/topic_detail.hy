@@ -20,16 +20,13 @@
     :description f"Liste des propositions des programmes pour l'Élection présidentielle de 2022
                    sur le thème {topic.name}."
     :url f"https://www.programmes-2022.fr/thematiques/{topic.slug}/"
-    :style "topic"
-    :manifesto-title topic.name))
+    :style "topic"))
 
 (defn toc [paragraphs topic]
     ['div {'class "manifesto-toc"}
       (link-to "#top" ['h2.title topic.name])
       (gfor paragraph paragraphs
-        (link-to f"#{paragraph.manifesto.slug}" paragraph.manifesto.name))
-      ['h2.hint
-        "Cliquez sur une mesure" ['br] "pour plus de détails."]])
+        (link-to f"#{paragraph.manifesto.slug}" paragraph.manifesto.name))])
   
 (defn paragraphs [manifestos topic]
   (let [paragraphs (-> ManifestoParagraph.objects
@@ -43,6 +40,10 @@
               ['div {'class "breadcrumb" 'aria-hidden True}
                 (link-to (reverse "topic-list") "Thématiques") " / "
                 (link-to "#top" topic.name)
-                ['div paragraph.manifesto.name]]
-              ['h1 {'id paragraph.manifesto.slug} paragraph.manifesto.name]
+                ['div (link-to {'title "Lire l'ensemble des propositions de ce programme"}
+                        (reverse "manifesto-detail" :args [paragraph.manifesto.slug]) paragraph.manifesto.name)]]
+              ['h1 {'id paragraph.manifesto.slug}
+                (link-to {'title "Lire l'ensemble des propositions de ce programme"}
+                  (reverse "manifesto-detail" :args [paragraph.manifesto.slug]) paragraph.manifesto.name)
+                ['span paragraph.manifesto.candidate]]
               (markdown paragraph.text)])]]))

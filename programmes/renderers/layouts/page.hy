@@ -12,7 +12,6 @@
   [#*
    content
    [home? False]
-   [manifesto-title ""]
    [title ""]
    [description ""]
    [url ""]
@@ -30,11 +29,11 @@
       ['meta {'name "viewport" 'content "width=device-width, initial-scale=1"}]
       #* (include-scss f"/static/css/{style}.scss")]
     ['body
-      ['header (navbar {'class (when home? "nav--home")} manifesto-title)]
+      ['header (navbar {'class (when home? "nav--home")})]
       ['main {'id "content"} (iter content)]
       (footer home?)]))
 
-(defelem navbar [manifesto-title]
+(defelem navbar []
   ['nav
     ['ul
       ['li (link-to (reverse "home") "Accueil")]

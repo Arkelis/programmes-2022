@@ -76,7 +76,8 @@ main#content {
 }
 
 .manifesto-paragraph {
-  h1 {
+  h1,
+  h1 a {
     text-align: center;
     padding-top: 5rem;
     margin-bottom: 2rem;
@@ -87,6 +88,13 @@ main#content {
 
     @media screen and (max-width: 1270px) {
       display: none;
+    }
+
+    span {
+      display: block;
+      font-size: 1rem;
+      font-weight: bold;
+      font-style: italic;
     }
   }
 
@@ -190,15 +198,12 @@ details[open] {
     padding-bottom: 1.5rem;
     z-index: 2;
 
-    div {
+    div a {
       font-family: "PT Serif", serif;
       font-size: 1.2rem;
       color: var(--flag-blue);
+      font-weight: bold;
     }
-  }
-
-  > div {
-    font-weight: bold;
   }
 }
 
@@ -208,28 +213,9 @@ details[open] {
 }
 
 @media screen and (max-width: 90ch) {
-  .container--manifesto-intro,
+  .title-container,
   .container--manifesto-paragraphs {
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-
-  .manifesto-intro {
-    margin-top: 6rem;
-
-    img.candidate {
-      top: -14rem;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (max-width: 50ch) {
-  .manifesto-intro img.party {
-    width: 100%;
   }
 }

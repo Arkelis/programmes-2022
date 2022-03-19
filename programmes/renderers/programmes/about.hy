@@ -34,5 +34,5 @@
           les adresses IP des visiteurs, plus d'informations sur "
           (link-to {'target "_blank"}
             "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection"
-            "le site de l'hébergeur")]
-          ".")))
+            "le site de l'hébergeur")
+          "."])))

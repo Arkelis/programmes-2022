@@ -11,6 +11,7 @@ def django_db_setup(django_db_setup, django_db_blocker):
             name="L'avenir en commun",
             summary="Résumé du programme de l'avenir en commun",
             website="https://melenchon2022.fr",
+            order=1,
             candidate=Candidate.objects.create(
                 first_name="Jean-Luc",
                 last_name="Mélenchon",

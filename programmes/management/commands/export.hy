@@ -11,7 +11,7 @@
   django.urls [reverse]
   sass)
 
-(import programmes.models [Manifesto])
+(import programmes.models [Manifesto Topic])
 
 
 (defclass Command [BaseCommand]
@@ -25,6 +25,7 @@
       (.content-at (reverse "home"))
       (.content-at (reverse "about"))
       (.contents-of Manifesto "manifesto-list" "manifesto-detail")
+      (.contents-of Topic "topic-list" "topic-detail")
       (.copy-styles)
       (.copy-images))
     "Done! Result build is in 'site' folder.")
