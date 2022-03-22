@@ -15,11 +15,12 @@ main#content {
 }
 
 .manifesto-toc {
-  grid-area: "toc";
+  grid-area: toc;
   position: sticky;
   margin-top: 2.5rem;
   top: 5rem;
   margin-right: 3rem;
+  margin-left: 1rem;
   align-self: start;
 
   @media screen and (max-width: 1270px) {
@@ -124,7 +125,7 @@ main#content {
 }
 
 .manifesto-paragraphs {
-  grid-area: "content";
+  grid-area: content;
   @include text-container;
 }
 
