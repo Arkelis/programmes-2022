@@ -344,11 +344,12 @@ main#content {
     margin-bottom: 0.25rem; }
 
 .manifesto-toc {
-  grid-area: "toc";
+  grid-area: toc;
   position: sticky;
   margin-top: 7rem;
   top: 5rem;
   margin-right: 3rem;
+  margin-left: 1rem;
   align-self: start; }
   @media screen and (max-width: 1270px) {
     .manifesto-toc {
@@ -382,7 +383,7 @@ main#content {
       grid-template-areas: "content";
       grid-template-columns: minmax(100%, 80ch); } }
 .manifesto-paragraphs {
-  grid-area: "content";
+  grid-area: content;
   max-width: 80ch;
   margin: auto; }
 
